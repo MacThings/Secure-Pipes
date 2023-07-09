@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NESGeneralViewController">
+            <connections>
+                <outlet property="allowSavePasswordCheckBox" destination="b5r-A3-rlG" id="cPm-0D-i6e"/>
+                <outlet property="connectionManagerErrorMessage" destination="dYB-EJ-ED8" id="Dkb-Xq-LhX"/>
+                <outlet property="enableMangedConnectionsCheckBox" destination="ftb-pN-kNP" id="yDc-8Y-A0n"/>
+                <outlet property="loginLaunchCheckBox" destination="KFr-Kd-fna" id="UTe-na-tyk"/>
+                <outlet property="managedInstanceName" destination="WjI-rw-M7U" id="eeu-mi-cBK"/>
+                <outlet property="managedProgressIndicator" destination="qOT-cB-299" id="fsY-W5-kaz"/>
+                <outlet property="managedStatusLight" destination="LLz-3L-1eH" id="ZuP-lG-Azp"/>
+                <outlet property="reconnectAtLoginCheckBox" destination="TXA-2r-Yzh" id="eJ2-6C-lLi"/>
+                <outlet property="registerButton" destination="Erz-nG-D3r" id="Rvh-fH-3MZ"/>
+                <outlet property="useNotificationCenterCheckBox" destination="5CB-XE-OvR" id="cNv-ow-wxg"/>
+                <outlet property="view" destination="1" id="E3L-D4-uUc"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="549" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFr-Kd-fna">
+                    <rect key="frame" x="18" y="236" width="377" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Launch application at login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="uUj-8e-elF">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkAction:" target="-2" id="REu-Gm-Rjw"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CB-XE-OvR">
+                    <rect key="frame" x="18" y="216" width="377" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Use Notification Center for connection status updates" bezelStyle="regularSquare" imagePosition="left" inset="2" id="PkZ-LS-cN8">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkAction:" target="-2" id="ft2-xT-Dk6"/>
+                        <binding destination="FZ6-kj-WvK" name="value" keyPath="selection.useNotificationCenter" id="pEN-wz-qh6"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5r-A3-rlG">
+                    <rect key="frame" x="18" y="196" width="377" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Allow saving administrative password in keychain" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Lhk-kK-3Ya">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkAction:" target="-2" id="fS0-kR-tYk"/>
+                        <binding destination="FZ6-kj-WvK" name="value" keyPath="selection.allowSavePassword" id="i0D-rs-Rvs"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXA-2r-Yzh">
+                    <rect key="frame" x="18" y="176" width="400" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Disconnect/reconnect active connections on sleep/wake" bezelStyle="regularSquare" imagePosition="left" inset="2" id="rOu-kb-fv9">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkAction:" target="-2" id="HpE-ob-HCh"/>
+                        <binding destination="FZ6-kj-WvK" name="value" keyPath="selection.relaunchOnWake" id="jFM-u8-IO7"/>
+                    </connections>
+                </button>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bdq-tt-QYs">
+                    <rect key="frame" x="38" y="102" width="101" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Instance Name:" id="8s6-xt-ATK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WjI-rw-M7U">
+                    <rect key="frame" x="145" y="99" width="296" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="C70-Qf-QoS">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="FZ6-kj-WvK" name="value" keyPath="selection.managedInstanceName" id="SRf-rW-cQw">
+                            <dictionary key="options">
+                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                            </dictionary>
+                        </binding>
+                        <outlet property="nextKeyView" destination="Erz-nG-D3r" id="kec-4H-JE2"/>
+                    </connections>
+                </textField>
+                <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Erz-nG-D3r">
+                    <rect key="frame" x="443" y="93" width="92" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Register" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="352-dS-UyC">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="registerAction:" target="-2" id="nxH-Dl-IrV"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLz-3L-1eH">
+                    <rect key="frame" x="443" y="98" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusAvailable" id="PUz-AL-FOq"/>
+                </imageView>
+                <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="qOT-cB-299">
+                    <rect key="frame" x="447" y="102" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYB-EJ-ED8">
+                    <rect key="frame" x="145" y="86" width="298" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="This is a error message placeholder string" id="xy7-DS-fiu">
+                        <font key="font" metaFont="miniSystemBold"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftb-pN-kNP">
+                    <rect key="frame" x="18" y="127" width="207" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Enable Managed Connections" bezelStyle="regularSquare" imagePosition="left" inset="2" id="iLQ-z1-8Zt">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkAction:" target="-2" id="WtX-FG-KIr"/>
+                        <binding destination="FZ6-kj-WvK" name="value" keyPath="selection.enableManagedConnections" id="Ci9-Nx-08b"/>
+                    </connections>
+                </button>
+            </subviews>
+        </customView>
+        <objectController id="FZ6-kj-WvK">
+            <connections>
+                <binding destination="-2" name="contentObject" keyPath="self.config" id="fKC-jV-U93"/>
+            </connections>
+        </objectController>
+    </objects>
+    <resources>
+        <image name="NSStatusAvailable" width="16" height="16"/>
+    </resources>
+</document>

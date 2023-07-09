@@ -1,0 +1,131 @@
+#!/usr/bin/expect
+#
+#  home-sharing_helper.exp
+#  Secure Pipes
+#
+#  Created by Timothy Stonis on 2/17/15.
+#  Copyright (c) 2015 Timothy Stonis. All rights reserved.
+
+log_user 1
+
+proc check_mdns_binary {} {
+    global mdns_binary
+    
+    spawn -noecho /usr/bin/which dns-sd
+    
+    expect {
+        -re "^(/.+?)\r\n" { set mdns_binary $expect_out(1,string) }
+    }
+    
+    if ![info exists mdns_binary] {
+        exit
+    }
+    
+}
+
+check_mdns_binary
+
+set target [lindex $argv 0]
+
+if {![regexp {[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+} $target] } {
+    spawn /usr/bin/host $target
+    expect {
+        "not found" {
+            puts "INFO:0|Cannot find IP address for Bonjour host|-"
+            exit 1
+        }
+        -re "(\[0-9]+\.\[0-9]+\.\[0-9]+\.\[0-9]+)" {
+            set target $expect_out(1,string)
+        }
+    }
+    
+}
+puts "INFO:0|Looking for $target|-"
+
+set timeout 1
+spawn /usr/bin/dns-sd -B _home-sharing
+
+while {1} {
+    
+    expect {
+        
+        -re "_home-sharing._tcp\\.(.+?)\n" { set instances([string trim $expect_out(1,string)]) ""  }
+        timeout {
+            break
+        }
+        
+    }
+}
+
+set timeout 2
+
+set instance_names [array names instances]
+puts "INFO:0|Instances: $instance_names|-"
+
+log_user 1
+foreach instance $instance_names {
+    
+    spawn /usr/bin/dns-sd -L "$instance" _home-sharing
+    while {1} {
+        
+        expect {
+            -re "can be reached at (.+?):(.+?)(txt.+?)$" {
+                set hostnames($expect_out(1,string)) ""
+                set record [string trim $expect_out(3,string)]
+                set instances($instance,record) $record
+            }
+            timeout {
+                break
+            }
+            
+        }
+        
+        set instances($instance) [array names hostnames]
+        
+    }
+    
+}
+set timeout 1
+
+foreach instance $instance_names {
+    
+    foreach hostname $instances($instance) {
+        spawn /usr/bin/dns-sd -G v4 $hostname
+        set ips {}
+        while {1} {
+            
+            expect {
+                -re "$hostname\(\\s+)(\[^\\s]+?)" { lappend ips $expect_out(2,string) }
+                timeout {
+                    break
+                }
+            }
+        }
+        set instances($instance,ips) $ips
+    }
+}
+
+
+foreach instance $instance_names {
+    
+    set ips $instances($instance,ips)
+    foreach ip $ips {
+        
+        if { $ip == $target } {
+            set matched_instance $instance
+            break;
+        } 
+        
+    }
+    
+}
+
+if { [info exists matched_instance] } {
+    # Get the info we need
+    puts "INFO:100|home-sharing instance at $matched_instance|$instances($matched_instance,record)"
+} 
+
+puts "DONE"
+
+exit
+

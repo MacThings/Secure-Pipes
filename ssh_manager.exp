@@ -1,0 +1,473 @@
+#!/usr/bin/expect
+#
+#  ssh_manager.exp
+#  Secure Pipes
+#
+#  Created by Timothy Stonis on 1/15/14.
+#  Copyright (c) 2014-2015 Timothy Stonis. All rights reserved.
+#
+
+source $env(SCRIPT_PATH)/getopt.tcl
+
+set timeout -1
+log_user 1
+
+set LOCAL_FORWARD 1
+set REMOTE_FORWARD 2
+set SOCKS_PROXY 3
+set MANAGED_SOCKS_PROXY 9
+set sudo_shell no
+set connected no
+set file stdout
+set sudo_prompt "Admin_Password:"
+set ssh_binary "/usr/bin/ssh"
+
+getopt::init {
+        {config             c   {::config ::config_file}}
+        {fprint             f   {::fp ::finger_print}}
+        {id                 i   {::id ::uuid}}
+        {type               t   {::t ::type}}
+        {needs-sudo         r   {::sudo}}
+        {mdns-record        m   {::mdns ::home_sharing_host}}
+        {socks-proxy        p   {::p ::proxy_config}}
+}
+set argv2 [getopt::getopt $argv]
+
+log_file -a $env(WORKING_DIR)/$uuid.log
+send_log "***** STARTING NEW ****\n"
+send_log "[exec date]\n"
+
+# Treat a manage SOCKS proxy like a normal one (for now there is no difference)
+if {$type == $MANAGED_SOCKS_PROXY} {
+    set type $SOCKS_PROXY
+}
+
+# Define error codes
+array set err {
+    connection_terminated { Error 2 Description "SSH connection terminated unexpectedly." }
+    permission_denied  { Error 3 Description "Permission denied." }
+    fingerprint_changed { Error 4 Description "Host fingerprint changed." }
+    dns_spoof { Error 5 Description "The RSA host key has changed for this connection and strict host key checking is enabled in the connection options. If you know this server has a new host key, please disable strict host key checking, save the connection, and then re-enable strict host key checking. You will be prompted to accept the new key the next time the conenction is started." }
+    unable_to_connect { Error 6 Description "Unable to connect to remote host." }
+    cannot_resolve_host { Error 7 Description "Cannot resolve remote host. Please check your network settings and verify your network connection." }
+    operation_timed_out { Error 8 Description "Operation with remote host timed out." }
+    remote_bind_failed { Error 9 Description "Remote port bind failed." }
+    connection_closed { Error 10 Description "Remote connection closed." }
+    connection_reset { Error 11 Description "Connection reset by peer." }
+    remote_forward_failed { Error 12 Description "Unable to make a connection to the forward's destination host." }
+    connection_dropped { Error 13 Description "SSH connection dropped abnormally." }
+    priviledged_port {Error 14 Description "Priviledged ports can only be forwarded by root."}
+    connection_refused {Error 15 Description "SSH connection refused."}
+    local_authorization_failed {Error 16 Description "This connection requires administrative privileges to start. Please retry the connection and supply valid administrative credentials."}
+    invalid_local_forward {Error 17 Description "Invalid local forward specification."}
+    address_already_in_use {Error 18 Description "Requested bind address is already in use."}
+    local_authorization_unknown {Error 19 Description "Unknown failure doing local authorization."}
+    cannot_bind_address {Error 20 Description "Cannot bind to requested address." }
+    connection_timed_out { Error 21 Description "Remote connection timed out." }
+    ssh_process_terminated { Error 22 Description "SSH process terminated abnormally." }
+    host_key_failed { Error 23 Description "Host key verification failed." }
+    no_finger_print { Error 24 Description "No finger print supplied for confirmation." }
+    finger_print_mismatch { Error 25 Description "The confirmed fingerprint and the fingerprint supplied by the server do not match." }
+    host_key_changed { Error 26 Description "The host key for the server has changed." }
+    connection_timeout { Error 27 Description "The connection with the SSH server timed out." }
+    received_sigterm { Error 28 Description "Termination signal received." }
+    no_route_to_host { Error 29 Description "No route to host. Please check your network connection." }
+    network_unreachable { Error 30 Description "Network unreachable to SSH server. Please check your network connection or configuration." }
+    bad_identity_file { Error 31 Description "There was a problem using the specified identity file. Please check that the file is accessible to the current user and the permissions are correct. Please note the identity file must only be readable by the current user." }
+    failed_ssh_exchange_connection { Error 32 Description "The connection with the SSH server using the supplied settings failed. Please check the settings and try again." }
+    proxy_auth_failed { Error 33 Description "Authentication with the HTTP proxy server failed. Please check the supplied username and password and try the connection again." }
+    proxy_connection_refused { Error 34 Description "Connection to the HTTP proxy server failed. Please check the supplied hostname, port, and local network configuration." }
+    bad_config { Error 35 Description "Connection failed due to an invalid configuration option. Please check the custom SSH configuration options supplied." }
+    unknown_error { Error 100 Description "Unknown error." }
+}
+
+trap {
+    global spawn_id sudo_job sudo
+
+    send_log "**** Recieved SIGTERM"
+    trap SIG_IGN {TERM}
+    exit_script $err(received_sigterm)
+
+} { SIGTERM }
+
+proc set_ssh_binary {} {
+    global ssh_binary
+
+    spawn -noecho /usr/bin/which ssh
+
+    expect {
+        -re "^(/.+?)\r\n" { set ssh_binary $expect_out(1,string) }
+    }
+
+    if {![regexp {ssh$} $ssh_binary]} {
+        set ssh_binary "/usr/bin/ssh"
+    }
+}
+
+proc send_passwd {} {
+    global env err mdns
+    global spawn_id
+
+    send_log "**** SENDING PASSWORD"
+
+    if [info exists env(SSH_PASSWD)] {
+        send -- "$env(SSH_PASSWD)\r"
+    } else {
+        send "\r"
+    }
+    
+    # Make some attempt to remove the password from memory
+    if ![info exists mdns] {
+        set env(SSH_PASSWD) ""
+    }
+
+    # Things that can happen right after being authorized
+    expect {
+        "Permission denied" { exit_script $err(permission_denied) }
+        -re "Connection to.*timed out while wa" {exit_script $err(connection_timed_out) }
+        "Bad local forwarding specification" { exit_script $err(invalid_local_forward) }
+        -re "bind: Address already in us.*\n" { exit_script $err(address_already_in_use) }
+        -re "bind: Can't assign requested address" { exit_script $err(cannot_bind_address) }
+        -re "Error: remote port forwarding failed for listen port (\n+)" {
+            set port $expect_out(1,string)
+            exit_script "$err(remote_bind_failed) Key \"$port\"" }
+        "Connected" {puts "STATE:4|Connection successful|passwd"}
+    }
+}
+
+proc start_priviledged_helper {} {
+    global sudo_helper err env proxy_config old_proxy_config active_service info
+
+    send_log "***** Starting priviledged helper\n"
+    spawn -noecho /usr/bin/sudo -k $env(SCRIPT_PATH)/proxy_helper.sh $active_service [lindex $proxy_config 0] [lindex $proxy_config 1] [dict get $old_proxy_config serverName] [dict get $old_proxy_config serverPort] [dict get $old_proxy_config "Enabled"]
+    expect "Password:"
+    send -- "$env(ADMIN_PASSWD)\r"
+    while 1 {
+        expect {
+            "Sorry" {
+                exit_script $err(local_authorization_failed)
+            }
+            "Password" {
+                exit_script $err(local_authorization_failed)
+            }
+            "Proxy Helper Started" {
+                puts "INFO:0|Proxy config helper started|-"
+                set sudo_helper $spawn_id
+                return
+            }
+            "password attempts" {
+                exit_script $err(local_authorization_failed)
+            }
+        }
+    }
+    exit_script $err(local_authorization_unknown)
+
+}
+
+proc execute_helper_command {command} {
+    global sudo_helper
+
+    send_log "***** Sending helper command ($command)\r\n"
+    send -i $sudo_helper "$command\n"
+    expect -i $sudo_helper "Complete"
+    send_log "***** Done running helper command\r\n"
+
+}
+
+proc reset_socks_proxy {} {
+    global sudo_helper
+
+    send_log "***** Resetting SOCKS Proxy ****\n"
+
+    execute_helper_command 1
+
+}
+
+proc exit_script { code } {
+    global sudo proxy_config active_service env dict type SOCKS_PROXY connected ssh_id sudo_helper
+    array set decode $code
+
+    # Return the proxy configuration to its previous state
+    if { ($type == $SOCKS_PROXY) && [info exists proxy_config] && [info exists active_service]} {
+        if { $active_service != "none"} {
+                reset_socks_proxy
+        }
+    }
+
+    send_log "***** Stopping SSH Process ****\n"
+
+    if {$connected == yes} {
+        # Send ^C to the ssh process to get it to exit
+        send -i $ssh_id \x03
+    }
+
+    if [info exists decode(Key)] {
+        puts "EXIT:$decode(Error)|$decode(Description)|$decode(Key)"
+    } else {
+        puts "EXIT:$decode(Error)|$decode(Description)|-"
+    }
+    send_log "***** Exiting expect ****\n"
+
+    exit $decode(Error)
+}
+
+proc get_active_service_name {} {
+
+    set activeService "none"
+
+    # Check to see what interface is running our default route
+    spawn -noecho /sbin/route -n get default
+    expect {
+        -re "interface: (.+\[0-9]+)(\r\n.+)" {  
+            set interface $expect_out(1,string)
+            puts "INFO:0|Active interface name is $interface|$interface"
+        }
+        "not in table" {
+            set interface "lo0"
+        }
+    }
+
+    # Get a list of services and find the currently active one
+    dict create services {}
+    spawn -noecho /usr/sbin/networksetup -listnetworkserviceorder
+
+    while 1 {
+        expect {
+
+            -re {\(([0-9]+)\) (.+)\r\n\(Hardware Port: (.*), Device: (.*)\)\r\n} {  
+                if {$expect_out(4,string) == $interface}  {
+                    set defaultInterface yes
+                    set activeService $expect_out(2,string)
+                } else {
+                    set defaultInterface no
+                }
+                set service [dict create "id" "\"$expect_out(1,string)\"" "serviceName" "\"$expect_out(2,string)\"" \
+                    "hardwarePort" "\"$expect_out(3,string)\"" "device" "\"$expect_out(4,string)\"" "defaultInterface" "\"$defaultInterface\""]
+                dict set services $expect_out(1,string) $service
+            }   
+
+            eof { 
+                break 
+            }
+        } 
+
+    } 
+
+    return $activeService;
+}
+
+proc get_proxy_config {} {
+    global active_service
+
+    spawn -noecho /usr/sbin/networksetup -getsocksfirewallproxy $active_service
+
+    expect {
+        -re "Enabled: (.+)\r\nServer: (.*)\r\nPort: (.+)\r\n" { 
+            set old_config [dict create "Enabled" $expect_out(1,string) "serverName" $expect_out(2,string) "serverPort" $expect_out(3,string)]
+        }
+    }
+    puts "INFO:0|Old proxy config is: $old_config|$old_config"
+    return $old_config
+}
+
+proc get_mdns_record {} {
+    global env ssh_binary home_sharing_host config_file uuid
+
+    log_user 0
+    spawn -noecho $ssh_binary -F $config_file $uuid "expect -f - $home_sharing_host"
+
+    # We assume no errors here, since we should have connected already
+    while 1 {
+        expect {
+            "assword" { send -- "$env(SSH_PASSWD)\r" }
+            "passphrase for key" { send -- "$env(SSH_PASSWD)\r" }
+            "Connected" {
+                break
+            }
+        }
+    }
+
+    # Try to clear out the password
+    set env(SSH_PASSWD) ""
+
+    # Send our script
+    set file [open "$env(SCRIPT_PATH)/home-sharing_helper.exp"]
+
+    while {![eof $file]} {
+        set buf [read $file 1000]
+        send -- $buf
+    }
+
+    while {1} {
+        expect {
+            -re "\n(INFO.+?)\n" { puts "$expect_out(1,string)" }
+            -re "^DONE\r\n" { break }
+            eof { return }
+        }
+    }
+
+    expect eof
+
+    log_user 1
+
+}
+
+# Using proxy:
+# ssh_exchange_identification: Connection closed by remote host
+
+proc connect {} {
+    global env err config_file uuid sudo fp finger_print sudo_prompt
+    global info ssh_command
+    global spawn_id
+    set ssh_options "-NF \"$config_file\" $uuid"
+
+    spawn -noecho {*}$ssh_command {*}$ssh_options
+    puts "INFO:0|$ssh_command $ssh_options|-"
+    puts "PID:[pid]|-|-"
+    puts "SPID:[exp_pid]|-|-"
+
+    while {1} {
+
+        expect {
+            -re "key fingerprint is (\[a-fA-F:0-9]*)\.\r" {
+                set hostfp $expect_out(1,string)
+                if [info exists fp] {
+                    if {$finger_print == $hostfp} {
+                        send "yes\r"
+                    } else {
+                        exit_script "$err(finger_print_mismatch) Key \"$hostfp\""
+                    }
+                } else {
+                    exit_script "$err(host_key_failed) Key \"$hostfp\""
+                }
+            }
+            -re "key fingerprint is SHA256:(.\{43\})\.\r" {
+                set hostfp $expect_out(1,string)
+                if [info exists fp] {
+                    if {$finger_print == $hostfp} {
+                        send "yes\r"
+                    } else {
+                        exit_script "$err(finger_print_mismatch) Key \"$hostfp\""
+                    }
+                } else {
+                    exit_script "$err(host_key_failed) Key \"$hostfp\""
+                }
+            }
+            "Sorry" {
+                exit_script $err(local_authorization_failed)
+            }
+            $sudo_prompt {
+                send -- "$env(ADMIN_PASSWD)\r"
+                send_log "***** Local Administrator's Password Sent *****\n"
+            }
+            "password attempts" {
+                exit_script $err(local_authorization_failed)
+            }
+            "assword:" {
+                send_passwd
+                break
+            }
+            "passphrase for key" {
+                send_passwd
+                break
+            }
+            "Couldn't establish connection to proxy: Connection refused" { exit_script $err(proxy_connection_refused) }
+            "Proxy Authentication Required" { exit_script $err(proxy_auth_failed) }
+            "ssh_exchange_identification:" { exit_script $err(failed_ssh_exchange_connection) }
+            "Bad configuration option" { exit_script "$err(bad_config) Key \"$uuid\"" }
+            "No route to host" { exit_script $err(no_route_to_host) }
+            "POSSIBLE DNS SPOOFING DETECTED" { exit_script $err(dns_spoof) }
+            -re "REMOTE HOST IDENTIFICATION HAS CHANGED.*host is\r\nSHA256:(.\{43\})" {
+                exit_script "$err(host_key_changed) Key \"$expect_out(1,string)\"" }
+            -re "REMOTE HOST IDENTIFICATION HAS CHANGED.*host is\r\n(\[a-fA-F:0-9]*).*" {
+                exit_script "$err(host_key_changed) Key \"$expect_out(1,string)\"" }
+            "Could not resolve" { exit_script $err(cannot_resolve_host) }
+            "timed out" { exit_script $err(operation_timed_out) }
+            "Warning: remote port forwarding failed" { exit_script $err(remote_bind_failed) }
+            "Connection closed" { exit_script $err(connection_closed) }
+            "Connection timed out" { exit_script $err(connection_timed_out) }
+            "Connection reset by peer" { exit_script $err(connection_reset) }
+            "Privileged ports can only be forwarded by root" { exit_script $err(priviledged_port) }
+            "no such identity" { exit_script $err(bad_identity_file) }
+            "Permission denied" {exit_script $err(permission_denied) }
+            "Network is unreachable" {exit_script$err(network_unreachable)}
+            -re "ssh: connect to(.*)Connection refused" { exit_script $err(connection_refused) }
+            "Connected" {
+                puts "STATE:4|Connection successful|connect"
+                break
+            }
+
+        }
+
+    }
+
+}
+
+set_ssh_binary
+
+if [info exists sudo] {
+    set ssh_command "/usr/bin/sudo -k -p $sudo_prompt $ssh_binary"
+} else {
+    set ssh_command $ssh_binary
+}
+
+# Try to establish a connection
+connect
+
+send_log "**** DONE WITH CONNECT"
+set ssh_id $spawn_id
+set connected yes
+
+if { ($type == $SOCKS_PROXY) && [info exists proxy_config] } {
+
+    set active_service [get_active_service_name]
+    if {$active_service != "none"} {
+
+        set old_proxy_config [get_proxy_config]
+        set proxy_config [split $proxy_config ":"]
+
+        start_priviledged_helper
+
+        puts "INFO:0|Active service name is $active_service|$active_service"
+    }
+}
+
+
+if [info exists mdns] {
+    get_mdns_record
+}
+
+# Things that can happen after we're connected
+while {1} {
+
+    expect {
+        "connect failed" {
+            if { $type == $LOCAL_FORWARD } {
+                puts "INFO:0|Failed to connect to remote forward|-"
+            } elseif { $type != $SOCKS_PROXY } {
+                exit_script $err(remote_forward_failed)
+            }
+        }
+        -re "Warning: remote port forwarding failed for listen port (.*)" {exit_script $err(remote_bind_failed)}
+        -re "Connection to (.+) closed by remote host." {exit_script $err(connection_closed)}
+        "timed out" {
+            if { $type == $LOCAL_FORWARD } {
+                puts "INFO:0|Failed to connect to remote forward|-"
+            } elseif { $type != $SOCKS_PROXY } {
+                exit_script $err(connection_timeout)
+            }
+        }
+        "terminated" { exit_script $err(connection_terminated)}
+        "Error: remote port forwarding failed" { exit_script $err(remote_bind_failed) }
+        "Timeout" { exit_script $err(connection_timeout)}
+        "Brokwne pipe" { exit_script $err(connection_closed)}
+        "connect_to*failed" { exit_script $err(remote_forward_failed) }
+        "Write failed" { exit_script $err(connection_closed)}
+        eof {
+            send_log "***** SSH process terminated"
+            exit_script $err(ssh_process_terminated)
+        }
+    }
+}
+
+exit_script $err(ssh_process_terminated)

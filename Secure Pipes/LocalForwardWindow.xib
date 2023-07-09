@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NESLocalForwardWindowController">
+            <connections>
+                <outlet property="addButton" destination="qad-Nf-1vZ" id="oFs-q0-AQr"/>
+                <outlet property="allowManagement" destination="c7Y-me-Cql" id="ZHr-9R-sJl"/>
+                <outlet property="autoReconnectBox" destination="Qem-h9-diF" id="vS8-u6-r0N"/>
+                <outlet property="autoReconnectTime" destination="gTY-Fp-Htt" id="pjG-yp-MD5"/>
+                <outlet property="bonjourServiceField" destination="Hx9-UI-fax" id="3ts-IU-yRG"/>
+                <outlet property="bonjourServiceTextField" destination="Hx9-UI-fax" id="va4-J9-EKl"/>
+                <outlet property="cancelButton" destination="vIr-Zb-Ajm" id="CJW-2X-OPJ"/>
+                <outlet property="compressDataBox" destination="nMm-jZ-nV4" id="8qB-m3-d1j"/>
+                <outlet property="customSSHOptions" destination="MLp-xD-TO9" id="L6X-TK-qxn"/>
+                <outlet property="httpProxyAddressField" destination="s9h-LE-aYq" id="bOX-SR-Dci"/>
+                <outlet property="httpProxyPasswordField" destination="0n5-d7-MUr" id="MwU-Gz-vIG"/>
+                <outlet property="httpProxyPortField" destination="Cd2-fm-9jS" id="YfY-94-8rS"/>
+                <outlet property="httpProxyUsernameField" destination="r3z-O7-GjP" id="tAv-Eq-6jD"/>
+                <outlet property="httpProxyUsernameLabel" destination="Kqy-f9-Lfl" id="04L-lv-FmS"/>
+                <outlet property="includeInMenuBox" destination="0DM-K0-j6J" id="66k-U0-NmP"/>
+                <outlet property="localAddressField" destination="8Wz-ZY-3dJ" id="UC4-RQ-6lP"/>
+                <outlet property="localPortField" destination="uFh-CD-Bjg" id="DFK-S4-ah9"/>
+                <outlet property="nameField" destination="OLl-IW-Uez" id="nwa-qI-KpJ"/>
+                <outlet property="objectController" destination="S6K-gw-Ae6" id="CDn-bF-WDg"/>
+                <outlet property="remoteHostField" destination="0dH-rQ-1FD" id="f0j-QW-fqh"/>
+                <outlet property="remoteHostPortField" destination="b7S-Zg-nF6" id="Y8i-LM-ecE"/>
+                <outlet property="scriptField" destination="f3C-jF-1sT" id="fvz-Zt-2di"/>
+                <outlet property="selectIDButton" destination="eGn-qg-bX5" id="6pO-ng-mhh"/>
+                <outlet property="selectScriptButton" destination="MBJ-YH-Ofm" id="y2A-dx-pZt"/>
+                <outlet property="sshIdentityField" destination="HZF-4k-ret" id="JSI-fv-73f"/>
+                <outlet property="sshPasswordField" destination="mf8-5W-CF7" id="hlW-6S-DRd"/>
+                <outlet property="sshPortField" destination="YXR-hh-aOx" id="fNi-0K-qey"/>
+                <outlet property="sshServerAliveCountMax" destination="FAQ-se-WfP" id="K1l-h9-jys"/>
+                <outlet property="sshServerAliveInterval" destination="jPU-fO-c0V" id="Gte-Wo-MX9"/>
+                <outlet property="sshServerField" destination="dVZ-oQ-YC2" id="bYC-N9-Zcc"/>
+                <outlet property="sshUsernameField" destination="liw-5B-xNV" id="sK8-xO-3iX"/>
+                <outlet property="startOnLaunchBox" destination="cSR-aH-FF8" id="OjX-rh-QdH"/>
+                <outlet property="tabView" destination="1Qh-3u-AGP" id="a66-UE-Uz4"/>
+                <outlet property="toggleEnableBonjour" destination="r9S-Fs-ekp" id="mrt-W4-uOq"/>
+                <outlet property="useBonjourButton" destination="r9S-Fs-ekp" id="iQE-PY-95p"/>
+                <outlet property="useCustomIDBox" destination="h5K-0w-qXu" id="ShL-Zf-008"/>
+                <outlet property="useCustomSSHOptionsBox" destination="DGn-A2-ZmN" id="QA0-kL-pic"/>
+                <outlet property="useHTTPPasswordBox" destination="MJz-MU-fFr" id="KYO-lC-hDp"/>
+                <outlet property="useHTTPProxyBox" destination="CBI-CH-L6P" id="GNo-d2-CeO"/>
+                <outlet property="useScriptBox" destination="4W0-Q7-yzY" id="Etz-Eb-yhs"/>
+                <outlet property="window" destination="1" id="bFS-gE-JLZ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Local Forward Connection" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="626" height="352"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="626" height="352"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qad-Nf-1vZ">
+                        <rect key="frame" x="510" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="j2u-xp-fZp">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addConnection:" target="-2" id="P9g-xX-ax5"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIr-Zb-Ajm">
+                        <rect key="frame" x="428" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="db0-9S-kSY">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">.</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelWindow:" target="-2" id="b3j-vo-Ar2"/>
+                        </connections>
+                    </button>
+                    <tabView fixedFrame="YES" initialItem="vHI-ku-kcO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-3u-AGP">
+                        <rect key="frame" x="13" y="41" width="600" height="305"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="Connection" identifier="1" id="vHI-ku-kcO">
+                                <view key="view" id="qc7-pR-X5G">
+                                    <rect key="frame" x="10" y="33" width="580" height="259"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sB-VC-rkx">
+                                            <rect key="frame" x="37" y="237" width="121" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Connection Name:" id="BhK-3x-VVb">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q75-sF-1GK">
+                                            <rect key="frame" x="19" y="193" width="139" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SSH Server Address:" id="lIK-kC-YFz">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVZ-oQ-YC2" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="164" y="190" width="274" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="server.example.com" drawsBackground="YES" id="Pis-kO-2pe">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshServer" id="dFL-bI-pnY">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNoSelectionPlaceholder">server.example.com</string>
+                                                        <string key="NSNullPlaceholder">server.example.com</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="OSq-vG-5vA"/>
+                                                <outlet property="nextKeyView" destination="YXR-hh-aOx" id="AOH-4R-QZI"/>
+                                            </connections>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="liw-5B-xNV" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="164" y="160" width="134" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="user" drawsBackground="YES" id="hUF-oz-wSy">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshUsername" id="oUH-Xi-Y1y">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder">user</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="37L-Ud-9ZY"/>
+                                                <outlet property="nextKeyView" destination="mf8-5W-CF7" id="2cV-Aj-2vn"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjq-GG-skk">
+                                            <rect key="frame" x="42" y="163" width="116" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SSH Username:" id="H2z-RB-6ma">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UpV-Il-cvC">
+                                            <rect key="frame" x="446" y="193" width="34" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Port:" id="2VY-1v-zZs">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mf8-5W-CF7">
+                                            <rect key="frame" x="380" y="160" width="183" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="yIC-V4-faU">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <allowedInputSourceLocales>
+                                                    <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                </allowedInputSourceLocales>
+                                            </secureTextFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshPassword" id="SAZ-TF-faC">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="cfg-iB-RCx"/>
+                                                <outlet property="nextKeyView" destination="8Wz-ZY-3dJ" id="qdq-TU-mO9"/>
+                                            </connections>
+                                        </secureTextField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YXR-hh-aOx" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="486" y="190" width="77" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="22" drawsBackground="YES" id="O3y-y1-w0M">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshPort" id="U9K-yp-gOw">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder">22</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="3Uw-nF-dz3"/>
+                                                <outlet property="nextKeyView" destination="liw-5B-xNV" id="8MK-98-qee"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3A-H7-eGo">
+                                            <rect key="frame" x="308" y="163" width="66" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password:" id="t84-9Q-1mi">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wz-ZY-3dJ" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="164" y="115" width="274" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="localhost" drawsBackground="YES" id="Fgw-gW-YeY">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.localBindAddress" id="14U-2V-a1G">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder">localhost</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="AcR-oD-iqh"/>
+                                                <outlet property="nextKeyView" destination="uFh-CD-Bjg" id="Zuj-bD-fu7"/>
+                                            </connections>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dH-rQ-1FD" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="164" y="83" width="274" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="myhost.example.com" drawsBackground="YES" id="hBP-Ja-iHf">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.remoteHost" id="K4K-SI-lDU">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder">myhost.example.com</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="3YO-MN-iLe"/>
+                                                <outlet property="nextKeyView" destination="b7S-Zg-nF6" id="5I7-Vg-x1d"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mnv-9i-Lfq">
+                                            <rect key="frame" x="31" y="118" width="127" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Local Bind Address:" id="zGe-go-haH">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uFh-CD-Bjg" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="486" y="115" width="77" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="8080" drawsBackground="YES" id="yrE-rv-Upy">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.localBindPort" id="BPb-l6-t4t">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder">8080</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="ffi-ef-KnN"/>
+                                                <outlet property="nextKeyView" destination="0dH-rQ-1FD" id="TCg-I1-3Gt"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZG-nd-N5n">
+                                            <rect key="frame" x="446" y="118" width="34" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Port:" id="8x7-qo-YRG">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7S-Zg-nF6" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="486" y="83" width="77" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="80" drawsBackground="YES" id="PjE-Tn-n97">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.remotePort" id="gYf-3B-dx8">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsHidden" value="YES"/>
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder">80</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="d29-or-pgQ"/>
+                                                <outlet property="nextKeyView" destination="OLl-IW-Uez" id="vf2-bH-kcM"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wv1-Fc-VBb">
+                                            <rect key="frame" x="446" y="86" width="34" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Port:" id="Kpc-Wa-yhm">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMQ-nq-Tmv">
+                                            <rect key="frame" x="15" y="58" width="143" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="right" title="Management:" id="i7D-eE-qsr">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7Y-me-Cql">
+                                            <rect key="frame" x="162" y="57" width="187" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Allow remote management" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" inset="2" id="h6G-JR-Dyl">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.managedConnection" id="BqT-xS-hjP"/>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8b7-xP-MuN">
+                                            <rect key="frame" x="15" y="86" width="143" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Remote Host Address:" id="toD-eB-TSy">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLl-IW-Uez" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="164" y="234" width="399" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Local Forward" drawsBackground="YES" id="FIY-wx-C24">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.name" id="56a-iJ-juq">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNoSelectionPlaceholder">Local Forward</string>
+                                                        <string key="NSNullPlaceholder">Local Forward</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="M6v-2k-Jzj"/>
+                                                <outlet property="nextKeyView" destination="dVZ-oQ-YC2" id="Tsc-KY-EhY"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Options" identifier="2" id="Ehy-9S-ABE">
+                                <view key="view" id="06E-kK-9gV">
+                                    <rect key="frame" x="10" y="33" width="580" height="259"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmG-7E-jnZ">
+                                            <rect key="frame" x="27" y="175" width="362" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Strict host key checking" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="K8R-br-Uep">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.strictHostKeys" id="bdm-kf-90m">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q2K-px-eOZ">
+                                            <rect key="frame" x="15" y="239" width="121" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SSH Options:" id="yPZ-1H-Vi1">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h5K-0w-qXu">
+                                            <rect key="frame" x="27" y="215" width="149" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Use ssh identity file" bezelStyle="regularSquare" imagePosition="left" inset="2" id="QEL-7i-iiu">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="toggleUseCustomID:" target="-2" id="vpk-hl-heU"/>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.useCustomIdentity" id="ygc-jG-8VT">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMm-jZ-nV4">
+                                            <rect key="frame" x="27" y="195" width="218" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Compress data" bezelStyle="regularSquare" imagePosition="left" inset="2" id="mUC-7u-Cj9">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.compressData" id="eYY-eT-m4d">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGn-qg-bX5">
+                                            <rect key="frame" x="479" y="206" width="90" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Select..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RkX-zt-D9F">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="selectCustomID:" target="-2" id="4LK-Be-i1E"/>
+                                            </connections>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZF-4k-ret" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="177" y="213" width="300" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="UHI-lr-7jI">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshIdentityFile" id="HmV-Wq-xF1">
+                                                    <dictionary key="options">
+                                                        <string key="NSNullPlaceholder" base64-UTF8="YES">
+IA
+</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </textField>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGn-A2-ZmN">
+                                            <rect key="frame" x="27" y="155" width="461" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Add these options to SSH config:" bezelStyle="regularSquare" imagePosition="left" inset="2" id="E8x-Up-RaT">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.addSSHOptions" id="e98-2g-Bh1"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSR-aH-FF8">
+                                            <rect key="frame" x="15" y="59" width="362" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Start this connection when Secure Pipes launches" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="y3g-RA-adM">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.startOnLaunch" id="49e-GF-Pub">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0DM-K0-j6J">
+                                            <rect key="frame" x="15" y="39" width="339" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Include this connection in the menu bar menu" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="337-JG-8nh">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.includeInMenu" id="a8e-55-7Rt">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-h9-diF">
+                                            <rect key="frame" x="15" y="19" width="339" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Automatically retry connection on disconnect after" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qVG-U8-N3w">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="toggleReconnect:" target="-2" id="lc9-ee-fjW"/>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.autoReconnect" id="ePU-ux-PaH">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6JA-xq-zg6">
+                                            <rect key="frame" x="420" y="20" width="62" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="seconds" id="cy8-ks-F1D">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTY-Fp-Htt">
+                                            <rect key="frame" x="354" y="17" width="44" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="gfN-Iz-u6T">
+                                                <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="mMT-0q-foH"/>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.reconnectInterval" id="SuY-Qr-Gg5">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="Ef9-ug-evq"/>
+                                            </connections>
+                                        </textField>
+                                        <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8l-Ow-bkP">
+                                            <rect key="frame" x="398" y="14" width="19" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="bUf-85-HBy"/>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.reconnectInterval" id="Xw7-i5-9Va"/>
+                                            </connections>
+                                        </stepper>
+                                        <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gea-KX-fce">
+                                            <rect key="frame" x="44" y="83" width="519" height="69"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <clipView key="contentView" drawsBackground="NO" id="oeD-qZ-Ca7">
+                                                <rect key="frame" x="1" y="1" width="517" height="67"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="panel" allowsUndo="YES" id="MLp-xD-TO9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="517" height="67"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        <size key="minSize" width="517" height="67"/>
+                                                        <size key="maxSize" width="525" height="10000000"/>
+                                                        <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <connections>
+                                                            <binding destination="S6K-gw-Ae6" name="editable" keyPath="selection.addSSHOptions" id="hfH-hZ-V4e"/>
+                                                            <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.customSSHOptions" id="4q2-85-LiZ">
+                                                                <dictionary key="options">
+                                                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                                    <string key="NSNullPlaceholder">Enter custom SSH config options...</string>
+                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                </dictionary>
+                                                            </binding>
+                                                        </connections>
+                                                    </textView>
+                                                </subviews>
+                                            </clipView>
+                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="WIh-V0-Lah">
+                                                <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                            <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="OMZ-GB-aKC">
+                                                <rect key="frame" x="502" y="1" width="16" height="67"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                        </scrollView>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Advanced" identifier="" id="OCt-e3-7VR">
+                                <view key="view" id="3ZQ-ME-wSc">
+                                    <rect key="frame" x="10" y="33" width="580" height="259"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKj-c9-32l">
+                                            <rect key="frame" x="15" y="239" width="133" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Connection Options:" id="YG2-y3-Qvr">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AuT-c3-Lwm">
+                                            <rect key="frame" x="27" y="215" width="215" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Send server alive messages every " id="v0o-f0-qr8">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2B-vs-DZ9">
+                                            <rect key="frame" x="198" y="190" width="219" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="unanswered server alive messages" id="vMw-KH-nN2">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjv-Wx-gnE">
+                                            <rect key="frame" x="27" y="190" width="107" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Disconnect after" id="3bV-GJ-4WD">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jPU-fO-c0V">
+                                            <rect key="frame" x="248" y="212" width="36" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="0JO-3H-gPF">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="ymE-gO-8is"/>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshServerAliveInterval" id="Gk3-im-NP0">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="sxj-yM-8wp"/>
+                                            </connections>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAQ-se-WfP">
+                                            <rect key="frame" x="140" y="187" width="36" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="eh4-pl-GUg">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="dx6-6N-Kuk"/>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshServerAliveCountMax" id="NOb-Z5-uqs">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="oE3-O0-hP5"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-HN-LfV">
+                                            <rect key="frame" x="306" y="215" width="55" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="seconds" id="nro-vp-ysi">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJ6-qW-8bb">
+                                            <rect key="frame" x="176" y="184" width="19" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="72n-1J-U2Q"/>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshServerAliveCountMax" id="n8d-0U-zjg"/>
+                                            </connections>
+                                        </stepper>
+                                        <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QTf-uF-p3a">
+                                            <rect key="frame" x="284" y="209" width="19" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="spo-MO-KqY"/>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.sshServerAliveInterval" id="cpK-b3-59T"/>
+                                            </connections>
+                                        </stepper>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4W0-Q7-yzY">
+                                            <rect key="frame" x="15" y="159" width="179" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Use script for SSH server" bezelStyle="regularSquare" imagePosition="left" inset="2" id="b6Z-kY-cXe">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="toggleUseScript:" target="-2" id="NjV-jK-sLF"/>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.useScriptForHostname" id="ze8-SE-80P">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3C-jF-1sT" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="200" y="157" width="233" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="F5L-HO-w7p">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.hostnameScriptFile" id="kXf-ho-IZD">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEditable" value="NO"/>
+                                                        <string key="NSNullPlaceholder" base64-UTF8="YES">
+IA
+</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="6I9-g6-Ugj"/>
+                                            </connections>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9h-LE-aYq" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="200" y="127" width="233" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="7uQ-qg-ZJf">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.httpProxyHost" id="GuW-Xo-E3Y">
+                                                    <dictionary key="options">
+                                                        <string key="NSNullPlaceholder" base64-UTF8="YES">
+IA
+</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="ewq-q8-AOc"/>
+                                                <outlet property="nextKeyView" destination="Cd2-fm-9jS" id="ZkH-4c-9EI"/>
+                                            </connections>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBJ-YH-Ofm">
+                                            <rect key="frame" x="438" y="151" width="90" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Select..." bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kvm-C9-bee">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="selectHostnameScript:" target="-2" id="Q43-Gz-3Zv"/>
+                                            </connections>
+                                        </button>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CBI-CH-L6P">
+                                            <rect key="frame" x="15" y="129" width="187" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Connect using web proxy" bezelStyle="regularSquare" imagePosition="left" inset="2" id="vLi-Cz-GCt">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="toggleUseHTTPProxy:" target="-2" id="LTn-vf-JW9"/>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.useHTTPProxy" id="X29-Yt-H8k">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cd2-fm-9jS" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="456" y="127" width="61" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="8080" drawsBackground="YES" id="GF8-x3-UlA">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.httpProxyPort" id="2YF-g4-FVk">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder">8080</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="74Z-fq-ie9"/>
+                                                <outlet property="nextKeyView" destination="r3z-O7-GjP" id="ofn-4y-Wqu"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLV-Bo-rbA">
+                                            <rect key="frame" x="439" y="131" width="13" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title=":" id="ZJR-gr-QME">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kqy-f9-Lfl">
+                                            <rect key="frame" x="52" y="78" width="71" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Username:" id="Yao-yR-2Cz">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJz-MU-fFr">
+                                            <rect key="frame" x="35" y="103" width="249" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Proxy server requires password" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="W17-6q-IQC">
+                                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="toggleUseHTTPPassword:" target="-2" id="xNf-i4-cdF"/>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.httpProxyNeedsPassword" id="bEh-6Y-TYQ">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-O7-GjP" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="129" y="75" width="134" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="LUy-tP-AO9">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.httpProxyUsername" id="HYX-lW-wa4">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder" base64-UTF8="YES">
+IA
+</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="XCV-fe-3Jq"/>
+                                                <outlet property="nextKeyView" destination="0n5-d7-MUr" id="bVf-Fx-Ptj"/>
+                                            </connections>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SkL-3c-12E">
+                                            <rect key="frame" x="267" y="79" width="77" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="right" title="Password:" id="Krz-Vv-4iD">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0n5-d7-MUr">
+                                            <rect key="frame" x="350" y="76" width="167" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="vsu-57-haQ">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <allowedInputSourceLocales>
+                                                    <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                </allowedInputSourceLocales>
+                                            </secureTextFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.httpProxyPassword" id="XzT-yj-yji">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                        <string key="NSNullPlaceholder" base64-UTF8="YES">
+IA
+</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="xTX-3R-k70"/>
+                                                <outlet property="nextKeyView" destination="8Wz-ZY-3dJ" id="vYm-yz-Gmq"/>
+                                            </connections>
+                                        </secureTextField>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9S-Fs-ekp">
+                                            <rect key="frame" x="15" y="48" width="294" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Advertise via Bonjour using service name:" bezelStyle="regularSquare" imagePosition="left" inset="2" id="ryI-on-ngr">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.useBonjour" id="adg-4l-4bU">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEnabled" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hx9-UI-fax">
+                                            <rect key="frame" x="299" y="46" width="134" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="IeF-oi-i57">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.bonjourServiceName" id="581-Zj-7nI">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                                <binding destination="S6K-gw-Ae6" name="enabled" keyPath="selection.useBonjour" id="RPc-JM-pb5">
+                                                    <dictionary key="options">
+                                                        <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="97" y="4"/>
+        </window>
+        <objectController automaticallyPreparesContent="YES" id="S6K-gw-Ae6">
+            <connections>
+                <binding destination="-2" name="contentObject" keyPath="self.config" id="rWh-Ye-h7u"/>
+            </connections>
+        </objectController>
+    </objects>
+</document>
