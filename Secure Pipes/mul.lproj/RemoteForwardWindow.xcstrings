@@ -1,0 +1,858 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1jf-a1-vR9.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"80\"; ObjectID = \"1jf-a1-vR9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "80"
+          }
+        }
+      }
+    },
+    "1jf-a1-vR9.ibShadowedNoSelectionPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedNoSelectionPlaceholder = \"80\"; ObjectID = \"1jf-a1-vR9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "80"
+          }
+        }
+      }
+    },
+    "4kz-x6-hoO.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Automatically retry connection on disconnect after\"; ObjectID = \"4kz-x6-hoO\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Automatically retry connection on disconnect after"
+          }
+        }
+      }
+    },
+    "4Np-Og-K9r.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"server.example.com\"; ObjectID = \"4Np-Og-K9r\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "server.example.com"
+          }
+        }
+      }
+    },
+    "5gw-Sk-42P.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"5gw-Sk-42P\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "5vg-5B-olq.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"localhost\"; ObjectID = \"5vg-5B-olq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "localhost"
+          }
+        }
+      }
+    },
+    "5vj-py-msl.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Remote Bind Address:\"; ObjectID = \"5vj-py-msl\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Remote Bind Address:"
+          }
+        }
+      }
+    },
+    "5YE-Ab-3xi.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Include this connection in the menu bar menu\"; ObjectID = \"5YE-Ab-3xi\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Include this connection in the menu bar menu"
+          }
+        }
+      }
+    },
+    "5YJ-Jo-gb2.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Add these options to SSH config:\"; ObjectID = \"5YJ-Jo-gb2\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add these options to SSH config:"
+          }
+        }
+      }
+    },
+    "6ya-Kh-Tdg.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"8080\"; ObjectID = \"6ya-Kh-Tdg\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "8080"
+          }
+        }
+      }
+    },
+    "7gy-Rx-xqQ.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Compress data\"; ObjectID = \"7gy-Rx-xqQ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Compress data"
+          }
+        }
+      }
+    },
+    "8pZ-gd-SxW.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"SSH Options:\"; ObjectID = \"8pZ-gd-SxW\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SSH Options:"
+          }
+        }
+      }
+    },
+    "8xi-vf-ZSd.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Use script for SSH server\"; ObjectID = \"8xi-vf-ZSd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Use script for SSH server"
+          }
+        }
+      }
+    },
+    "20z-gB-6MD.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"unanswered server alive messages\"; ObjectID = \"20z-gB-6MD\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "unanswered server alive messages"
+          }
+        }
+      }
+    },
+    "AXo-41-v3E.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Cancel\"; ObjectID = \"AXo-41-v3E\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "aYl-J8-O6t.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"SSH Username:\"; ObjectID = \"aYl-J8-O6t\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SSH Username:"
+          }
+        }
+      }
+    },
+    "azN-CZ-YUJ.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"SSH Server Address:\"; ObjectID = \"azN-CZ-YUJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SSH Server Address:"
+          }
+        }
+      }
+    },
+    "BMI-X5-G1d.title" : {
+      "comment" : "Class = \"NSWindow\"; title = \"Remote Forward Connection\"; ObjectID = \"BMI-X5-G1d\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Remote Forward Connection"
+          }
+        }
+      }
+    },
+    "bmZ-aJ-lou.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Password:\"; ObjectID = \"bmZ-aJ-lou\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password:"
+          }
+        }
+      }
+    },
+    "Bux-GS-oAb.label" : {
+      "comment" : "Class = \"NSTabViewItem\"; label = \"Advanced\"; ObjectID = \"Bux-GS-oAb\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Advanced"
+          }
+        }
+      }
+    },
+    "cbS-fQ-m7w.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"myserver.internal\"; ObjectID = \"cbS-fQ-m7w\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "myserver.internal"
+          }
+        }
+      }
+    },
+    "CgX-iE-XhL.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"8080\"; ObjectID = \"CgX-iE-XhL\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "8080"
+          }
+        }
+      }
+    },
+    "CgX-iE-XhL.ibShadowedNoSelectionPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedNoSelectionPlaceholder = \"8080\"; ObjectID = \"CgX-iE-XhL\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "8080"
+          }
+        }
+      }
+    },
+    "e5K-4t-hs0.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Disconnect after\"; ObjectID = \"e5K-4t-hs0\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Disconnect after"
+          }
+        }
+      }
+    },
+    "e9U-Hj-Ate.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Select...\"; ObjectID = \"e9U-Hj-Ate\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Select..."
+          }
+        }
+      }
+    },
+    "eF3-GG-mMq.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Connect using web proxy\"; ObjectID = \"eF3-GG-mMq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Connect using web proxy"
+          }
+        }
+      }
+    },
+    "ES2-b6-qrz.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Connection Name:\"; ObjectID = \"ES2-b6-qrz\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Connection Name:"
+          }
+        }
+      }
+    },
+    "ETI-8D-GPJ.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"8080\"; ObjectID = \"ETI-8D-GPJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "8080"
+          }
+        }
+      }
+    },
+    "EZi-gr-voq.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \":\"; ObjectID = \"EZi-gr-voq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ":"
+          }
+        }
+      }
+    },
+    "gGq-2N-0da.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"22\"; ObjectID = \"gGq-2N-0da\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "22"
+          }
+        }
+      }
+    },
+    "gGq-2N-0da.ibShadowedNoSelectionPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedNoSelectionPlaceholder = \"22\"; ObjectID = \"gGq-2N-0da\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "22"
+          }
+        }
+      }
+    },
+    "H1F-aZ-FdT.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Proxy server requires password\"; ObjectID = \"H1F-aZ-FdT\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Proxy server requires password"
+          }
+        }
+      }
+    },
+    "h8M-bc-hpA.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Send server alive messages every \"; ObjectID = \"h8M-bc-hpA\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Send server alive messages every "
+          }
+        }
+      }
+    },
+    "hdY-3g-QrA.label" : {
+      "comment" : "Class = \"NSTabViewItem\"; label = \"Options\"; ObjectID = \"hdY-3g-QrA\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Options"
+          }
+        }
+      }
+    },
+    "hUN-8Z-qqU.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"seconds\"; ObjectID = \"hUN-8Z-qqU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "seconds"
+          }
+        }
+      }
+    },
+    "hXb-Np-uXo.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"user\"; ObjectID = \"hXb-Np-uXo\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "user"
+          }
+        }
+      }
+    },
+    "Iel-TL-P1v.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"localhost\"; ObjectID = \"Iel-TL-P1v\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "localhost"
+          }
+        }
+      }
+    },
+    "Iel-TL-P1v.ibShadowedNoSelectionPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedNoSelectionPlaceholder = \"localhost\"; ObjectID = \"Iel-TL-P1v\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "localhost"
+          }
+        }
+      }
+    },
+    "Ii7-T6-hha.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"Ii7-T6-hha\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "JmJ-oe-ZZH.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Strict host key checking\"; ObjectID = \"JmJ-oe-ZZH\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Strict host key checking"
+          }
+        }
+      }
+    },
+    "k3M-Pe-jTm.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Management:\"; ObjectID = \"k3M-Pe-jTm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Management:"
+          }
+        }
+      }
+    },
+    "KIo-38-f9l.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Allow remote management\"; ObjectID = \"KIo-38-f9l\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Allow remote management"
+          }
+        }
+      }
+    },
+    "Ko6-5C-DLn.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"8080\"; ObjectID = \"Ko6-5C-DLn\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "8080"
+          }
+        }
+      }
+    },
+    "KoO-pg-nUS.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"myserver.internal\"; ObjectID = \"KoO-pg-nUS\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "myserver.internal"
+          }
+        }
+      }
+    },
+    "KoO-pg-nUS.ibShadowedNoSelectionPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedNoSelectionPlaceholder = \"myserver.internal\"; ObjectID = \"KoO-pg-nUS\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "myserver.internal"
+          }
+        }
+      }
+    },
+    "Kv5-DU-wfN.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Start this connection when Secure Pipes launches\"; ObjectID = \"Kv5-DU-wfN\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Start this connection when Secure Pipes launches"
+          }
+        }
+      }
+    },
+    "lCO-gi-Oip.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Port:\"; ObjectID = \"lCO-gi-Oip\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Port:"
+          }
+        }
+      }
+    },
+    "lR6-OC-4Fy.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Add\"; ObjectID = \"lR6-OC-4Fy\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add"
+          }
+        }
+      }
+    },
+    "mq6-na-bEY.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Port:\"; ObjectID = \"mq6-na-bEY\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Port:"
+          }
+        }
+      }
+    },
+    "mwp-97-oQk.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"mwp-97-oQk\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "ofB-Xe-SaJ.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"user\"; ObjectID = \"ofB-Xe-SaJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "user"
+          }
+        }
+      }
+    },
+    "ofB-Xe-SaJ.ibShadowedNoSelectionPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedNoSelectionPlaceholder = \"user\"; ObjectID = \"ofB-Xe-SaJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "user"
+          }
+        }
+      }
+    },
+    "oQK-8n-qoY.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"22\"; ObjectID = \"oQK-8n-qoY\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "22"
+          }
+        }
+      }
+    },
+    "PIJ-XG-FXn.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"Remote Forward\"; ObjectID = \"PIJ-XG-FXn\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Remote Forward"
+          }
+        }
+      }
+    },
+    "PTT-N5-HMd.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"Remote Forward\"; ObjectID = \"PTT-N5-HMd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Remote Forward"
+          }
+        }
+      }
+    },
+    "PTT-N5-HMd.ibShadowedNoSelectionPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedNoSelectionPlaceholder = \"Remote Forward\"; ObjectID = \"PTT-N5-HMd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Remote Forward"
+          }
+        }
+      }
+    },
+    "Pwu-c0-yKh.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Connection Options:\"; ObjectID = \"Pwu-c0-yKh\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Connection Options:"
+          }
+        }
+      }
+    },
+    "pyW-SK-tgl.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Port:\"; ObjectID = \"pyW-SK-tgl\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Port:"
+          }
+        }
+      }
+    },
+    "QZD-VN-6xX.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"server.example.com\"; ObjectID = \"QZD-VN-6xX\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "server.example.com"
+          }
+        }
+      }
+    },
+    "QZD-VN-6xX.ibShadowedNoSelectionPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedNoSelectionPlaceholder = \"server.example.com\"; ObjectID = \"QZD-VN-6xX\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "server.example.com"
+          }
+        }
+      }
+    },
+    "RRm-k3-9Ss.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Username:\"; ObjectID = \"RRm-k3-9Ss\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Username:"
+          }
+        }
+      }
+    },
+    "t4o-0J-GXQ.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"Enter custom SSH config options...\"; ObjectID = \"t4o-0J-GXQ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Enter custom SSH config options..."
+          }
+        }
+      }
+    },
+    "TtI-z8-Beg.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"seconds\"; ObjectID = \"TtI-z8-Beg\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "seconds"
+          }
+        }
+      }
+    },
+    "v2d-A9-T2r.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Select...\"; ObjectID = \"v2d-A9-T2r\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Select..."
+          }
+        }
+      }
+    },
+    "VCg-Ys-TdT.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"80\"; ObjectID = \"VCg-Ys-TdT\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "80"
+          }
+        }
+      }
+    },
+    "wcZ-RR-2pF.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"wcZ-RR-2pF\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "wOd-2V-FRW.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Local Host Address:\"; ObjectID = \"wOd-2V-FRW\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Local Host Address:"
+          }
+        }
+      }
+    },
+    "wUE-nt-qlj.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Use ssh identity file\"; ObjectID = \"wUE-nt-qlj\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Use ssh identity file"
+          }
+        }
+      }
+    },
+    "Xbx-GD-cGe.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"Xbx-GD-cGe\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "Y3E-DL-kW2.label" : {
+      "comment" : "Class = \"NSTabViewItem\"; label = \"Connection\"; ObjectID = \"Y3E-DL-kW2\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Connection"
+          }
+        }
+      }
+    },
+    "YIZ-gS-fgJ.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Password:\"; ObjectID = \"YIZ-gS-fgJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password:"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

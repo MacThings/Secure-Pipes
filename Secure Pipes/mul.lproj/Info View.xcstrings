@@ -1,0 +1,42 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "cGY-R5-1T5.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Secure Pipes\"; ObjectID = \"cGY-R5-1T5\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Secure Pipes"
+          }
+        }
+      }
+    },
+    "jx6-9h-MeG.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Copyright © 2014-2020 Timothy Stonis, All rights reserved. http://www.opoet.com  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website.\"; ObjectID = \"jx6-9h-MeG\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Copyright © 2014-2020 Timothy Stonis, All rights reserved. http://www.opoet.com  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website."
+          }
+        }
+      }
+    },
+    "WS0-8u-keI.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Version 0.99.11\"; ObjectID = \"WS0-8u-keI\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Version 0.99.11"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

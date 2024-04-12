@@ -1,0 +1,66 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1.title" : {
+      "comment" : "Class = \"NSWindow\"; title = \"Window\"; ObjectID = \"1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Window"
+          }
+        }
+      }
+    },
+    "3dJ-h9-1yi.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Are you sure you want to delete the connection \\\"Local Connection\\\"? \"; ObjectID = \"3dJ-h9-1yi\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Are you sure you want to delete the connection \"Local Connection\"? "
+          }
+        }
+      }
+    },
+    "oq1-pV-C9Z.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Don't show again\"; ObjectID = \"oq1-pV-C9Z\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Don't show again"
+          }
+        }
+      }
+    },
+    "s0i-Me-Sl7.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Cancel\"; ObjectID = \"s0i-Me-Sl7\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "zrT-Xi-Gl9.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Okay\"; ObjectID = \"zrT-Xi-Gl9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Okay"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

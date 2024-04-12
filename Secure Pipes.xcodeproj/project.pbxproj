@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,38 +11,29 @@
 		220DF523188C668400AA9D50 /* NESConnectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220DF522188C668400AA9D50 /* NESConnectionCellView.m */; };
 		221A0B5A18870C150008EBDC /* NESConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A0B5918870C150008EBDC /* NESConnection.m */; };
 		221A0BA718882CFD0008EBDC /* NESConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A0BA618882CFD0008EBDC /* NESConnectionViewController.m */; };
-		221CE21A1880A96300F55125 /* Connection View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221CE2191880A96300F55125 /* Connection View.xib */; };
-		221CE21C1880B16600F55125 /* Prefs Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221CE21B1880B16600F55125 /* Prefs Window.xib */; };
-		221CE21E188194D000F55125 /* General View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221CE21D188194D000F55125 /* General View.xib */; };
-		221CE220188194D900F55125 /* Info View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221CE21F188194D900F55125 /* Info View.xib */; };
 		2234C989189480BF000DEB44 /* NESPopoverTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C984189480BF000DEB44 /* NESPopoverTextField.m */; };
 		2234C98A189480BF000DEB44 /* NESPopoverTextFieldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C986189480BF000DEB44 /* NESPopoverTextFieldButton.m */; };
 		2234C98B189480BF000DEB44 /* NESPopoverTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C988189480BF000DEB44 /* NESPopoverTextFieldCell.m */; };
 		224200A71A93D5FF00D0E56A /* home-sharing_helper.exp in Resources */ = {isa = PBXBuildFile; fileRef = 224200A21A93D49300D0E56A /* home-sharing_helper.exp */; };
 		224200AB1A97ACBC00D0E56A /* NESManagedRegistrationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 224200A91A97ACBC00D0E56A /* NESManagedRegistrationSheet.m */; };
-		224200AC1A97ACBC00D0E56A /* NESManagedRegistrationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224200AA1A97ACBC00D0E56A /* NESManagedRegistrationSheet.xib */; };
 		22455D4118A43DA50057F353 /* NESConnectionProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 22455D4018A43DA50057F353 /* NESConnectionProcess.m */; };
 		2246F95F1991D36800A53B83 /* NESManagedConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246F95E1991D36800A53B83 /* NESManagedConnection.m */; };
 		22488D9B18AD8B11003F5B68 /* NESAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 22488D9A18AD8B11003F5B68 /* NESAppConfig.m */; };
 		22488D9E18AD8E13003F5B68 /* NESGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22488D9D18AD8E13003F5B68 /* NESGeneralViewController.m */; };
 		224D8708195B2D1800C0B6D8 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 224D8707195B2D1800C0B6D8 /* Log.m */; };
 		22575C5418AC26BB00B00006 /* ssh_manager.exp in Resources */ = {isa = PBXBuildFile; fileRef = 22575C5218AC267E00B00006 /* ssh_manager.exp */; };
-		2266BEA918AAC80B00F4ED58 /* NESAdminPasswordDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2266BEA818AAC80B00F4ED58 /* NESAdminPasswordDialog.xib */; };
 		2266BEAF18AAD3E600F4ED58 /* NESUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2266BEAE18AAD3E600F4ED58 /* NESUser.m */; };
 		2266BEB218AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2266BEB118AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.m */; };
 		2266BEB418AADCFF00F4ED58 /* Collaboration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2266BEB318AADCFF00F4ED58 /* Collaboration.framework */; };
 		2273B3BB1989A21A00654C17 /* NESManagedConnectionWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273B3B91989A21A00654C17 /* NESManagedConnectionWindowController.m */; };
-		2273B3BE1989A31600654C17 /* ManagedConnectionWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2273B3BD1989A31600654C17 /* ManagedConnectionWindow.xib */; };
 		2273B3C1198E8DF600654C17 /* NESEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273B3C0198E8DF600654C17 /* NESEmptyView.m */; };
 		22759899189DA9CA00E42ADD /* NESKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 22759898189DA9CA00E42ADD /* NESKeychain.m */; };
 		2275989B189DC08700E42ADD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2275989A189DC08700E42ADD /* Security.framework */; };
 		227E54921AA2776F00DF77AC /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228FC41A1A8ABD85000BEC34 /* SocketRocket.framework */; };
 		227E54951AA2786100DF77AC /* SocketRocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 228FC41A1A8ABD85000BEC34 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2284C65C18B18683005C34E1 /* NESPopoverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284C65B18B18683005C34E1 /* NESPopoverButton.m */; };
-		2284C65E18B1BD3C005C34E1 /* RemoteForwardWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2284C65D18B1BD3C005C34E1 /* RemoteForwardWindow.xib */; };
 		2284C66118B1C090005C34E1 /* NESRemoteForwardWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284C66018B1C090005C34E1 /* NESRemoteForwardWindowController.m */; };
 		2288F40518A027C600C0331C /* NESController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2288F40418A027C600C0331C /* NESController.m */; };
-		228E61BD188F1E4E00864214 /* LocalForwardWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228E61BC188F1E4E00864214 /* LocalForwardWindow.xib */; };
 		228E61C0188F2B1E00864214 /* NESLocalForwardWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228E61BF188F2B1E00864214 /* NESLocalForwardWindowController.m */; };
 		228FC4211A8AC372000BEC34 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228FC4201A8AC372000BEC34 /* SystemConfiguration.framework */; };
 		229803AC187F345C00B704DD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229803AB187F345C00B704DD /* Cocoa.framework */; };
@@ -59,11 +50,9 @@
 		229803D9187F345C00B704DD /* Secure_PipesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229803D8187F345C00B704DD /* Secure_PipesTests.m */; };
 		229803E8187F3F2A00B704DD /* NESPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229803E7187F3F2A00B704DD /* NESPrefsWindowController.m */; };
 		229F49A01984464B003BC1D2 /* FilterBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229F499D1984464A003BC1D2 /* FilterBarView.m */; };
-		22A0576D18A9824500553E75 /* ConfirmationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A0576C18A9824500553E75 /* ConfirmationSheet.xib */; };
 		22A0577018A9833100553E75 /* NESConfirmationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A0576F18A9833100553E75 /* NESConfirmationSheet.m */; };
 		22AB38AB1A1299CE0030926C /* proxy_helper.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22AB38AA1A117A150030926C /* proxy_helper.sh */; };
 		22B4BB0518B3E25C0052B33E /* NESConnectionWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4BB0418B3E25C0052B33E /* NESConnectionWindowController.m */; };
-		22B4BB0718B45C180052B33E /* ProxyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B4BB0618B45C180052B33E /* ProxyWindow.xib */; };
 		22CE2F6B1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE2F6A1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m */; };
 		22DA06581A8532D700F85E56 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 22DA06491A8532D700F85E56 /* LICENSE */; };
 		22DA065A1A8532D700F85E56 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DA064C1A8532D700F85E56 /* SocketIO.m */; };
@@ -72,12 +61,24 @@
 		22DA065D1A8532D700F85E56 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DA06531A8532D700F85E56 /* SocketIOTransportWebsocket.m */; };
 		22DA065E1A8532D700F85E56 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DA06551A8532D700F85E56 /* SocketIOTransportXHR.m */; };
 		22DBDA0C18EFBC8600A7013F /* NESConfirmationDialogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBDA0B18EFBC8600A7013F /* NESConfirmationDialogWindowController.m */; };
-		22DBDA0E18EFBCAF00A7013F /* NESConfirmationDialogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DBDA0D18EFBCAF00A7013F /* NESConfirmationDialogWindow.xib */; };
 		22DC63B31A16839E000064F3 /* NESGetScriptOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DC63B21A16839E000064F3 /* NESGetScriptOutput.m */; };
 		22E199EF18B5698B001B60C0 /* NESProxyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E199EE18B5698B001B60C0 /* NESProxyWindowController.m */; };
 		22ED982518A9349E005F9C1C /* NESMenuIconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ED982418A9349E005F9C1C /* NESMenuIconController.m */; };
 		22F4F4A718F0530C004D21E4 /* NESSelectIdentityDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4F4A618F0530C004D21E4 /* NESSelectIdentityDelegate.m */; };
 		22F8E2FC1A8BA0EB00FB45AB /* NESConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8E2FB1A8BA0EB00FB45AB /* NESConnectionManager.m */; };
+		2A3DE2062BC9674D00E67E04 /* Prefs Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2052BC9674D00E67E04 /* Prefs Window.xib */; };
+		2A3DE20A2BC9675B00E67E04 /* Connection View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2092BC9675B00E67E04 /* Connection View.xib */; };
+		2A3DE20E2BC9676000E67E04 /* LocalForwardWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */; };
+		2A3DE2122BC9676400E67E04 /* RemoteForwardWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2112BC9676400E67E04 /* RemoteForwardWindow.xib */; };
+		2A3DE2162BC9676800E67E04 /* ProxyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2152BC9676800E67E04 /* ProxyWindow.xib */; };
+		2A3DE21A2BC9676C00E67E04 /* ManagedConnectionWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2192BC9676C00E67E04 /* ManagedConnectionWindow.xib */; };
+		2A3DE21E2BC9677000E67E04 /* General View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE21D2BC9677000E67E04 /* General View.xib */; };
+		2A3DE2222BC9677300E67E04 /* Info View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2212BC9677300E67E04 /* Info View.xib */; };
+		2A3DE22D2BC96EC500E67E04 /* corkscrew in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE22C2BC96EC500E67E04 /* corkscrew */; };
+		2A3DE2302BC97F9E00E67E04 /* NESAdminPasswordDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE22F2BC97F9E00E67E04 /* NESAdminPasswordDialog.xib */; };
+		2A3DE2342BC97FA200E67E04 /* NESConfirmationDialogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2332BC97FA200E67E04 /* NESConfirmationDialogWindow.xib */; };
+		2A3DE2382BC97FA700E67E04 /* ConfirmationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2372BC97FA700E67E04 /* ConfirmationSheet.xib */; };
+		2A3DE23C2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE23B2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,10 +146,6 @@
 		221A0B5918870C150008EBDC /* NESConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnection.m; sourceTree = "<group>"; };
 		221A0BA518882CFD0008EBDC /* NESConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionViewController.h; sourceTree = "<group>"; };
 		221A0BA618882CFD0008EBDC /* NESConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionViewController.m; sourceTree = "<group>"; };
-		221CE2191880A96300F55125 /* Connection View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Connection View.xib"; sourceTree = "<group>"; };
-		221CE21B1880B16600F55125 /* Prefs Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Prefs Window.xib"; sourceTree = "<group>"; };
-		221CE21D188194D000F55125 /* General View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "General View.xib"; sourceTree = "<group>"; };
-		221CE21F188194D900F55125 /* Info View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Info View.xib"; sourceTree = "<group>"; };
 		2234C983189480BF000DEB44 /* NESPopoverTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPopoverTextField.h; sourceTree = "<group>"; };
 		2234C984189480BF000DEB44 /* NESPopoverTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPopoverTextField.m; sourceTree = "<group>"; };
 		2234C985189480BF000DEB44 /* NESPopoverTextFieldButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPopoverTextFieldButton.h; sourceTree = "<group>"; };
@@ -158,7 +155,6 @@
 		224200A21A93D49300D0E56A /* home-sharing_helper.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = "home-sharing_helper.exp"; sourceTree = "<group>"; };
 		224200A81A97ACBC00D0E56A /* NESManagedRegistrationSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESManagedRegistrationSheet.h; sourceTree = "<group>"; };
 		224200A91A97ACBC00D0E56A /* NESManagedRegistrationSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESManagedRegistrationSheet.m; sourceTree = "<group>"; };
-		224200AA1A97ACBC00D0E56A /* NESManagedRegistrationSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NESManagedRegistrationSheet.xib; sourceTree = "<group>"; };
 		22455D3F18A43DA50057F353 /* NESConnectionProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionProcess.h; sourceTree = "<group>"; };
 		22455D4018A43DA50057F353 /* NESConnectionProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionProcess.m; sourceTree = "<group>"; };
 		2246F95D1991D36800A53B83 /* NESManagedConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESManagedConnection.h; sourceTree = "<group>"; };
@@ -170,7 +166,6 @@
 		224D8706195B2D1800C0B6D8 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		224D8707195B2D1800C0B6D8 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		22575C5218AC267E00B00006 /* ssh_manager.exp */ = {isa = PBXFileReference; explicitFileType = text.script.sh; fileEncoding = 4; name = ssh_manager.exp; path = ../ssh_manager.exp; sourceTree = "<group>"; };
-		2266BEA818AAC80B00F4ED58 /* NESAdminPasswordDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NESAdminPasswordDialog.xib; sourceTree = "<group>"; };
 		2266BEAD18AAD3E600F4ED58 /* NESUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESUser.h; sourceTree = "<group>"; };
 		2266BEAE18AAD3E600F4ED58 /* NESUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESUser.m; sourceTree = "<group>"; };
 		2266BEB018AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESAdminPasswordDialogWindowController.h; sourceTree = "<group>"; };
@@ -178,7 +173,6 @@
 		2266BEB318AADCFF00F4ED58 /* Collaboration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Collaboration.framework; path = System/Library/Frameworks/Collaboration.framework; sourceTree = SDKROOT; };
 		2273B3B81989A21A00654C17 /* NESManagedConnectionWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESManagedConnectionWindowController.h; sourceTree = "<group>"; };
 		2273B3B91989A21A00654C17 /* NESManagedConnectionWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESManagedConnectionWindowController.m; sourceTree = "<group>"; };
-		2273B3BD1989A31600654C17 /* ManagedConnectionWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagedConnectionWindow.xib; sourceTree = "<group>"; };
 		2273B3BF198E8DF600654C17 /* NESEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESEmptyView.h; sourceTree = "<group>"; };
 		2273B3C0198E8DF600654C17 /* NESEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESEmptyView.m; sourceTree = "<group>"; };
 		22759897189DA9CA00E42ADD /* NESKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESKeychain.h; sourceTree = "<group>"; };
@@ -186,12 +180,10 @@
 		2275989A189DC08700E42ADD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2284C65A18B18683005C34E1 /* NESPopoverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPopoverButton.h; sourceTree = "<group>"; };
 		2284C65B18B18683005C34E1 /* NESPopoverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPopoverButton.m; sourceTree = "<group>"; };
-		2284C65D18B1BD3C005C34E1 /* RemoteForwardWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteForwardWindow.xib; sourceTree = "<group>"; };
 		2284C65F18B1C090005C34E1 /* NESRemoteForwardWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESRemoteForwardWindowController.h; sourceTree = "<group>"; };
 		2284C66018B1C090005C34E1 /* NESRemoteForwardWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESRemoteForwardWindowController.m; sourceTree = "<group>"; };
 		2288F40318A027C600C0331C /* NESController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESController.h; sourceTree = "<group>"; };
 		2288F40418A027C600C0331C /* NESController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESController.m; sourceTree = "<group>"; };
-		228E61BC188F1E4E00864214 /* LocalForwardWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalForwardWindow.xib; sourceTree = "<group>"; };
 		228E61BE188F2B1E00864214 /* NESLocalForwardWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESLocalForwardWindowController.h; sourceTree = "<group>"; };
 		228E61BF188F2B1E00864214 /* NESLocalForwardWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESLocalForwardWindowController.m; sourceTree = "<group>"; };
 		228FC4101A8ABD85000BEC34 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = SocketRocket/SocketRocket.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -219,14 +211,12 @@
 		229803E7187F3F2A00B704DD /* NESPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPrefsWindowController.m; sourceTree = "<group>"; };
 		229F499C1984464A003BC1D2 /* FilterBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterBarView.h; sourceTree = "<group>"; };
 		229F499D1984464A003BC1D2 /* FilterBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterBarView.m; sourceTree = "<group>"; };
-		22A0576C18A9824500553E75 /* ConfirmationSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationSheet.xib; sourceTree = "<group>"; };
 		22A0576E18A9833100553E75 /* NESConfirmationSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConfirmationSheet.h; sourceTree = "<group>"; };
 		22A0576F18A9833100553E75 /* NESConfirmationSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConfirmationSheet.m; sourceTree = "<group>"; };
 		22A9C8111898574400F1999D /* NESPopoverTextField+FirstResponderNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NESPopoverTextField+FirstResponderNotification.h"; sourceTree = "<group>"; };
 		22AB38AA1A117A150030926C /* proxy_helper.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = proxy_helper.sh; sourceTree = "<group>"; };
 		22B4BB0318B3E25C0052B33E /* NESConnectionWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionWindowController.h; sourceTree = "<group>"; };
 		22B4BB0418B3E25C0052B33E /* NESConnectionWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionWindowController.m; sourceTree = "<group>"; };
-		22B4BB0618B45C180052B33E /* ProxyWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProxyWindow.xib; sourceTree = "<group>"; };
 		22B6B4C32432465E00FC75A0 /* Secure Pipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Secure Pipes.entitlements"; sourceTree = "<group>"; };
 		22CE2F691A155ACA003A19CB /* NESSelectHostnameScriptDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESSelectHostnameScriptDelegate.h; sourceTree = "<group>"; };
 		22CE2F6A1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSelectHostnameScriptDelegate.m; sourceTree = "<group>"; };
@@ -247,7 +237,6 @@
 		22DA06551A8532D700F85E56 /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
 		22DBDA0A18EFBC8600A7013F /* NESConfirmationDialogWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConfirmationDialogWindowController.h; sourceTree = "<group>"; };
 		22DBDA0B18EFBC8600A7013F /* NESConfirmationDialogWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConfirmationDialogWindowController.m; sourceTree = "<group>"; };
-		22DBDA0D18EFBCAF00A7013F /* NESConfirmationDialogWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NESConfirmationDialogWindow.xib; sourceTree = "<group>"; };
 		22DC63B11A16839E000064F3 /* NESGetScriptOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESGetScriptOutput.h; sourceTree = "<group>"; };
 		22DC63B21A16839E000064F3 /* NESGetScriptOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESGetScriptOutput.m; sourceTree = "<group>"; };
 		22E199ED18B5698B001B60C0 /* NESProxyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESProxyWindowController.h; sourceTree = "<group>"; };
@@ -260,6 +249,34 @@
 		22F8E2FA1A8BA0EB00FB45AB /* NESConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionManager.h; sourceTree = "<group>"; };
 		22F8E2FB1A8BA0EB00FB45AB /* NESConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionManager.m; sourceTree = "<group>"; };
 		2A3DE1FE2BC960A500E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2A3DE2032BC966E400E67E04 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		2A3DE2042BC9674D00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Prefs Window.xib"; sourceTree = "<group>"; };
+		2A3DE2082BC9675B00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Connection View.xib"; sourceTree = "<group>"; };
+		2A3DE20B2BC9675B00E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = "mul.lproj/Connection View.xcstrings"; sourceTree = "<group>"; };
+		2A3DE20C2BC9676000E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LocalForwardWindow.xib; sourceTree = "<group>"; };
+		2A3DE20F2BC9676000E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/LocalForwardWindow.xcstrings; sourceTree = "<group>"; };
+		2A3DE2102BC9676400E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RemoteForwardWindow.xib; sourceTree = "<group>"; };
+		2A3DE2132BC9676400E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/RemoteForwardWindow.xcstrings; sourceTree = "<group>"; };
+		2A3DE2142BC9676800E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProxyWindow.xib; sourceTree = "<group>"; };
+		2A3DE2172BC9676800E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/ProxyWindow.xcstrings; sourceTree = "<group>"; };
+		2A3DE2182BC9676C00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ManagedConnectionWindow.xib; sourceTree = "<group>"; };
+		2A3DE21B2BC9676D00E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/ManagedConnectionWindow.xcstrings; sourceTree = "<group>"; };
+		2A3DE21C2BC9677000E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/General View.xib"; sourceTree = "<group>"; };
+		2A3DE21F2BC9677000E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = "mul.lproj/General View.xcstrings"; sourceTree = "<group>"; };
+		2A3DE2202BC9677300E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Info View.xib"; sourceTree = "<group>"; };
+		2A3DE2232BC9677300E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = "mul.lproj/Info View.xcstrings"; sourceTree = "<group>"; };
+		2A3DE2242BC96B7800E67E04 /* corkscrew-2.0.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "corkscrew-2.0.xcodeproj"; path = "corkscrew-2.0/corkscrew-2.0.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		2A3DE2282BC96DCF00E67E04 /* corkscrew_arm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = corkscrew_arm; sourceTree = "<group>"; };
+		2A3DE22A2BC96DD600E67E04 /* corkscrew_x86 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = corkscrew_x86; sourceTree = "<group>"; };
+		2A3DE22C2BC96EC500E67E04 /* corkscrew */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = corkscrew; sourceTree = "<group>"; };
+		2A3DE22E2BC97F9E00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NESAdminPasswordDialog.xib; sourceTree = "<group>"; };
+		2A3DE2312BC97F9E00E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/NESAdminPasswordDialog.xcstrings; sourceTree = "<group>"; };
+		2A3DE2322BC97FA200E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NESConfirmationDialogWindow.xib; sourceTree = "<group>"; };
+		2A3DE2352BC97FA200E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/NESConfirmationDialogWindow.xcstrings; sourceTree = "<group>"; };
+		2A3DE2362BC97FA700E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConfirmationSheet.xib; sourceTree = "<group>"; };
+		2A3DE2392BC97FA700E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/ConfirmationSheet.xcstrings; sourceTree = "<group>"; };
+		2A3DE23A2BC97FAC00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NESManagedRegistrationSheet.xib; sourceTree = "<group>"; };
+		2A3DE23D2BC97FAC00E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/NESManagedRegistrationSheet.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,8 +330,8 @@
 			children = (
 				2273B3BF198E8DF600654C17 /* NESEmptyView.h */,
 				2273B3C0198E8DF600654C17 /* NESEmptyView.m */,
-				2266BEA818AAC80B00F4ED58 /* NESAdminPasswordDialog.xib */,
-				22DBDA0D18EFBCAF00A7013F /* NESConfirmationDialogWindow.xib */,
+				2A3DE22F2BC97F9E00E67E04 /* NESAdminPasswordDialog.xib */,
+				2A3DE2332BC97FA200E67E04 /* NESConfirmationDialogWindow.xib */,
 				2266BEB018AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.h */,
 				2266BEB118AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.m */,
 				22DBDA0A18EFBC8600A7013F /* NESConfirmationDialogWindowController.h */,
@@ -330,14 +347,14 @@
 				22ED982418A9349E005F9C1C /* NESMenuIconController.m */,
 				22A0576E18A9833100553E75 /* NESConfirmationSheet.h */,
 				22A0576F18A9833100553E75 /* NESConfirmationSheet.m */,
-				22A0576C18A9824500553E75 /* ConfirmationSheet.xib */,
+				2A3DE2372BC97FA700E67E04 /* ConfirmationSheet.xib */,
 				2284C65A18B18683005C34E1 /* NESPopoverButton.h */,
 				2284C65B18B18683005C34E1 /* NESPopoverButton.m */,
 				229F499C1984464A003BC1D2 /* FilterBarView.h */,
 				229F499D1984464A003BC1D2 /* FilterBarView.m */,
 				224200A81A97ACBC00D0E56A /* NESManagedRegistrationSheet.h */,
 				224200A91A97ACBC00D0E56A /* NESManagedRegistrationSheet.m */,
-				224200AA1A97ACBC00D0E56A /* NESManagedRegistrationSheet.xib */,
+				2A3DE23B2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib */,
 			);
 			name = UIElements;
 			sourceTree = "<group>";
@@ -398,6 +415,9 @@
 		229803B1187F345C00B704DD /* Secure Pipes */ = {
 			isa = PBXGroup;
 			children = (
+				2A3DE22C2BC96EC500E67E04 /* corkscrew */,
+				2A3DE2282BC96DCF00E67E04 /* corkscrew_arm */,
+				2A3DE22A2BC96DD600E67E04 /* corkscrew_x86 */,
 				22B6B4C32432465E00FC75A0 /* Secure Pipes.entitlements */,
 				2234C982189480AA000DEB44 /* UIElements */,
 				221A0B5718870BDE0008EBDC /* Model */,
@@ -448,6 +468,7 @@
 		229803D3187F345C00B704DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A3DE2242BC96B7800E67E04 /* corkscrew-2.0.xcodeproj */,
 				229803D4187F345C00B704DD /* Secure PipesTests-Info.plist */,
 				229803D5187F345C00B704DD /* InfoPlist.strings */,
 			);
@@ -479,14 +500,14 @@
 				220DF522188C668400AA9D50 /* NESConnectionCellView.m */,
 				229803E6187F3F2A00B704DD /* NESPrefsWindowController.h */,
 				229803E7187F3F2A00B704DD /* NESPrefsWindowController.m */,
-				221CE21B1880B16600F55125 /* Prefs Window.xib */,
-				221CE2191880A96300F55125 /* Connection View.xib */,
-				228E61BC188F1E4E00864214 /* LocalForwardWindow.xib */,
-				2284C65D18B1BD3C005C34E1 /* RemoteForwardWindow.xib */,
-				22B4BB0618B45C180052B33E /* ProxyWindow.xib */,
-				2273B3BD1989A31600654C17 /* ManagedConnectionWindow.xib */,
-				221CE21D188194D000F55125 /* General View.xib */,
-				221CE21F188194D900F55125 /* Info View.xib */,
+				2A3DE2052BC9674D00E67E04 /* Prefs Window.xib */,
+				2A3DE2092BC9675B00E67E04 /* Connection View.xib */,
+				2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */,
+				2A3DE2112BC9676400E67E04 /* RemoteForwardWindow.xib */,
+				2A3DE2152BC9676800E67E04 /* ProxyWindow.xib */,
+				2A3DE2192BC9676C00E67E04 /* ManagedConnectionWindow.xib */,
+				2A3DE21D2BC9677000E67E04 /* General View.xib */,
+				2A3DE2212BC9677300E67E04 /* Info View.xib */,
 			);
 			name = "Prefs Window";
 			sourceTree = "<group>";
@@ -511,6 +532,13 @@
 				22DA06551A8532D700F85E56 /* SocketIOTransportXHR.m */,
 			);
 			name = "socket.IO-objc";
+			sourceTree = "<group>";
+		};
+		2A3DE2252BC96B7800E67E04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,11 +604,16 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 2298039F187F345B00B704DD;
 			productRefGroup = 229803A9187F345C00B704DD /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 2A3DE2252BC96B7800E67E04 /* Products */;
+					ProjectRef = 2A3DE2242BC96B7800E67E04 /* corkscrew-2.0.xcodeproj */;
+				},
 				{
 					ProductGroup = 228FC4111A8ABD85000BEC34 /* Products */;
 					ProjectRef = 228FC4101A8ABD85000BEC34 /* SocketRocket.xcodeproj */;
@@ -631,26 +664,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AB38AB1A1299CE0030926C /* proxy_helper.sh in Resources */,
-				22B4BB0718B45C180052B33E /* ProxyWindow.xib in Resources */,
+				2A3DE2162BC9676800E67E04 /* ProxyWindow.xib in Resources */,
 				22DA06581A8532D700F85E56 /* LICENSE in Resources */,
 				22575C5418AC26BB00B00006 /* ssh_manager.exp in Resources */,
 				224200A71A93D5FF00D0E56A /* home-sharing_helper.exp in Resources */,
 				2206D45D18A8260E00FB3E65 /* getopt.tcl in Resources */,
-				221CE21A1880A96300F55125 /* Connection View.xib in Resources */,
+				2A3DE20A2BC9675B00E67E04 /* Connection View.xib in Resources */,
 				229803B6187F345C00B704DD /* InfoPlist.strings in Resources */,
-				224200AC1A97ACBC00D0E56A /* NESManagedRegistrationSheet.xib in Resources */,
+				2A3DE23C2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib in Resources */,
 				229803C7187F345C00B704DD /* Images.xcassets in Resources */,
-				2284C65E18B1BD3C005C34E1 /* RemoteForwardWindow.xib in Resources */,
-				22DBDA0E18EFBCAF00A7013F /* NESConfirmationDialogWindow.xib in Resources */,
+				2A3DE2122BC9676400E67E04 /* RemoteForwardWindow.xib in Resources */,
+				2A3DE22D2BC96EC500E67E04 /* corkscrew in Resources */,
+				2A3DE2342BC97FA200E67E04 /* NESConfirmationDialogWindow.xib in Resources */,
 				229803BC187F345C00B704DD /* Credits.rtf in Resources */,
-				2273B3BE1989A31600654C17 /* ManagedConnectionWindow.xib in Resources */,
-				221CE21E188194D000F55125 /* General View.xib in Resources */,
-				2266BEA918AAC80B00F4ED58 /* NESAdminPasswordDialog.xib in Resources */,
-				228E61BD188F1E4E00864214 /* LocalForwardWindow.xib in Resources */,
-				22A0576D18A9824500553E75 /* ConfirmationSheet.xib in Resources */,
-				221CE220188194D900F55125 /* Info View.xib in Resources */,
+				2A3DE21A2BC9676C00E67E04 /* ManagedConnectionWindow.xib in Resources */,
+				2A3DE21E2BC9677000E67E04 /* General View.xib in Resources */,
+				2A3DE2302BC97F9E00E67E04 /* NESAdminPasswordDialog.xib in Resources */,
+				2A3DE20E2BC9676000E67E04 /* LocalForwardWindow.xib in Resources */,
+				2A3DE2382BC97FA700E67E04 /* ConfirmationSheet.xib in Resources */,
+				2A3DE2222BC9677300E67E04 /* Info View.xib in Resources */,
 				229803C2187F345C00B704DD /* MainMenu.xib in Resources */,
-				221CE21C1880B16600F55125 /* Prefs Window.xib in Resources */,
+				2A3DE2062BC9674D00E67E04 /* Prefs Window.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +790,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A3DE1FE2BC960A500E67E04 /* Base */,
+				2A3DE2032BC966E400E67E04 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -768,6 +803,113 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		2A3DE2052BC9674D00E67E04 /* Prefs Window.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE2042BC9674D00E67E04 /* Base */,
+			);
+			name = "Prefs Window.xib";
+			sourceTree = "<group>";
+		};
+		2A3DE2092BC9675B00E67E04 /* Connection View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE2082BC9675B00E67E04 /* Base */,
+				2A3DE20B2BC9675B00E67E04 /* mul */,
+			);
+			name = "Connection View.xib";
+			sourceTree = "<group>";
+		};
+		2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE20C2BC9676000E67E04 /* Base */,
+				2A3DE20F2BC9676000E67E04 /* mul */,
+			);
+			name = LocalForwardWindow.xib;
+			sourceTree = "<group>";
+		};
+		2A3DE2112BC9676400E67E04 /* RemoteForwardWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE2102BC9676400E67E04 /* Base */,
+				2A3DE2132BC9676400E67E04 /* mul */,
+			);
+			name = RemoteForwardWindow.xib;
+			sourceTree = "<group>";
+		};
+		2A3DE2152BC9676800E67E04 /* ProxyWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE2142BC9676800E67E04 /* Base */,
+				2A3DE2172BC9676800E67E04 /* mul */,
+			);
+			name = ProxyWindow.xib;
+			sourceTree = "<group>";
+		};
+		2A3DE2192BC9676C00E67E04 /* ManagedConnectionWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE2182BC9676C00E67E04 /* Base */,
+				2A3DE21B2BC9676D00E67E04 /* mul */,
+			);
+			name = ManagedConnectionWindow.xib;
+			sourceTree = "<group>";
+		};
+		2A3DE21D2BC9677000E67E04 /* General View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE21C2BC9677000E67E04 /* Base */,
+				2A3DE21F2BC9677000E67E04 /* mul */,
+			);
+			name = "General View.xib";
+			sourceTree = "<group>";
+		};
+		2A3DE2212BC9677300E67E04 /* Info View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE2202BC9677300E67E04 /* Base */,
+				2A3DE2232BC9677300E67E04 /* mul */,
+			);
+			name = "Info View.xib";
+			sourceTree = "<group>";
+		};
+		2A3DE22F2BC97F9E00E67E04 /* NESAdminPasswordDialog.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE22E2BC97F9E00E67E04 /* Base */,
+				2A3DE2312BC97F9E00E67E04 /* mul */,
+			);
+			name = NESAdminPasswordDialog.xib;
+			sourceTree = "<group>";
+		};
+		2A3DE2332BC97FA200E67E04 /* NESConfirmationDialogWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE2322BC97FA200E67E04 /* Base */,
+				2A3DE2352BC97FA200E67E04 /* mul */,
+			);
+			name = NESConfirmationDialogWindow.xib;
+			sourceTree = "<group>";
+		};
+		2A3DE2372BC97FA700E67E04 /* ConfirmationSheet.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE2362BC97FA700E67E04 /* Base */,
+				2A3DE2392BC97FA700E67E04 /* mul */,
+			);
+			name = ConfirmationSheet.xib;
+			sourceTree = "<group>";
+		};
+		2A3DE23B2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3DE23A2BC97FAC00E67E04 /* Base */,
+				2A3DE23D2BC97FAC00E67E04 /* mul */,
+			);
+			name = NESManagedRegistrationSheet.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -775,6 +917,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -831,6 +974,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -888,7 +1032,7 @@
 				CURRENT_PROJECT_VERSION = 0.99.11;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Secure Pipes/Secure Pipes-Prefix.pch";
 				INFOPLIST_FILE = "Secure Pipes/Secure Pipes-Info.plist";
@@ -915,7 +1059,7 @@
 				CURRENT_PROJECT_VERSION = 0.99.11;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Secure Pipes/Secure Pipes-Prefix.pch";
 				INFOPLIST_FILE = "Secure Pipes/Secure Pipes-Info.plist";

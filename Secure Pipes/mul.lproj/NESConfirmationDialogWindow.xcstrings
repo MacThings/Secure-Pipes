@@ -1,0 +1,54 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "c2P-uz-mDc.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"XXX\"; ObjectID = \"c2P-uz-mDc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "XXX"
+          }
+        }
+      }
+    },
+    "fHr-uk-Wat.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:\"; ObjectID = \"fHr-uk-Wat\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:"
+          }
+        }
+      }
+    },
+    "GGU-eZ-MeB.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Reject\"; ObjectID = \"GGU-eZ-MeB\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reject"
+          }
+        }
+      }
+    },
+    "rK3-u9-HFy.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Confirm\"; ObjectID = \"rK3-u9-HFy\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Confirm"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

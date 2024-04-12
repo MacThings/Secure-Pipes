@@ -1,0 +1,187 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		223F59031A1A7FB8002119AE /* corkscrew */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = corkscrew; sourceTree = "<group>"; };
+		22C1BEBF1A13DE6700C88F60 /* acconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acconfig.h; sourceTree = "<group>"; };
+		22C1BEC01A13DE6700C88F60 /* aclocal.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		22C1BEC11A13DE6700C88F60 /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		22C1BEC21A13DE6700C88F60 /* ChangeLog */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		22C1BEC31A13DE6700C88F60 /* config.guess */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
+		22C1BEC41A13DE6700C88F60 /* config.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.in; sourceTree = "<group>"; };
+		22C1BEC51A13DE6700C88F60 /* config.sub */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
+		22C1BEC61A13DE6700C88F60 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		22C1BEC71A13DE6700C88F60 /* configure.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.in; sourceTree = "<group>"; };
+		22C1BEC81A13DE6700C88F60 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		22C1BEC91A13DE6700C88F60 /* corkscrew.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = corkscrew.c; sourceTree = "<group>"; };
+		22C1BECA1A13DE6700C88F60 /* INSTALL */ = {isa = PBXFileReference; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		22C1BECB1A13DE6700C88F60 /* install-sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		22C1BECC1A13DE6700C88F60 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		22C1BECD1A13DE6700C88F60 /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		22C1BECE1A13DE6700C88F60 /* missing */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		22C1BECF1A13DE6700C88F60 /* mkinstalldirs */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = mkinstalldirs; sourceTree = "<group>"; };
+		22C1BED01A13DE6700C88F60 /* NEWS */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		22C1BED11A13DE6700C88F60 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		22C1BED21A13DE6700C88F60 /* stamp-h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = "stamp-h.in"; sourceTree = "<group>"; };
+		22C1BED31A13DE6700C88F60 /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		22C1BEDB1A13DED400C88F60 /* osx-build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "osx-build.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		22C1BEB91A13DE6700C88F60 = {
+			isa = PBXGroup;
+			children = (
+				22C1BEBF1A13DE6700C88F60 /* acconfig.h */,
+				22C1BEC01A13DE6700C88F60 /* aclocal.m4 */,
+				22C1BEC11A13DE6700C88F60 /* AUTHORS */,
+				22C1BEC21A13DE6700C88F60 /* ChangeLog */,
+				22C1BEC31A13DE6700C88F60 /* config.guess */,
+				22C1BEC41A13DE6700C88F60 /* config.in */,
+				22C1BEC51A13DE6700C88F60 /* config.sub */,
+				22C1BEC61A13DE6700C88F60 /* configure */,
+				22C1BEC71A13DE6700C88F60 /* configure.in */,
+				22C1BEC81A13DE6700C88F60 /* COPYING */,
+				22C1BEC91A13DE6700C88F60 /* corkscrew.c */,
+				22C1BECA1A13DE6700C88F60 /* INSTALL */,
+				22C1BEDB1A13DED400C88F60 /* osx-build.sh */,
+				22C1BECB1A13DE6700C88F60 /* install-sh */,
+				22C1BECC1A13DE6700C88F60 /* Makefile.am */,
+				22C1BECD1A13DE6700C88F60 /* Makefile.in */,
+				22C1BECE1A13DE6700C88F60 /* missing */,
+				22C1BECF1A13DE6700C88F60 /* mkinstalldirs */,
+				22C1BED01A13DE6700C88F60 /* NEWS */,
+				22C1BED11A13DE6700C88F60 /* README */,
+				22C1BED21A13DE6700C88F60 /* stamp-h.in */,
+				223F59031A1A7FB8002119AE /* corkscrew */,
+				22C1BED31A13DE6700C88F60 /* TODO */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		22C1BEBE1A13DE6700C88F60 /* corkscrew-2.0 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 22C1BED41A13DE6700C88F60 /* Build configuration list for PBXLegacyTarget "corkscrew-2.0" */;
+			buildPhases = (
+			);
+			buildToolPath = "./osx-build.sh";
+			buildWorkingDirectory = "/Users/luigi/Downloads/Secure-Pipes-main/corkscrew-2.0";
+			dependencies = (
+			);
+			name = "corkscrew-2.0";
+			passBuildSettingsInEnvironment = 1;
+			productName = "corkscrew-2.0";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		22C1BEBA1A13DE6700C88F60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = 22C1BEBD1A13DE6700C88F60 /* Build configuration list for PBXProject "corkscrew-2.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 22C1BEB91A13DE6700C88F60;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22C1BEBE1A13DE6700C88F60 /* corkscrew-2.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		22C1BEBB1A13DE6700C88F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		22C1BEBC1A13DE6700C88F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		22C1BED51A13DE6700C88F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "corkscrew-2.0";
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		22C1BED61A13DE6700C88F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "corkscrew-2.0";
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22C1BEBD1A13DE6700C88F60 /* Build configuration list for PBXProject "corkscrew-2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C1BEBB1A13DE6700C88F60 /* Debug */,
+				22C1BEBC1A13DE6700C88F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C1BED41A13DE6700C88F60 /* Build configuration list for PBXLegacyTarget "corkscrew-2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C1BED51A13DE6700C88F60 /* Debug */,
+				22C1BED61A13DE6700C88F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22C1BEBA1A13DE6700C88F60 /* Project object */;
+}

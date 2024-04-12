@@ -1,0 +1,336 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1yW-yS-R2Y.title" : {
+      "comment" : "Class = \"NSMenu\"; title = \"OtherViews\"; ObjectID = \"1yW-yS-R2Y\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OtherViews"
+          }
+        }
+      }
+    },
+    "3Si-ME-7uZ.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Managed\"; ObjectID = \"3Si-ME-7uZ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwaltet"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Managed"
+          }
+        }
+      }
+    },
+    "7kQ-T3-tSq.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Action\"; ObjectID = \"7kQ-T3-tSq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktion"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Action"
+          }
+        }
+      }
+    },
+    "bL9-ba-oL6.ibShadowedToolTip" : {
+      "comment" : "Class = \"NSMenuItem\"; ibShadowedToolTip = \"Connection that binds to a local port and forwards to a remote port through the SSH tunnel.\"; ObjectID = \"bL9-ba-oL6\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindung, die an einen lokalen Port bindet und über den SSH-Tunnel an einen Remote-Port weiterleitet."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Connection that binds to a local port and forwards to a remote port through the SSH tunnel."
+          }
+        }
+      }
+    },
+    "bL9-ba-oL6.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"New Local Forward...\"; ObjectID = \"bL9-ba-oL6\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue lokale Weiterleitung..."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "New Local Forward..."
+          }
+        }
+      }
+    },
+    "ckK-uw-1qE.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"All\"; ObjectID = \"ckK-uw-1qE\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "All"
+          }
+        }
+      }
+    },
+    "CWC-Ks-rVI.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"!\"; ObjectID = \"CWC-Ks-rVI\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "!"
+          }
+        }
+      }
+    },
+    "dpD-3G-oNL.ibShadowedToolTip" : {
+      "comment" : "Class = \"NSMenuItem\"; ibShadowedToolTip = \"Sets up a local SOCKS proxy to forward requests over the SSH channel and brokered by the remote server\"; ObjectID = \"dpD-3G-oNL\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Richtet einen lokalen SOCKS-Proxy ein, um Anfragen über den SSH-Kanal weiterzuleiten und vom Remote-Server zu vermitteln"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Sets up a local SOCKS proxy to forward requests over the SSH channel and brokered by the remote server"
+          }
+        }
+      }
+    },
+    "dpD-3G-oNL.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"New SOCKS Proxy...\"; ObjectID = \"dpD-3G-oNL\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer SOCKS Proxy..."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "New SOCKS Proxy..."
+          }
+        }
+      }
+    },
+    "GlD-6J-JwK.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Managed\"; ObjectID = \"GlD-6J-JwK\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwaltet"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Managed"
+          }
+        }
+      }
+    },
+    "Haq-U0-PX8.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Manual\"; ObjectID = \"Haq-U0-PX8\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuell"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Manual"
+          }
+        }
+      }
+    },
+    "hBi-0C-Ttw.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"No Connections\"; ObjectID = \"hBi-0C-Ttw\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Verbindung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "No Connections"
+          }
+        }
+      }
+    },
+    "M5d-l9-3ty.title" : {
+      "comment" : "Class = \"NSMenu\"; title = \"OtherViews\"; ObjectID = \"M5d-l9-3ty\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OtherViews"
+          }
+        }
+      }
+    },
+    "RjK-fK-WOS.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Connection\"; ObjectID = \"RjK-fK-WOS\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Connection"
+          }
+        }
+      }
+    },
+    "RKg-oX-JCm.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Label\"; ObjectID = \"RKg-oX-JCm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Label"
+          }
+        }
+      }
+    },
+    "rXu-Sm-Jay.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"(Group Label Field)\"; ObjectID = \"rXu-Sm-Jay\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "(Group Label Field)"
+          }
+        }
+      }
+    },
+    "WQb-0J-vA1.ibShadowedToolTip" : {
+      "comment" : "Class = \"NSMenuItem\"; ibShadowedToolTip = \"Connection that binds to a remote port and forwards to a local port through the SSH tunnel.\"; ObjectID = \"WQb-0J-vA1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindung, die an einen Remote-Port bindet und über den SSH-Tunnel an einen lokalen Port weiterleitet."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Connection that binds to a remote port and forwards to a local port through the SSH tunnel."
+          }
+        }
+      }
+    },
+    "WQb-0J-vA1.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"New Remote Forward...\"; ObjectID = \"WQb-0J-vA1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Remote-Verbindung..."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "New Remote Forward..."
+          }
+        }
+      }
+    },
+    "wZJ-Bq-mE7.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"wZJ-Bq-mE7\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Text Cell"
+          }
+        }
+      }
+    },
+    "Ysj-FT-4sh.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"New Managed Connection...\"; ObjectID = \"Ysj-FT-4sh\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue verwaltete Verbindung..."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "New Managed Connection..."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

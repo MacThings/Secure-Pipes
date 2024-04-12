@@ -1,0 +1,102 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "8s6-xt-ATK.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Instance Name:\"; ObjectID = \"8s6-xt-ATK\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Instance Name:"
+          }
+        }
+      }
+    },
+    "352-dS-UyC.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Register\"; ObjectID = \"352-dS-UyC\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Register"
+          }
+        }
+      }
+    },
+    "iLQ-z1-8Zt.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Enable Managed Connections\"; ObjectID = \"iLQ-z1-8Zt\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Enable Managed Connections"
+          }
+        }
+      }
+    },
+    "Lhk-kK-3Ya.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Allow saving administrative password in keychain\"; ObjectID = \"Lhk-kK-3Ya\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Allow saving administrative password in keychain"
+          }
+        }
+      }
+    },
+    "PkZ-LS-cN8.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Use Notification Center for connection status updates\"; ObjectID = \"PkZ-LS-cN8\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Use Notification Center for connection status updates"
+          }
+        }
+      }
+    },
+    "rOu-kb-fv9.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Disconnect/reconnect active connections on sleep/wake\"; ObjectID = \"rOu-kb-fv9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Disconnect/reconnect active connections on sleep/wake"
+          }
+        }
+      }
+    },
+    "uUj-8e-elF.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Launch application at login\"; ObjectID = \"uUj-8e-elF\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Launch application at login"
+          }
+        }
+      }
+    },
+    "xy7-DS-fiu.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"This is a error message placeholder string\"; ObjectID = \"xy7-DS-fiu\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "This is a error message placeholder string"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "jCX-YM-XR5.title" : {
+      "comment" : "Class = \"NSWindow\"; title = \"Secure Pipes\"; ObjectID = \"jCX-YM-XR5\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Secure Pipes"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

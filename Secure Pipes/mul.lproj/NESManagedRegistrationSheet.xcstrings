@@ -1,0 +1,78 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1We-OU-oeQ.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Password:\"; ObjectID = \"1We-OU-oeQ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password:"
+          }
+        }
+      }
+    },
+    "F0z-JX-Cv5.title" : {
+      "comment" : "Class = \"NSWindow\"; title = \"Window\"; ObjectID = \"F0z-JX-Cv5\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Window"
+          }
+        }
+      }
+    },
+    "Gth-1A-y0i.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Cancel\"; ObjectID = \"Gth-1A-y0i\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "Iyt-aE-FOw.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Verify:\"; ObjectID = \"Iyt-aE-FOw\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Verify:"
+          }
+        }
+      }
+    },
+    "Y5k-ez-K4l.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Okay\"; ObjectID = \"Y5k-ez-K4l\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Okay"
+          }
+        }
+      }
+    },
+    "yax-4E-e3H.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Username:\"; ObjectID = \"yax-4E-e3H\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Username:"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
