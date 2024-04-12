@@ -228,7 +228,6 @@
 		22B4BB0418B3E25C0052B33E /* NESConnectionWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionWindowController.m; sourceTree = "<group>"; };
 		22B4BB0618B45C180052B33E /* ProxyWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProxyWindow.xib; sourceTree = "<group>"; };
 		22B6B4C32432465E00FC75A0 /* Secure Pipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Secure Pipes.entitlements"; sourceTree = "<group>"; };
-		22C1BED71A13DE6800C88F60 /* corkscrew-2.0.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "corkscrew-2.0.xcodeproj"; path = "corkscrew-2.0/corkscrew-2.0.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		22CE2F691A155ACA003A19CB /* NESSelectHostnameScriptDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESSelectHostnameScriptDelegate.h; sourceTree = "<group>"; };
 		22CE2F6A1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSelectHostnameScriptDelegate.m; sourceTree = "<group>"; };
 		22DA06471A8532D700F85E56 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -420,7 +419,6 @@
 			children = (
 				22DA06461A8532B300F85E56 /* socket.IO-objc */,
 				228FC4101A8ABD85000BEC34 /* SocketRocket.xcodeproj */,
-				22C1BED71A13DE6800C88F60 /* corkscrew-2.0.xcodeproj */,
 				22575C5218AC267E00B00006 /* ssh_manager.exp */,
 				224200A21A93D49300D0E56A /* home-sharing_helper.exp */,
 				22AB38AA1A117A150030926C /* proxy_helper.sh */,
@@ -491,13 +489,6 @@
 				221CE21F188194D900F55125 /* Info View.xib */,
 			);
 			name = "Prefs Window";
-			sourceTree = "<group>";
-		};
-		22C1BED81A13DE6800C88F60 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		22DA06461A8532B300F85E56 /* socket.IO-objc */ = {
@@ -590,10 +581,6 @@
 			productRefGroup = 229803A9187F345C00B704DD /* Products */;
 			projectDirPath = "";
 			projectReferences = (
-				{
-					ProductGroup = 22C1BED81A13DE6800C88F60 /* Products */;
-					ProjectRef = 22C1BED71A13DE6800C88F60 /* corkscrew-2.0.xcodeproj */;
-				},
 				{
 					ProductGroup = 228FC4111A8ABD85000BEC34 /* Products */;
 					ProjectRef = 228FC4101A8ABD85000BEC34 /* SocketRocket.xcodeproj */;

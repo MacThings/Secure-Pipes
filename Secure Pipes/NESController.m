@@ -321,7 +321,7 @@ static const int NESConnectionRestartDelay = 30;
 
 - (void) handleConnectionSyncStatusChange:(NESConnection *) connection withUpdate:(NSDictionary *) update {
 
-    NESConnectionStatus oldSyncStatus = [connection status]&~CONNECTION_STATE_MASK;
+    //NESConnectionStatus oldSyncStatus = [connection status]&~CONNECTION_STATE_MASK;
     NESConnectionStatus newSyncStatus = [(NSString *)[update objectForKey:@"status"] integerValue]&~CONNECTION_STATE_MASK;
 
     NSLog(@"Current status of %@: %@",[connection name],[connection connectionStatus]);
