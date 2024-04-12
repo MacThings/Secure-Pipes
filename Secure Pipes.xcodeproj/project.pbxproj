@@ -18,7 +18,6 @@
 		2234C989189480BF000DEB44 /* NESPopoverTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C984189480BF000DEB44 /* NESPopoverTextField.m */; };
 		2234C98A189480BF000DEB44 /* NESPopoverTextFieldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C986189480BF000DEB44 /* NESPopoverTextFieldButton.m */; };
 		2234C98B189480BF000DEB44 /* NESPopoverTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C988189480BF000DEB44 /* NESPopoverTextFieldCell.m */; };
-		223F59091A1A8660002119AE /* corkscrew in Resources */ = {isa = PBXBuildFile; fileRef = 223F59081A1A8660002119AE /* corkscrew */; };
 		224200A71A93D5FF00D0E56A /* home-sharing_helper.exp in Resources */ = {isa = PBXBuildFile; fileRef = 224200A21A93D49300D0E56A /* home-sharing_helper.exp */; };
 		224200AB1A97ACBC00D0E56A /* NESManagedRegistrationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 224200A91A97ACBC00D0E56A /* NESManagedRegistrationSheet.m */; };
 		224200AC1A97ACBC00D0E56A /* NESManagedRegistrationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224200AA1A97ACBC00D0E56A /* NESManagedRegistrationSheet.xib */; };
@@ -124,13 +123,6 @@
 			remoteGlobalIDString = 229803A7187F345C00B704DD;
 			remoteInfo = "Secure Pipes";
 		};
-		22C1BEDC1A13DF6E00C88F60 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22C1BED71A13DE6800C88F60 /* corkscrew-2.0.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C1BEBE1A13DE6700C88F60;
-			remoteInfo = "corkscrew-2.0";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -163,7 +155,6 @@
 		2234C986189480BF000DEB44 /* NESPopoverTextFieldButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPopoverTextFieldButton.m; sourceTree = "<group>"; };
 		2234C987189480BF000DEB44 /* NESPopoverTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPopoverTextFieldCell.h; sourceTree = "<group>"; };
 		2234C988189480BF000DEB44 /* NESPopoverTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPopoverTextFieldCell.m; sourceTree = "<group>"; };
-		223F59081A1A8660002119AE /* corkscrew */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = corkscrew; path = "corkscrew-2.0/corkscrew"; sourceTree = "<group>"; };
 		224200A21A93D49300D0E56A /* home-sharing_helper.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = "home-sharing_helper.exp"; sourceTree = "<group>"; };
 		224200A81A97ACBC00D0E56A /* NESManagedRegistrationSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESManagedRegistrationSheet.h; sourceTree = "<group>"; };
 		224200A91A97ACBC00D0E56A /* NESManagedRegistrationSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESManagedRegistrationSheet.m; sourceTree = "<group>"; };
@@ -366,7 +357,6 @@
 		2298039F187F345B00B704DD = {
 			isa = PBXGroup;
 			children = (
-				223F59081A1A8660002119AE /* corkscrew */,
 				229803B1187F345C00B704DD /* Secure Pipes */,
 				229803D2187F345C00B704DD /* Secure PipesTests */,
 				229803AA187F345C00B704DD /* Frameworks */,
@@ -548,7 +538,6 @@
 			);
 			dependencies = (
 				223582FA1AA272F9005141B6 /* PBXTargetDependency */,
-				22C1BEDD1A13DF6E00C88F60 /* PBXTargetDependency */,
 			);
 			name = "Secure Pipes";
 			productName = "Secure Pipes";
@@ -654,7 +643,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223F59091A1A8660002119AE /* corkscrew in Resources */,
 				22AB38AB1A1299CE0030926C /* proxy_helper.sh in Resources */,
 				22B4BB0718B45C180052B33E /* ProxyWindow.xib in Resources */,
 				22DA06581A8532D700F85E56 /* LICENSE in Resources */,
@@ -757,11 +745,6 @@
 			isa = PBXTargetDependency;
 			target = 229803A7187F345C00B704DD /* Secure Pipes */;
 			targetProxy = 229803D0187F345C00B704DD /* PBXContainerItemProxy */;
-		};
-		22C1BEDD1A13DF6E00C88F60 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "corkscrew-2.0";
-			targetProxy = 22C1BEDC1A13DF6E00C88F60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
