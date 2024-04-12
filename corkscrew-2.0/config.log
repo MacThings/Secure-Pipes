@@ -12,33 +12,14 @@ configure:764: checking for working makeinfo
 configure:783: checking for gcc
 configure:896: checking whether the C compiler (gcc  ) works
 configure:912: gcc -o conftest    conftest.c  1>&5
-configure:909:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+configure:909:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
 main(){return(0);}
 ^
-1 warning generated.
-configure:938: checking whether the C compiler (gcc  ) is a cross-compiler
-configure:943: checking whether we are using GNU C
-configure:971: checking whether gcc accepts -g
-configure:1006: checking for gcc option to accept ANSI C
-configure:1083: checking how to run the C preprocessor
-configure:1165: checking for function prototypes
-configure:1327: checking for gcc
-configure:1440: checking whether the C compiler (gcc -g -O2 ) works
-configure:1456: gcc -o conftest -g -O2   conftest.c  1>&5
-configure:1453:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+int
+1 error generated.
+configure: failed program was:
+
+#line 907 "configure"
+#include "confdefs.h"
+
 main(){return(0);}
-^
-1 warning generated.
-configure:1482: checking whether the C compiler (gcc -g -O2 ) is a cross-compiler
-configure:1487: checking whether we are using GNU C
-configure:1515: checking whether gcc accepts -g
-configure:1551: checking for mawk
-configure:1592: checking for a BSD compatible install
-configure:1645: checking whether ln -s works
-configure:1673: checking host system type
-configure:1927: checking for ANSI C header files
-configure:2031: checking whether time.h and sys/time.h may both be included
-configure:2070: checking for select
-configure:2070: checking for socket
-configure:2070: checking for strerror
-configure:2123: checking for working const

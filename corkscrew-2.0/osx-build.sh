@@ -15,7 +15,8 @@ if [ $1 = clean ]; then
 fi
 
 echo "Running configure script..."
-./configure --host=i386-pc-mach3
+#./configure --host=i386-pc-mach3
+./configure --build=aarch64 --host=aarch64 --enable-all
 
 echo "Running make..."
 

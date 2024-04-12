@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "1530"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -79,18 +79,6 @@
             </ActionContent>
          </ExecutionAction>
       </PostActions>
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F6BDA801145900D200FE3253"
-               BuildableName = "SRWebSocketTests.octest"
-               BlueprintName = "SRWebSocketTests"
-               ReferencedContainer = "container:SocketRocket.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -107,11 +95,21 @@
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F6BDA801145900D200FE3253"
+               BuildableName = "SRWebSocketTests.octest"
+               BlueprintName = "SRWebSocketTests"
+               ReferencedContainer = "container:SocketRocket.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -132,11 +130,6 @@
       <AdditionalOptions>
          <AdditionalOption
             key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
-         <AdditionalOption
-            key = "OBJC_PRINT_EXCEPTIONS"
             value = "YES"
             isEnabled = "YES">
          </AdditionalOption>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1530"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F62417E214D52F3C003CE997"
-               BuildableName = "TestChat.app"
-               BlueprintName = "TestChat"
-               ReferencedContainer = "container:SocketRocket.xcodeproj">
+               BlueprintIdentifier = "229803A7187F345C00B704DD"
+               BuildableName = "Secure Pipes.app"
+               BlueprintName = "Secure Pipes"
+               ReferencedContainer = "container:Secure Pipes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -25,18 +26,20 @@
    <TestAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F62417E214D52F3C003CE997"
-            BuildableName = "TestChat.app"
-            BlueprintName = "TestChat"
-            ReferencedContainer = "container:SocketRocket.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "229803CB187F345C00B704DD"
+               BuildableName = "Secure PipesTests.xctest"
+               BlueprintName = "Secure PipesTests"
+               ReferencedContainer = "container:Secure Pipes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -53,29 +56,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F62417E214D52F3C003CE997"
-            BuildableName = "TestChat.app"
-            BlueprintName = "TestChat"
-            ReferencedContainer = "container:SocketRocket.xcodeproj">
+            BlueprintIdentifier = "229803A7187F345C00B704DD"
+            BuildableName = "Secure Pipes.app"
+            BlueprintName = "Secure Pipes"
+            ReferencedContainer = "container:Secure Pipes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
-         <AdditionalOption
-            key = "MallocGuardEdges"
-            value = ""
-            isEnabled = "YES">
-         </AdditionalOption>
-         <AdditionalOption
-            key = "MallocScribble"
-            value = ""
-            isEnabled = "YES">
-         </AdditionalOption>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -87,10 +73,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F62417E214D52F3C003CE997"
-            BuildableName = "TestChat.app"
-            BlueprintName = "TestChat"
-            ReferencedContainer = "container:SocketRocket.xcodeproj">
+            BlueprintIdentifier = "229803A7187F345C00B704DD"
+            BuildableName = "Secure Pipes.app"
+            BlueprintName = "Secure Pipes"
+            ReferencedContainer = "container:Secure Pipes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
