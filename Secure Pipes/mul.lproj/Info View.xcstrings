@@ -17,6 +17,12 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Copyright © 2014-2020 Timothy Stonis, All rights reserved. http://www.opoet.com  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website.\"; ObjectID = \"jx6-9h-MeG\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copyright © 2014-2020 Timothy Stonis, Alle Rechte vorbehalten. http://www.opoet.com  Secure Pipes ist urheberrechtlich geschützte Software und wird ohne jegliche Gewährleistung geliefert. In keinem Fall haftet der Autor dieser Software für besondere, Folgeschäden, zufällige oder indirekte Schäden jeglicher Art. Durch das Herunterladen und Verwenden dieser Software sind Sie an die Bedingungen der Endbenutzer-Lizenzvereinbarung und die Nutzungsbedingungen gebunden, die auf der opoet-Website veröffentlicht sind."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",

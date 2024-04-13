@@ -285,25 +285,6 @@
             </subviews>
             <point key="canvasLocation" x="133" y="524"/>
         </customView>
-        <button verticalHuggingPriority="750" id="lVU-X5-tAG">
-            <rect key="frame" x="0.0" y="0.0" width="85" height="18"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <buttonCell key="cell" type="inline" title="Managed" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="GlD-6J-JwK">
-                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                <font key="font" metaFont="smallSystemBold"/>
-            </buttonCell>
-            <point key="canvasLocation" x="772.5" y="214"/>
-        </button>
-        <tokenField verticalHuggingPriority="750" id="4E9-nL-nuB">
-            <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <tokenFieldCell key="cell" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" drawsBackground="YES" allowsEditingTextAttributes="YES" id="t3o-32-szF">
-                <font key="font" metaFont="cellTitle"/>
-                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-            </tokenFieldCell>
-            <point key="canvasLocation" x="705" y="211"/>
-        </tokenField>
     </objects>
     <resources>
         <image name="NSActionTemplate" width="20" height="20"/>

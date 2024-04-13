@@ -12,6 +12,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="apQ-Lj-iIh" customClass="SPUStandardUpdaterController"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
                 <menuItem title="Secure Pipes" id="56">
@@ -647,6 +648,11 @@
                 <menuItem title="Preferences..." keyEquivalent="," id="76J-g9-Qap">
                     <connections>
                         <action selector="showPrefsWindow:" target="494" id="OMS-r3-WxR"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Search for Updates..." keyEquivalent="," id="lfd-Ad-m5S">
+                    <connections>
+                        <action selector="checkForUpdates:" target="apQ-Lj-iIh" id="ZrH-Cp-ck6"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" keyEquivalent="q" id="5YF-Bg-9LN">

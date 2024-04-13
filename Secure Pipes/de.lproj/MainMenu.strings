@@ -21,7 +21,7 @@
 "57.title" = "Secure Pipes";
 
 /* Class = "NSMenuItem"; title = "About Secure Pipes"; ObjectID = "58"; */
-"58.title" = "About Secure Pipes";
+"58.title" = "Über Secure Pipes";
 
 /* Class = "NSMenuItem"; title = "Open…"; ObjectID = "72"; */
 "72.title" = "Open…";
@@ -318,7 +318,7 @@
 "491.title" = "Help";
 
 /* Class = "NSMenuItem"; title = "Secure Pipes Help"; ObjectID = "492"; */
-"492.title" = "Secure Pipes Help";
+"492.title" = "Secure Pipes Hilfe";
 
 /* Class = "NSMenuItem"; title = "Text"; ObjectID = "496"; */
 "496.title" = "Text";
@@ -394,3 +394,5 @@
 
 /* Class = "NSMenuItem"; title = "Item"; ObjectID = "pix-WJ-EbV"; */
 "pix-WJ-EbV.title" = "Item";
+
+"lfd-Ad-m5S.title" = "Suche nach Updates...";

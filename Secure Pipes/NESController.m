@@ -186,20 +186,20 @@ static const int NESConnectionRestartDelay = 30;
     switch (status&CONNECTION_STATE_MASK) {
             case NESConnectionIdle:
             if ([connection reconnecting]) {
-                return [NSString stringWithFormat:@"Cancel %@",[connection name]];
+                return [NSString stringWithFormat:NSLocalizedString(@"Cancel %@", nil), [connection name]];
             } else {
-                return [NSString stringWithFormat:@"Connect %@",[connection name]];
+                return [NSString stringWithFormat:NSLocalizedString(@"Connect %@", nil), [connection name]];
             }
             break;
             case NESConnectionConnected:
             case NESConnectionConnecting:
-            return [NSString stringWithFormat:@"Disconnect %@",[connection name]];
+            return [NSString stringWithFormat:NSLocalizedString(@"Disconnect %@", nil), [connection name]];
             case NESConnectionAuthenticationFailed:
             case NESConnectionError:
             if ([connection reconnecting]) {
-                return [NSString stringWithFormat:@"Cancel %@",[connection name]];
+                return [NSString stringWithFormat:NSLocalizedString(@"Cancel %@", nil), [connection name]];
             } else {
-                return [NSString stringWithFormat:@"Retry %@",[connection name]];
+                return [NSString stringWithFormat:NSLocalizedString(@"Retry %@", nil), [connection name]];
             }
         default:
             return @"No Action Available";
@@ -321,7 +321,7 @@ static const int NESConnectionRestartDelay = 30;
 
 - (void) handleConnectionSyncStatusChange:(NESConnection *) connection withUpdate:(NSDictionary *) update {
 
-    //NESConnectionStatus oldSyncStatus = [connection status]&~CONNECTION_STATE_MASK;
+    NESConnectionStatus oldSyncStatus = [connection status]&~CONNECTION_STATE_MASK;
     NESConnectionStatus newSyncStatus = [(NSString *)[update objectForKey:@"status"] integerValue]&~CONNECTION_STATE_MASK;
 
     NSLog(@"Current status of %@: %@",[connection name],[connection connectionStatus]);

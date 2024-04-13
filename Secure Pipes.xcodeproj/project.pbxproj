@@ -44,8 +44,6 @@
 		229803C2187F345C00B704DD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229803C0187F345C00B704DD /* MainMenu.xib */; };
 		229803C5187F345C00B704DD /* Secure_Pipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 229803C3187F345C00B704DD /* Secure_Pipes.xcdatamodeld */; };
 		229803C7187F345C00B704DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229803C6187F345C00B704DD /* Images.xcassets */; };
-		229803CE187F345C00B704DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229803CD187F345C00B704DD /* XCTest.framework */; };
-		229803CF187F345C00B704DD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229803AB187F345C00B704DD /* Cocoa.framework */; };
 		229803E8187F3F2A00B704DD /* NESPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229803E7187F3F2A00B704DD /* NESPrefsWindowController.m */; };
 		229F49A01984464B003BC1D2 /* FilterBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229F499D1984464A003BC1D2 /* FilterBarView.m */; };
 		22A0577018A9833100553E75 /* NESConfirmationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A0576F18A9833100553E75 /* NESConfirmationSheet.m */; };
@@ -64,6 +62,7 @@
 		22ED982518A9349E005F9C1C /* NESMenuIconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ED982418A9349E005F9C1C /* NESMenuIconController.m */; };
 		22F4F4A718F0530C004D21E4 /* NESSelectIdentityDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4F4A618F0530C004D21E4 /* NESSelectIdentityDelegate.m */; };
 		22F8E2FC1A8BA0EB00FB45AB /* NESConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8E2FB1A8BA0EB00FB45AB /* NESConnectionManager.m */; };
+		2A2D12492BCB0EBC0042DEEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D12482BCB0EBC0042DEEA /* Localizable.strings */; };
 		2A3DE2062BC9674D00E67E04 /* Prefs Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2052BC9674D00E67E04 /* Prefs Window.xib */; };
 		2A3DE20A2BC9675B00E67E04 /* Connection View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2092BC9675B00E67E04 /* Connection View.xib */; };
 		2A3DE20E2BC9676000E67E04 /* LocalForwardWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */; };
@@ -77,6 +76,7 @@
 		2A3DE2342BC97FA200E67E04 /* NESConfirmationDialogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2332BC97FA200E67E04 /* NESConfirmationDialogWindow.xib */; };
 		2A3DE2382BC97FA700E67E04 /* ConfirmationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2372BC97FA700E67E04 /* ConfirmationSheet.xib */; };
 		2A3DE23C2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE23B2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib */; };
+		2A3DE2732BCB0A4E00E67E04 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3DE2722BCB0A4E00E67E04 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,13 +114,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = F62417E314D52F3C003CE997;
 			remoteInfo = TestChat;
-		};
-		229803D0187F345C00B704DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 229803A0187F345B00B704DD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 229803A7187F345C00B704DD;
-			remoteInfo = "Secure Pipes";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -200,8 +193,6 @@
 		229803BE187F345C00B704DD /* NESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESAppDelegate.m; sourceTree = "<group>"; };
 		229803C4187F345C00B704DD /* Secure_Pipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Secure_Pipes.xcdatamodel; sourceTree = "<group>"; };
 		229803C6187F345C00B704DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		229803CC187F345C00B704DD /* Secure PipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Secure PipesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		229803CD187F345C00B704DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		229803E6187F3F2A00B704DD /* NESPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPrefsWindowController.h; sourceTree = "<group>"; };
 		229803E7187F3F2A00B704DD /* NESPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPrefsWindowController.m; sourceTree = "<group>"; };
 		229F499C1984464A003BC1D2 /* FilterBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterBarView.h; sourceTree = "<group>"; };
@@ -243,6 +234,7 @@
 		22F4F4A618F0530C004D21E4 /* NESSelectIdentityDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSelectIdentityDelegate.m; sourceTree = "<group>"; };
 		22F8E2FA1A8BA0EB00FB45AB /* NESConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionManager.h; sourceTree = "<group>"; };
 		22F8E2FB1A8BA0EB00FB45AB /* NESConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionManager.m; sourceTree = "<group>"; };
+		2A2D12482BCB0EBC0042DEEA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2A3DE1FE2BC960A500E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2A3DE2032BC966E400E67E04 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		2A3DE2042BC9674D00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Prefs Window.xib"; sourceTree = "<group>"; };
@@ -281,17 +273,9 @@
 				227E54921AA2776F00DF77AC /* SocketRocket.framework in Frameworks */,
 				228FC4211A8AC372000BEC34 /* SystemConfiguration.framework in Frameworks */,
 				2266BEB418AADCFF00F4ED58 /* Collaboration.framework in Frameworks */,
+				2A3DE2732BCB0A4E00E67E04 /* Sparkle in Frameworks */,
 				2275989B189DC08700E42ADD /* Security.framework in Frameworks */,
 				229803AC187F345C00B704DD /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		229803C9187F345C00B704DD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				229803CF187F345C00B704DD /* Cocoa.framework in Frameworks */,
-				229803CE187F345C00B704DD /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +361,6 @@
 			isa = PBXGroup;
 			children = (
 				229803A8187F345C00B704DD /* Secure Pipes.app */,
-				229803CC187F345C00B704DD /* Secure PipesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -389,7 +372,6 @@
 				2266BEB318AADCFF00F4ED58 /* Collaboration.framework */,
 				2275989A189DC08700E42ADD /* Security.framework */,
 				229803AB187F345C00B704DD /* Cocoa.framework */,
-				229803CD187F345C00B704DD /* XCTest.framework */,
 				229803AD187F345C00B704DD /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -421,6 +403,7 @@
 				2288F40418A027C600C0331C /* NESController.m */,
 				229803C0187F345C00B704DD /* MainMenu.xib */,
 				229803C6187F345C00B704DD /* Images.xcassets */,
+				2A2D12482BCB0EBC0042DEEA /* Localizable.strings */,
 				229803C3187F345C00B704DD /* Secure_Pipes.xcdatamodeld */,
 				229803B2187F345C00B704DD /* Supporting Files */,
 			);
@@ -523,30 +506,16 @@
 			buildRules = (
 			);
 			dependencies = (
+				2A3DE2702BCB0A2B00E67E04 /* PBXTargetDependency */,
 				223582FA1AA272F9005141B6 /* PBXTargetDependency */,
 			);
 			name = "Secure Pipes";
+			packageProductDependencies = (
+				2A3DE2722BCB0A4E00E67E04 /* Sparkle */,
+			);
 			productName = "Secure Pipes";
 			productReference = 229803A8187F345C00B704DD /* Secure Pipes.app */;
 			productType = "com.apple.product-type.application";
-		};
-		229803CB187F345C00B704DD /* Secure PipesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 229803DF187F345C00B704DD /* Build configuration list for PBXNativeTarget "Secure PipesTests" */;
-			buildPhases = (
-				229803C8187F345C00B704DD /* Sources */,
-				229803C9187F345C00B704DD /* Frameworks */,
-				229803CA187F345C00B704DD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				229803D1187F345C00B704DD /* PBXTargetDependency */,
-			);
-			name = "Secure PipesTests";
-			productName = "Secure PipesTests";
-			productReference = 229803CC187F345C00B704DD /* Secure PipesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -558,11 +527,6 @@
 				CLASSPREFIX = NES;
 				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = "Timothy Stonis";
-				TargetAttributes = {
-					229803CB187F345C00B704DD = {
-						TestTargetID = 229803A7187F345C00B704DD;
-					};
-				};
 			};
 			buildConfigurationList = 229803A3187F345B00B704DD /* Build configuration list for PBXProject "Secure Pipes" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -574,6 +538,9 @@
 				de,
 			);
 			mainGroup = 2298039F187F345B00B704DD;
+			packageReferences = (
+				2A3DE2712BCB0A4E00E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = 229803A9187F345C00B704DD /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -585,7 +552,6 @@
 			projectRoot = "";
 			targets = (
 				229803A7187F345C00B704DD /* Secure Pipes */,
-				229803CB187F345C00B704DD /* Secure PipesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -628,6 +594,7 @@
 			files = (
 				22AB38AB1A1299CE0030926C /* proxy_helper.sh in Resources */,
 				2A3DE2162BC9676800E67E04 /* ProxyWindow.xib in Resources */,
+				2A2D12492BCB0EBC0042DEEA /* Localizable.strings in Resources */,
 				22DA06581A8532D700F85E56 /* LICENSE in Resources */,
 				22575C5418AC26BB00B00006 /* ssh_manager.exp in Resources */,
 				224200A71A93D5FF00D0E56A /* home-sharing_helper.exp in Resources */,
@@ -648,13 +615,6 @@
 				2A3DE2222BC9677300E67E04 /* Info View.xib in Resources */,
 				229803C2187F345C00B704DD /* MainMenu.xib in Resources */,
 				2A3DE2062BC9674D00E67E04 /* Prefs Window.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		229803CA187F345C00B704DD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,13 +668,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		229803C8187F345C00B704DD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -723,10 +676,9 @@
 			name = SocketRocketOSX;
 			targetProxy = 223582F91AA272F9005141B6 /* PBXContainerItemProxy */;
 		};
-		229803D1187F345C00B704DD /* PBXTargetDependency */ = {
+		2A3DE2702BCB0A2B00E67E04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 229803A7187F345C00B704DD /* Secure Pipes */;
-			targetProxy = 229803D0187F345C00B704DD /* PBXContainerItemProxy */;
+			productRef = 2A3DE26F2BCB0A2B00E67E04 /* Sparkle */;
 		};
 /* End PBXTargetDependency section */
 
@@ -976,6 +928,7 @@
 		229803DD187F345C00B704DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Secure Pipes/Secure Pipes.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -986,9 +939,16 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Secure Pipes/Secure Pipes-Prefix.pch";
 				INFOPLIST_FILE = "Secure Pipes/Secure Pipes-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST))",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"$(inherited)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 0.99.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.edgeservices.${PRODUCT_NAME:rfc1034identifier}";
@@ -1003,6 +963,7 @@
 		229803DE187F345C00B704DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Secure Pipes/Secure Pipes.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1013,9 +974,16 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Secure Pipes/Secure Pipes-Prefix.pch";
 				INFOPLIST_FILE = "Secure Pipes/Secure Pipes-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST))",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"$(inherited)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 0.99.11;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1025,50 +993,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		229803E0187F345C00B704DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Secure Pipes.app/Contents/MacOS/Secure Pipes";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Secure Pipes/Secure Pipes-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Secure PipesTests/Secure PipesTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.edgeservices.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		229803E1187F345C00B704DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Secure Pipes.app/Contents/MacOS/Secure Pipes";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Secure Pipes/Secure Pipes-Prefix.pch";
-				INFOPLIST_FILE = "Secure PipesTests/Secure PipesTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.edgeservices.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -1093,16 +1017,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229803DF187F345C00B704DD /* Build configuration list for PBXNativeTarget "Secure PipesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				229803E0187F345C00B704DD /* Debug */,
-				229803E1187F345C00B704DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A3DE26C2BCA854500E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		2A3DE2712BCB0A4E00E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A3DE26F2BCB0A2B00E67E04 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3DE26C2BCA854500E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		2A3DE2722BCB0A4E00E67E04 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A3DE2712BCB0A4E00E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		229803C3187F345C00B704DD /* Secure_Pipes.xcdatamodeld */ = {

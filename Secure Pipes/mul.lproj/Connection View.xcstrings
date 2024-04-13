@@ -159,7 +159,7 @@
     },
     "GlD-6J-JwK.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Managed\"; ObjectID = \"GlD-6J-JwK\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
