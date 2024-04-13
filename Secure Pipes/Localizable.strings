@@ -4,6 +4,10 @@
 
 "Retry %@" = "Erneut versuchen %@";
 
+"Quit" = "Beenden";
+
+"Cancel" = "Abbrechen";
+
 "Cancel %@" = "Abbrechen %@";
 
 "The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:" = "Die Authentizität dieses Hosts kann nicht bestätigt werden. Bitte bestätige, dass der Host-Schlüsselfingerabdruck unten gültig ist:";
@@ -25,3 +29,17 @@
 "The %@ connection \"%@\" failed to connect." = "Die %@ Verbindung \"%@\" konnte nicht hergestellt werden.";
 
 "The %@ connection \"%@\" was disconnected." = "Die %@ Verbindung \"%@\" wurde getrennt.";
+
+"The specified SSH server hostname script did not return a valid hostname or IP address. The returned value was:\n\n %@" = "Das angegebene SSH-Server-Hostnamen-Skript hat keinen gültigen Hostnamen oder keine gültige IP-Adresse zurückgegeben. Der zurückgegebene Wert lautet:\n\n %@";
+
+"Unable to post updated configuration to server. Error from the server was: \"%@\"" = "Aktualisierte Konfiguration konnte nicht auf den Server übertragen werden. Fehler vom Server lautet: \"%@\"";
+
+"There was an error updating the configuration on the server: %@" = "Beim Aktualisieren der Konfiguration auf dem Server ist ein Fehler aufgetreten: %@";
+
+"Error: %@" = "Fehler: %@";
+
+"Warning: %@" = "Warnung: %@";
+
+"Are you sure you want to quit Secure Pipes?" = "Möchtest Du Secure Pipes wirklich beenden?";
+
+"Quitting the application will force all active connections to stop." = "Beim Beenden des Programms werden alle aktiven Verbindungen getrennt.";

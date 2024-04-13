@@ -115,7 +115,7 @@ NSString * const ticketPath = TICKET_PATH;
                     if (serverErrorString) {
                         NSLog(@"Error posting config!");
                         //[self setStatus:NESConnectionInvalidated];
-                        [self queueStatusUpdate:NESConnectionSyncFailure withData:[NSString stringWithFormat:@"Unable to post updated configuration to server. Error from the server was: \"%@\"",serverErrorString]];
+                        [self queueStatusUpdate:NESConnectionSyncFailure withData:[NSString stringWithFormat:NSLocalizedString(@"Unable to post updated configuration to server. Error from the server was: \"%@\"", nil),serverErrorString]];
 
                     } else {
                         
@@ -311,7 +311,7 @@ NSString * const ticketPath = TICKET_PATH;
                 
                 if (statusCode == 500) {
                     errorString = [[NSMutableString alloc] init];
-                    [errorString setString:[NSString stringWithFormat:@"There was an error updating the configuration on the server: %@",[postResponse objectForKey:@"errorMessage"]]];
+                    [errorString setString:[NSString stringWithFormat:NSLocalizedString(@"There was an error updating the configuration on the server: %@", nil),[postResponse objectForKey:@"errorMessage"]]];
                 }
             }
             postResponse = nil;

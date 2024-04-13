@@ -59,10 +59,10 @@
 
     if ([[_controller connections] hasActiveConnections]) {
         NSAlert *alert = [[NSAlert alloc] init];
-        [alert addButtonWithTitle:@"Quit"];
-        [alert addButtonWithTitle:@"Cancel"];
-        [alert setMessageText:@"Are you sure you want to quit Secure Pipes?"];
-        [alert setInformativeText:@"Quitting the application will force all active connections to stop."];
+        [alert addButtonWithTitle:NSLocalizedString(@"Quit", nil)];
+        [alert addButtonWithTitle:NSLocalizedString(@"Cancel", nil)];
+        [alert setMessageText:NSLocalizedString(@"Are you sure you want to quit Secure Pipes?", nil)];
+        [alert setInformativeText:NSLocalizedString(@"Quitting the application will force all active connections to stop.", nil)];
         [alert setAlertStyle:NSWarningAlertStyle];
         
         [NSApp activateIgnoringOtherApps:YES];

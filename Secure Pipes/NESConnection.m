@@ -775,7 +775,7 @@
             }
             
             if (!([NESConnection isValidHost:output]||[NESConnection isValidIP:output])) {
-                error = [NSString stringWithFormat:@"The specified SSH server hostname script did not return a valid hostname or IP address. The returned value was:\n\n %@",output];
+                error = [NSString stringWithFormat:NSLocalizedString(@"The specified SSH server hostname script did not return a valid hostname or IP address. The returned value was:\n\n %@", nil),output];
             }
             
             address = output;

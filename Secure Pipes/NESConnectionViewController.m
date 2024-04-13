@@ -349,14 +349,14 @@
             [cellView.infoPopupButton setHidden:NO];
             [cellView.infoPopupButton setTarget:self];
             [cellView.infoPopupButton setAssociatedObject:item];
-            [cellView.infoPopupButton setPopoverMessage:[NSString stringWithFormat:@"Error: %@",[item statusForKey:@"message"]]];
+            [cellView.infoPopupButton setPopoverMessage:[NSString stringWithFormat:NSLocalizedString(@"Error: %@", nil),[item statusForKey:@"message"]]];
             [cellView.infoPopupButton setAction:@selector(showErrorPopup:)];
         } else if ([item status]&NESConnectionSyncFailure) {
             [cellView.infoPopupButton setTitle:@"i"];
             [cellView.infoPopupButton setHidden:NO];
             [cellView.infoPopupButton setTarget:self];
             [cellView.infoPopupButton setAssociatedObject:item];
-            [cellView.infoPopupButton setPopoverMessage:[NSString stringWithFormat:@"Warning: %@",[item statusForKey:@"syncMessage"]]];
+            [cellView.infoPopupButton setPopoverMessage:[NSString stringWithFormat:NSLocalizedString(@"Warning: %@", nil),[item statusForKey:@"syncMessage"]]];
             [cellView.infoPopupButton setAction:@selector(showWarningPopup:)];
         } else {
             [cellView.infoPopupButton setHidden:YES];
