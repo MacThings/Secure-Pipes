@@ -502,6 +502,7 @@
 				229803A5187F345C00B704DD /* Frameworks */,
 				229803A6187F345C00B704DD /* Resources */,
 				227E54941AA2785800DF77AC /* CopyFiles */,
+				2A2D124A2BCB13130042DEEA /* Prepare Publishing */,
 			);
 			buildRules = (
 			);
@@ -619,6 +620,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A2D124A2BCB13130042DEEA /* Prepare Publishing */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Publishing";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\nSSHTUNNEL_USER=$(id -un)\n\nif [ -d /Volumes/Homeshare/Xcode/Secure-Pipes/upload ]; then\n    cp /Users/$SSHTUNNEL_USER/Documents/Xcode/Secure-Pipes/secure-pipes.html /Volumes/Homeshare/Xcode/Secure-Pipes/upload/\n    codesign --force --deep --sign - \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"\n    ditto -c -k --sequesterRsrc --keepParent \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/Secure-Pipes/upload/secure-pipes.zip\nfi\n\nif [ -d /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\" ]; then\n  rm -rf /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\nfi\n\ncp -a \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Users/$SSHTUNNEL_USER/Desktop/.\ncodesign --force --deep --sign - /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		229803A4187F345C00B704DD /* Sources */ = {
@@ -851,7 +873,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -909,7 +931,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;

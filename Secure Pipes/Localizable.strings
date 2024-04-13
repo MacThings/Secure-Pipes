@@ -5,3 +5,23 @@
 "Retry %@" = "Erneut versuchen %@";
 
 "Cancel %@" = "Abbrechen %@";
+
+"The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:" = "Die Authentizität dieses Hosts kann nicht bestätigt werden. Bitte bestätige, dass der Host-Schlüsselfingerabdruck unten gültig ist:";
+
+"Warning: The host key fingerprint of this server has changed. Please confirm the new host key fingerprint below is valid:" = "Warnung: Der Host-Key-Fingerabdruck dieses Servers hat sich geändert. Bitte bestätige, dass der neue Host-Key-Fingerabdruck unten gültig ist:";
+
+"The authenticity of the host key fingerprint was not confirmed." = "TDie Echtheit des Host-Key-Fingerabdrucks wurde nicht bestätigt.";
+
+"The host key of the server changed and the new key was not confirmed." = "Der Hostschlüssel des Servers hat sich geändert und der neue Schlüssel wurde nicht bestätigt.";
+
+"Authentication with the SSH server failed. Please check the password, SSH server configuration, or identity used." = "Die Authentifizierung beim SSH-Server ist fehlgeschlagen. Bitte überprüfe das Passwort, die SSH-Serverkonfiguration oder die verwendete Identität.";
+
+"The %@ connection \"%@\" connected successfully." = "Die %@ Verbindung \"%@\" wurde erfolgreich hergestellt.";
+
+"The %@ connection \"%@\" failed to connect (Permission denied)." = "Die %@ Verbindung \"%@\" wurde nicht hergestellt (Erlaubnis verweigert).";
+
+"The %@ connection \"%@\" unexpectedly disconnected." = "Die %@ Verbindung \"%@\" wurde unerwartet geschlossen.";
+
+"The %@ connection \"%@\" failed to connect." = "Die %@ Verbindung \"%@\" konnte nicht hergestellt werden.";
+
+"The %@ connection \"%@\" was disconnected." = "Die %@ Verbindung \"%@\" wurde getrennt.";

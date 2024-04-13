@@ -73,9 +73,13 @@ static const int NESConnectionRestartDelay = 30;
     
     confirmationDialog = [[NESConfirmationDialogWindowController alloc] init];
     if (!replace) {
-        [confirmationDialog setConfirmationText:@"The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:"];
+        NSString *confirmationText = NSLocalizedString(@"The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:", nil);
+        [confirmationDialog setConfirmationText:confirmationText];
+
     } else {
-        [confirmationDialog setConfirmationText:@"Warning: The host key fingerprint of this server has changed. Please confirm the new host key fingerprint below is valid:"];
+        NSString *warningText = NSLocalizedString(@"Warning: The host key fingerprint of this server has changed. Please confirm the new host key fingerprint below is valid:", nil);
+        [confirmationDialog setConfirmationText:warningText];
+
     }
     
     [confirmationDialog setSubText:key];
@@ -263,7 +267,9 @@ static const int NESConnectionRestartDelay = 30;
             return;
         } else {
             [connection setStatus:NESConnectionError];
-            [connection setStatusForKey:@"message" value:@"The authenticity of the host key fingerprint was not confirmed."];
+            NSString *message = NSLocalizedString(@"The authenticity of the host key fingerprint was not confirmed.", nil);
+            [connection setStatusForKey:@"message" value:message];
+
         }
         
     } else if (newStatus&NESConnectionKeyChanged) {
@@ -279,7 +285,9 @@ static const int NESConnectionRestartDelay = 30;
             return;
         } else {
             [connection setStatus:NESConnectionError];
-            [connection setStatusForKey:@"message" value:@"The host key of the server changed and the new key was not confirmed."];
+            NSString *message = NSLocalizedString(@"The host key of the server changed and the new key was not confirmed.", nil);
+            [connection setStatusForKey:@"message" value:message];
+
         }
         
     } else if ((newStatus&NESConnectionError)&&((oldStatus&NESConnectionConnected)||oldStatus&NESConnectionConnecting)) {
@@ -289,7 +297,7 @@ static const int NESConnectionRestartDelay = 30;
         NSString *errorMessage = [update objectForKey:@"data"];
         [connection setStatus:NESConnectionError];
         if (errorMessage == nil) {
-            errorMessage = @"Authentication with the SSH server failed. Please check the password, SSH server configuration, or identity used.";
+            errorMessage = NSLocalizedString(@"Authentication with the SSH server failed. Please check the password, SSH server configuration, or identity used.", nil);
         }
         [connection setStatusForKey:@"message" value:errorMessage];
     } else if (!(oldStatus&NESConnectionConnected) && (newStatus&NESConnectionConnected)) {
@@ -321,7 +329,7 @@ static const int NESConnectionRestartDelay = 30;
 
 - (void) handleConnectionSyncStatusChange:(NESConnection *) connection withUpdate:(NSDictionary *) update {
 
-    NESConnectionStatus oldSyncStatus = [connection status]&~CONNECTION_STATE_MASK;
+    //NESConnectionStatus oldSyncStatus = [connection status]&~CONNECTION_STATE_MASK;
     NESConnectionStatus newSyncStatus = [(NSString *)[update objectForKey:@"status"] integerValue]&~CONNECTION_STATE_MASK;
 
     NSLog(@"Current status of %@: %@",[connection name],[connection connectionStatus]);
@@ -399,23 +407,24 @@ static const int NESConnectionRestartDelay = 30;
     switch ([connection status]&CONNECTION_STATE_MASK) {
         case NESConnectionConnected:
             title = @"Secure Connection Successful";
-            subtitle = [NSString stringWithFormat:@"The %@ connection \"%@\" connected successfully.",type,[connection name]];
+            subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" connected successfully.", nil), type, [connection name]];
+
             break;
         case NESConnectionAuthenticationFailed:
             title = @"Secure Connection Failure";
-            subtitle = [NSString stringWithFormat:@"The %@ connection \"%@\" failed to connect (Permission denied).",type,[connection name]];
+            subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" failed to connect (Permission denied).", nil),type,[connection name]];
             break;
         case NESConnectionError:
             title = @"Secure Connection Failure";
             if (oldStatus&NESConnectionConnected) {
-                subtitle = [NSString stringWithFormat:@"The %@ connection \"%@\" unexpectedly disconnected.",type,[connection name]];                
+                subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" unexpectedly disconnected.", nil),type,[connection name]];
             } else {
-                subtitle = [NSString stringWithFormat:@"The %@ connection \"%@\" failed to connect.",type,[connection name]];
+                subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" failed to connect.", nil),type,[connection name]];
             }
             break;
         case NESConnectionIdle:
             title = @"Secure Connection Disconnected";
-            subtitle = [NSString stringWithFormat:@"The %@ connection \"%@\" was disconnected.",type,[connection name]];
+            subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" was disconnected.", nil),type,[connection name]];
             break;
         case NESConnectionConnecting:
             return;
