@@ -627,7 +627,7 @@
     },
     "k3M-Pe-jTm.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Management:\"; ObjectID = \"k3M-Pe-jTm\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -645,7 +645,7 @@
     },
     "KIo-38-f9l.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Allow remote management\"; ObjectID = \"KIo-38-f9l\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {

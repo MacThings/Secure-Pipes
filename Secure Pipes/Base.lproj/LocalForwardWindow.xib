@@ -9,7 +9,6 @@
         <customObject id="-2" userLabel="File's Owner" customClass="NESLocalForwardWindowController">
             <connections>
                 <outlet property="addButton" destination="qad-Nf-1vZ" id="oFs-q0-AQr"/>
-                <outlet property="allowManagement" destination="c7Y-me-Cql" id="ZHr-9R-sJl"/>
                 <outlet property="autoReconnectBox" destination="Qem-h9-diF" id="vS8-u6-r0N"/>
                 <outlet property="autoReconnectTime" destination="gTY-Fp-Htt" id="pjG-yp-MD5"/>
                 <outlet property="bonjourServiceField" destination="Hx9-UI-fax" id="3ts-IU-yRG"/>
@@ -327,26 +326,6 @@ DQ
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMQ-nq-Tmv">
-                                            <rect key="frame" x="15" y="58" width="143" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="right" title="Management:" id="i7D-eE-qsr">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7Y-me-Cql">
-                                            <rect key="frame" x="162" y="57" width="187" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Allow remote management" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" inset="2" id="h6G-JR-Dyl">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.managedConnection" id="BqT-xS-hjP"/>
-                                            </connections>
-                                        </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8b7-xP-MuN">
                                             <rect key="frame" x="15" y="86" width="143" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>

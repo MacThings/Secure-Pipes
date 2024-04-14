@@ -68,7 +68,6 @@
 		2A3DE20E2BC9676000E67E04 /* LocalForwardWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */; };
 		2A3DE2122BC9676400E67E04 /* RemoteForwardWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2112BC9676400E67E04 /* RemoteForwardWindow.xib */; };
 		2A3DE2162BC9676800E67E04 /* ProxyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2152BC9676800E67E04 /* ProxyWindow.xib */; };
-		2A3DE21A2BC9676C00E67E04 /* ManagedConnectionWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2192BC9676C00E67E04 /* ManagedConnectionWindow.xib */; };
 		2A3DE21E2BC9677000E67E04 /* General View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE21D2BC9677000E67E04 /* General View.xib */; };
 		2A3DE2222BC9677300E67E04 /* Info View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2212BC9677300E67E04 /* Info View.xib */; };
 		2A3DE22D2BC96EC500E67E04 /* corkscrew in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE22C2BC96EC500E67E04 /* corkscrew */; };
@@ -246,8 +245,6 @@
 		2A3DE2132BC9676400E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/RemoteForwardWindow.xcstrings; sourceTree = "<group>"; };
 		2A3DE2142BC9676800E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProxyWindow.xib; sourceTree = "<group>"; };
 		2A3DE2172BC9676800E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/ProxyWindow.xcstrings; sourceTree = "<group>"; };
-		2A3DE2182BC9676C00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ManagedConnectionWindow.xib; sourceTree = "<group>"; };
-		2A3DE21B2BC9676D00E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/ManagedConnectionWindow.xcstrings; sourceTree = "<group>"; };
 		2A3DE21C2BC9677000E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/General View.xib"; sourceTree = "<group>"; };
 		2A3DE21F2BC9677000E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = "mul.lproj/General View.xcstrings"; sourceTree = "<group>"; };
 		2A3DE2202BC9677300E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Info View.xib"; sourceTree = "<group>"; };
@@ -462,7 +459,6 @@
 				2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */,
 				2A3DE2112BC9676400E67E04 /* RemoteForwardWindow.xib */,
 				2A3DE2152BC9676800E67E04 /* ProxyWindow.xib */,
-				2A3DE2192BC9676C00E67E04 /* ManagedConnectionWindow.xib */,
 				2A3DE21D2BC9677000E67E04 /* General View.xib */,
 				2A3DE2212BC9677300E67E04 /* Info View.xib */,
 			);
@@ -608,7 +604,6 @@
 				2A3DE22D2BC96EC500E67E04 /* corkscrew in Resources */,
 				2A3DE2342BC97FA200E67E04 /* NESConfirmationDialogWindow.xib in Resources */,
 				229803BC187F345C00B704DD /* Credits.rtf in Resources */,
-				2A3DE21A2BC9676C00E67E04 /* ManagedConnectionWindow.xib in Resources */,
 				2A3DE21E2BC9677000E67E04 /* General View.xib in Resources */,
 				2A3DE2302BC97F9E00E67E04 /* NESAdminPasswordDialog.xib in Resources */,
 				2A3DE20E2BC9676000E67E04 /* LocalForwardWindow.xib in Resources */,
@@ -772,15 +767,6 @@
 				2A3DE2172BC9676800E67E04 /* mul */,
 			);
 			name = ProxyWindow.xib;
-			sourceTree = "<group>";
-		};
-		2A3DE2192BC9676C00E67E04 /* ManagedConnectionWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A3DE2182BC9676C00E67E04 /* Base */,
-				2A3DE21B2BC9676D00E67E04 /* mul */,
-			);
-			name = ManagedConnectionWindow.xib;
 			sourceTree = "<group>";
 		};
 		2A3DE21D2BC9677000E67E04 /* General View.xib */ = {

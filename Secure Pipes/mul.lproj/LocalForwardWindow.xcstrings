@@ -381,7 +381,7 @@
     },
     "h6G-JR-Dyl.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Allow remote management\"; ObjectID = \"h6G-JR-Dyl\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -453,7 +453,7 @@
     },
     "i7D-eE-qsr.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Management:\"; ObjectID = \"i7D-eE-qsr\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {

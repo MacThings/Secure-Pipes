@@ -9,7 +9,6 @@
         <customObject id="-2" userLabel="File's Owner" customClass="NESRemoteForwardWindowController">
             <connections>
                 <outlet property="addButton" destination="367-DC-iut" id="L7x-KI-52C"/>
-                <outlet property="allowManagement" destination="0gF-kx-UAC" id="SRj-eY-uyH"/>
                 <outlet property="autoReconnectBox" destination="DBM-el-jsO" id="BQ8-zS-7C4"/>
                 <outlet property="autoReconnectTime" destination="tRv-fK-7LA" id="7cG-mm-ulh"/>
                 <outlet property="cancelButton" destination="Yzw-4I-IbC" id="2fK-zq-XrX"/>
@@ -323,26 +322,6 @@
                                             <rect key="frame" x="446" y="86" width="34" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Port:" id="lCO-gi-Oip">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gF-kx-UAC">
-                                            <rect key="frame" x="162" y="57" width="187" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Allow remote management" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="KIo-38-f9l">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <binding destination="Cte-bK-Fka" name="value" keyPath="selection.managedConnection" id="v9Z-Z3-o2e"/>
-                                            </connections>
-                                        </button>
-                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8p2-Gs-RFF">
-                                            <rect key="frame" x="15" y="58" width="143" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Management:" id="k3M-Pe-jTm">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>

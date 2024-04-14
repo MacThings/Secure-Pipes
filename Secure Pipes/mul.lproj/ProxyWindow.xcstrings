@@ -193,18 +193,6 @@
         }
       }
     },
-    "9Nh-2N-MW7.title" : {
-      "comment" : "Class = \"NSButtonCell\"; title = \"Allow remote management\"; ObjectID = \"9Nh-2N-MW7\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Allow remote management"
-          }
-        }
-      }
-    },
     "B5C-PS-gSl.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"B5C-PS-gSl\";",
       "extractionState" : "extracted_with_value",
@@ -693,18 +681,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Connection Options:"
-          }
-        }
-      }
-    },
-    "wgG-Jo-Cxb.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Management:\"; ObjectID = \"wgG-Jo-Cxb\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Management:"
           }
         }
       }

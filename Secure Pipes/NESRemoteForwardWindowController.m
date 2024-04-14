@@ -9,6 +9,10 @@
 #import "NESRemoteForwardWindowController.h"
 #import "NESUser.h"
 
+#import <Foundation/Foundation.h>
+#import <ifaddrs.h>
+#import <arpa/inet.h>
+
 @interface NESRemoteForwardWindowController ()
 
 @end
@@ -135,6 +139,33 @@
     
 }
 
+- (IBAction)show_network:(id)sender {
+    
+    struct ifaddrs *interfaces = NULL;
+            struct ifaddrs *temp_addr = NULL;
+            
+            // Erhalten Sie die Liste der Netzwerkinterfaces
+            if (getifaddrs(&interfaces) == 0) {
+                // Durchlaufen Sie die Liste der Netzwerkinterfaces
+                temp_addr = interfaces;
+                while (temp_addr != NULL) {
+                    if (temp_addr->ifa_addr->sa_family == AF_INET) { // Überprüfen, ob es sich um eine IPv4-Adresse handelt
+                        // Holen Sie sich die IP-Adresse als Zeichenkette
+                        NSString *name = [NSString stringWithUTF8String:temp_addr->ifa_name];
+                        NSString *ip = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
+                        
+                        // Überprüfen, ob die IP-Adresse gültig ist
+                        if (![ip isEqualToString:@"0.0.0.0"] && ![ip isEqualToString:@"127.0.0.1"]) {
+                            // Ausgabe des gefundenen Netzwerkgeräts
+                            printf("%s, IP: %s\n", [name UTF8String], [ip UTF8String]);
+                            
+                        }
+                    }
+                    temp_addr = temp_addr->ifa_next;
+                }
+                freeifaddrs(interfaces); // Freigabe der Speicherressourcen
+            }
+}
 
 
 @end
