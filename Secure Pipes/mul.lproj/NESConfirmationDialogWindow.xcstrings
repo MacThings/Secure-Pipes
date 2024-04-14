@@ -17,6 +17,12 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:\"; ObjectID = \"fHr-uk-Wat\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Authentizität dieses Hosts kann nicht bestätigt werden. Bitte bestätige, dass der Host-Schlüsselfingerabdruck unten gültig ist:"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -29,6 +35,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Reject\"; ObjectID = \"GGU-eZ-MeB\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ablehnen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -41,6 +53,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Confirm\"; ObjectID = \"rK3-u9-HFy\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestätigen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",

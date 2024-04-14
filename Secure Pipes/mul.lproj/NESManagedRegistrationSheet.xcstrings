@@ -5,6 +5,12 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Password:\"; ObjectID = \"1We-OU-oeQ\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwort:"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -29,6 +35,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Cancel\"; ObjectID = \"Gth-1A-y0i\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -41,6 +53,12 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Verify:\"; ObjectID = \"Iyt-aE-FOw\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überprüfen:"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -65,6 +83,12 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Username:\"; ObjectID = \"yax-4E-e3H\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benutzername:"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",

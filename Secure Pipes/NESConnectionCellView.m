@@ -26,7 +26,7 @@
     return;
     NSArray *subViews = [self subviews];
     NSLog(@"Count: %lu",(unsigned long)[subViews count]);
-    CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
+    CGContextRef context = [[NSGraphicsContext currentContext] CGContext];
     
     //CGContextSaveGState(context);
     

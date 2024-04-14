@@ -21,7 +21,7 @@
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="9dh-aA-3kO">
             <windowStyleMask key="styleMask" titled="YES"/>
             <rect key="contentRect" x="196" y="240" width="480" height="163"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1260"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1285"/>
             <view key="contentView" id="PWa-th-iIF">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="163"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -13,7 +13,7 @@
 #import "NESRemoteForwardWindowController.h"
 #import "NESProxyWindowController.h"
 #import "NESManagedConnectionWindowController.h"
-#import "NESPrefsWindowController.h"
+#import "nesPrefsWindowController.h"
 #import "NESController.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 
@@ -94,7 +94,7 @@
             if (config) {
                 NSLog(@"%@ needs an update!",[config objectForKey:@"UUID"]);
                 [config setObject:@true forKey:@"managedConnection"];
-                NESManagedConnection *oldConnection = (NESManagedConnection *)[_rootContents findConnectionWithUUID:[config objectForKey:@"UUID"]];
+                NESManagedConnection *oldConnection = (NESManagedConnection *)[self->_rootContents findConnectionWithUUID:[config objectForKey:@"UUID"]];
                 // This is a bit of a hack, but resuses same code as the dialog...
                 NESManagedConnection *newConnection = (NESManagedConnection *)[self finishAddEditConnection:NSModalResponseOK asType:[oldConnection type] connectionName:[oldConnection name] withConfig:config];
                 
@@ -493,7 +493,7 @@
 
     [localForwardController initWithConnection:nil];
     [_prefsWindow beginSheet:[localForwardController window] completionHandler:^(NSModalResponse returnCode) {
-        [self finishAddEditConnection:returnCode asType:NESConnectionLocalForward connectionName:nil withConfig:[localForwardController config]];
+        [self finishAddEditConnection:returnCode asType:NESConnectionLocalForward connectionName:nil withConfig:[self->localForwardController config]];
     }];
     
 }
@@ -502,7 +502,7 @@
 
     [remoteForwardController initWithConnection:nil];
     [_prefsWindow beginSheet:[remoteForwardController window] completionHandler:^(NSModalResponse returnCode) {
-        [self finishAddEditConnection:returnCode asType:NESConnectionRemoteForward connectionName:nil withConfig:[remoteForwardController config]];
+        [self finishAddEditConnection:returnCode asType:NESConnectionRemoteForward connectionName:nil withConfig:[self->remoteForwardController config]];
     }];
     
     
@@ -512,7 +512,7 @@
 
     [proxyController initWithConnection:nil];
     [_prefsWindow beginSheet:[proxyController window] completionHandler:^(NSModalResponse returnCode) {
-        [self finishAddEditConnection:returnCode asType:NESConnectionProxy connectionName:nil withConfig:[proxyController config]];
+        [self finishAddEditConnection:returnCode asType:NESConnectionProxy connectionName:nil withConfig:[self->proxyController config]];
     }];
     
     
@@ -522,7 +522,7 @@
 
     [managedConnectionController initWithConnection:nil];
     [_prefsWindow beginSheet:[managedConnectionController window] completionHandler:^(NSModalResponse returnCode) {
-        [self finishAddEditConnection:returnCode asType:NESConnectionManaged connectionName:nil withConfig:[managedConnectionController config]];
+        [self finishAddEditConnection:returnCode asType:NESConnectionManaged connectionName:nil withConfig:[self->managedConnectionController config]];
     }];
     
 }
@@ -545,27 +545,27 @@
     [_prefsWindow beginCriticalSheet:[confirmSheet window] completionHandler:^(NSModalResponse returnCode) {
         if (returnCode == NSModalResponseOK) {
             
-            NSIndexSet *index = [_rootContents removeConnection:connection];
+            NSIndexSet *index = [self->_rootContents removeConnection:connection];
             
-            [_outlineView beginUpdates];
-            [_outlineView removeItemsAtIndexes:index inParent:container withAnimation:NSTableViewAnimationSlideLeft];
-            [_outlineView endUpdates];
-            [_outlineView reloadItem:container reloadChildren:YES];
+            [self->_outlineView beginUpdates];
+            [self->_outlineView removeItemsAtIndexes:index inParent:container withAnimation:NSTableViewAnimationSlideLeft];
+            [self->_outlineView endUpdates];
+            [self->_outlineView reloadItem:container reloadChildren:YES];
             
-            [_minusButton setEnabled:NO];
-            [_actionButton setEnabled:NO];
+            [self->_minusButton setEnabled:NO];
+            [self->_actionButton setEnabled:NO];
             
             // Check to see if the container is empty, and remove it if necessary
             if ([[container children] count] == 0 ) {
-                index = [_rootContents removeConnection:container];
-                [_outlineView beginUpdates];
-                [_outlineView removeItemsAtIndexes:index inParent:nil withAnimation:NSTableViewAnimationSlideLeft];
+                index = [self->_rootContents removeConnection:container];
+                [self->_outlineView beginUpdates];
+                [self->_outlineView removeItemsAtIndexes:index inParent:nil withAnimation:NSTableViewAnimationSlideLeft];
                 [self showFilterBarIfNeeded];
-                [_outlineView endUpdates];
+                [self->_outlineView endUpdates];
                 [self checkNeedsEmptyTable];
             }
             
-            [_rootContents saveConnections];
+            [self->_rootContents saveConnections];
             [self selectConnection:nil];
             
         }
