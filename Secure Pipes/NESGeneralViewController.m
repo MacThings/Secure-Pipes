@@ -351,4 +351,63 @@
     
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    // Starte die Überprüfung und Aktualisierung des Textfelds
+        [self checkLastCheckAndUpdateTextField];
+        
+        // Starte einen Timer, der die Überprüfung regelmäßig durchführt (z.B. alle 5 Sekunden)
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(checkLastCheckAndUpdateTextField) userInfo:nil repeats:YES];
+
+    
+    // Überprüfen, ob das Kontrollkästchen checkForUpdatesAutomaticCheckBox nicht ausgewählt ist
+    if (![_checkForUpdatesAutomaticCheckBox state]) {
+        // Deaktiviere das Kontrollkästchen installAutomaticCheckBox
+        [_installAutomaticCheckBox setEnabled:NO];
+        [_updateCheckInterval setEnabled:NO];
+    } else {
+        // Aktiviere das Kontrollkästchen installAutomaticCheckBox
+        [_installAutomaticCheckBox setEnabled:YES];
+        [_updateCheckInterval setEnabled:YES];
+    }
+    
+}
+
+- (IBAction)check_update_state:(id)sender {
+    // Überprüfen, ob das Kontrollkästchen checkForUpdatesAutomaticCheckBox nicht ausgewählt ist
+    if (![_checkForUpdatesAutomaticCheckBox state]) {
+        // Deaktiviere das Kontrollkästchen installAutomaticCheckBox
+        [_installAutomaticCheckBox setEnabled:NO];
+        [_updateCheckInterval setEnabled:NO];
+    } else {
+        // Aktiviere das Kontrollkästchen installAutomaticCheckBox
+        [_installAutomaticCheckBox setEnabled:YES];
+        [_updateCheckInterval setEnabled:YES];
+    }
+}
+
+
+- (void)checkLastCheckAndUpdateTextField {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDate *savedDate = [defaults objectForKey:@"SULastCheckTime"];
+    
+    if (savedDate) {
+        // Datum formatieren
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"dd.MM.yyyy HH:mm:ss"; // Passendes Datumsformat wählen
+        
+        // Datum formatieren und ausgeben
+        NSString *formattedDate = [dateFormatter stringFromDate:savedDate];
+        NSLog(@"%@", formattedDate);
+        
+        // Hier kannst du formattedDate in dein NSTextField setzen
+        self.lastCheckTextfield.stringValue = formattedDate;
+    } else {
+        NSLog(@"Kein Datum gefunden.");
+    }
+}
+
+
 @end

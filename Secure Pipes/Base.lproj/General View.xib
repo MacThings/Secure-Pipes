@@ -9,8 +9,12 @@
         <customObject id="-2" userLabel="File's Owner" customClass="NESGeneralViewController">
             <connections>
                 <outlet property="allowSavePasswordCheckBox" destination="b5r-A3-rlG" id="cPm-0D-i6e"/>
+                <outlet property="checkForUpdatesAutomaticCheckBox" destination="88F-JX-Uuv" id="vzG-lN-o2f"/>
+                <outlet property="installAutomaticCheckBox" destination="igr-ai-dDp" id="Z4w-F7-lxC"/>
+                <outlet property="lastCheckTextfield" destination="7Ce-ne-sTq" id="Hcf-uV-MQP"/>
                 <outlet property="loginLaunchCheckBox" destination="KFr-Kd-fna" id="UTe-na-tyk"/>
                 <outlet property="reconnectAtLoginCheckBox" destination="TXA-2r-Yzh" id="eJ2-6C-lLi"/>
+                <outlet property="updateCheckInterval" destination="nkt-ef-Uhb" id="lgc-6L-S34"/>
                 <outlet property="useNotificationCenterCheckBox" destination="5CB-XE-OvR" id="cNv-ow-wxg"/>
                 <outlet property="view" destination="1" id="E3L-D4-uUc"/>
             </connections>
@@ -18,11 +22,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView wantsLayer="YES" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="549" height="115"/>
+            <rect key="frame" x="0.0" y="0.0" width="560" height="207"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFr-Kd-fna">
-                    <rect key="frame" x="18" y="79" width="511" height="18"/>
+                    <rect key="frame" x="18" y="171" width="511" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="check" title="Launch application at login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="uUj-8e-elF">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -33,7 +37,7 @@
                     </connections>
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CB-XE-OvR">
-                    <rect key="frame" x="18" y="59" width="511" height="18"/>
+                    <rect key="frame" x="18" y="151" width="511" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="check" title="Use Notification Center for connection status updates" bezelStyle="regularSquare" imagePosition="left" inset="2" id="PkZ-LS-cN8">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -45,7 +49,7 @@
                     </connections>
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5r-A3-rlG">
-                    <rect key="frame" x="18" y="39" width="510" height="18"/>
+                    <rect key="frame" x="18" y="131" width="510" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="check" title="Allow saving administrative password in keychain" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Lhk-kK-3Ya">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -57,7 +61,7 @@
                     </connections>
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXA-2r-Yzh">
-                    <rect key="frame" x="18" y="19" width="511" height="18"/>
+                    <rect key="frame" x="18" y="111" width="511" height="18"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="check" title="Disconnect/reconnect active connections on sleep/wake" bezelStyle="regularSquare" imagePosition="left" inset="2" id="rOu-kb-fv9">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -68,13 +72,102 @@
                         <binding destination="FZ6-kj-WvK" name="value" keyPath="selection.relaunchOnWake" id="jFM-u8-IO7"/>
                     </connections>
                 </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlE-IO-Shc">
+                    <rect key="frame" x="13" y="56" width="203" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Check for Updates now" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TGC-jL-GBv">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkForUpdates:" target="aJx-ER-YYi" id="Ocb-6Q-EUu"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SB9-8I-xZT">
+                    <rect key="frame" x="18" y="41" width="173" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Last check:" id="LEd-Ug-Yze">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ce-ne-sTq">
+                    <rect key="frame" x="18" y="21" width="256" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="7Pa-jQ-gkj">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="XG7-i0-kDb" name="value" keyPath="values.SULastCheckTime" id="rzo-pX-W10"/>
+                    </connections>
+                </textField>
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="CcU-HN-Qmm">
+                    <rect key="frame" x="12" y="94" width="531" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="igr-ai-dDp">
+                    <rect key="frame" x="275" y="64" width="180" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Install Updates automatic" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" inset="2" id="Xyl-2i-I95">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="XG7-i0-kDb" name="value" keyPath="values.SUAutomaticallyUpdate" id="Oqu-av-hdq"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="88F-JX-Uuv">
+                    <rect key="frame" x="275" y="42" width="203" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Check for Updates automatic" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Mx7-vF-TRD">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="check_update_state:" target="-2" id="bxx-vK-TZg"/>
+                        <binding destination="XG7-i0-kDb" name="value" keyPath="values.SUEnableAutomaticChecks" id="VvP-jN-tyY"/>
+                    </connections>
+                </button>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nkt-ef-Uhb">
+                    <rect key="frame" x="358" y="16" width="124" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Hourly" bezelStyle="rounded" alignment="center" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="3600" imageScaling="proportionallyDown" inset="2" selectedItem="7VK-M4-P0y" id="Dmc-hE-1zd">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" id="oOQ-im-iu6">
+                            <items>
+                                <menuItem title="Hourly" state="on" tag="3600" id="7VK-M4-P0y"/>
+                                <menuItem title="Daily" tag="86400" id="yz4-Uu-FGL"/>
+                                <menuItem title="Weekly" tag="604800" id="aKT-Cj-aaf"/>
+                                <menuItem title="Monthly" tag="26298000" id="Qam-NG-qpY"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="XG7-i0-kDb" name="selectedTag" keyPath="values.SUScheduledCheckInterval" id="CRI-4x-oDO"/>
+                    </connections>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tkM-LD-ciS">
+                    <rect key="frame" x="295" y="22" width="53" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Interval:" id="FKH-3W-1BV">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
-            <point key="canvasLocation" x="131.5" y="-150.5"/>
+            <point key="canvasLocation" x="154" y="-104.5"/>
         </customView>
+        <customObject id="aJx-ER-YYi" customClass="SPUStandardUpdaterController"/>
         <objectController id="FZ6-kj-WvK">
             <connections>
                 <binding destination="-2" name="contentObject" keyPath="self.config" id="fKC-jV-U93"/>
             </connections>
         </objectController>
+        <userDefaultsController representsSharedInstance="YES" id="XG7-i0-kDb"/>
     </objects>
 </document>

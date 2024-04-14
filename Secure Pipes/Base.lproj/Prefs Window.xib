@@ -15,10 +15,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Secure Pipes" allowsToolTipsWhenApplicationIsInactive="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="jCX-YM-XR5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <rect key="contentRect" x="700" y="430" width="560" height="388"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1260"/>
+            <rect key="contentRect" x="700" y="430" width="590" height="388"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1285"/>
             <view key="contentView" hidden="YES" id="tDl-in-Dds">
-                <rect key="frame" x="0.0" y="0.0" width="560" height="388"/>
+                <rect key="frame" x="0.0" y="0.0" width="590" height="388"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
             <connections>

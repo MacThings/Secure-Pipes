@@ -31,6 +31,15 @@
 @property (strong) IBOutlet NSProgressIndicator *managedProgressIndicator;
 @property (strong) IBOutlet NSTextField *connectionManagerErrorMessage;
 
+@property (strong) IBOutlet NSTextField *lastCheckTextfield;
+
+@property (strong) IBOutlet NSButton *installAutomaticCheckBox;
+
+@property (strong) IBOutlet NSButton *checkForUpdatesAutomaticCheckBox;
+
+@property (strong) IBOutlet NSPopUpButton *updateCheckInterval;
+
+
 - (IBAction)checkAction:(NSButton *)sender;
 - (IBAction)registerAction:(NSBundle *)sender;
 

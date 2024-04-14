@@ -1,56 +1,86 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "8s6-xt-ATK.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Instance Name:\"; ObjectID = \"8s6-xt-ATK\";",
-      "extractionState" : "stale",
+    "7Pa-jQ-gkj.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Label\"; ObjectID = \"7Pa-jQ-gkj\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Instanz-Name"
-          }
-        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Instance Name:"
+            "value" : "Label"
           }
         }
       }
     },
-    "352-dS-UyC.title" : {
-      "comment" : "Class = \"NSButtonCell\"; title = \"Register\"; ObjectID = \"352-dS-UyC\";",
-      "extractionState" : "stale",
+    "7VK-M4-P0y.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Hourly\"; ObjectID = \"7VK-M4-P0y\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Registrieren"
+            "value" : "Stündlich"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Register"
+            "value" : "Hourly"
           }
         }
       }
     },
-    "iLQ-z1-8Zt.title" : {
-      "comment" : "Class = \"NSButtonCell\"; title = \"Enable Managed Connections\"; ObjectID = \"iLQ-z1-8Zt\";",
-      "extractionState" : "stale",
+    "aKT-Cj-aaf.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Weekly\"; ObjectID = \"aKT-Cj-aaf\";",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aktiiviere verwaltete Verbindungen"
+            "value" : "Wöchentlich"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Enable Managed Connections"
+            "value" : "Weekly"
+          }
+        }
+      }
+    },
+    "FKH-3W-1BV.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Interval:\"; ObjectID = \"FKH-3W-1BV\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intervall:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Interval:"
+          }
+        }
+      }
+    },
+    "LEd-Ug-Yze.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Last check:\"; ObjectID = \"LEd-Ug-Yze\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letzte Überprüfung:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Last check:"
           }
         }
       }
@@ -73,6 +103,24 @@
         }
       }
     },
+    "Mx7-vF-TRD.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Check for Updates automatic\"; ObjectID = \"Mx7-vF-TRD\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prüfe automatisch auf Updates"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Check for Updates automatic"
+          }
+        }
+      }
+    },
     "PkZ-LS-cN8.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Use Notification Center for connection status updates\"; ObjectID = \"PkZ-LS-cN8\";",
       "extractionState" : "extracted_with_value",
@@ -87,6 +135,24 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Use Notification Center for connection status updates"
+          }
+        }
+      }
+    },
+    "Qam-NG-qpY.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Monthly\"; ObjectID = \"Qam-NG-qpY\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monatlich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Monthly"
           }
         }
       }
@@ -109,6 +175,24 @@
         }
       }
     },
+    "TGC-jL-GBv.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Check for Updates now\"; ObjectID = \"TGC-jL-GBv\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt nach Updates suchen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Check for Updates now"
+          }
+        }
+      }
+    },
     "uUj-8e-elF.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Launch application at login\"; ObjectID = \"uUj-8e-elF\";",
       "extractionState" : "extracted_with_value",
@@ -116,13 +200,49 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Start Programm beim Login"
+            "value" : "Starte Programm beim Login"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "Launch application at login"
+          }
+        }
+      }
+    },
+    "Xyl-2i-I95.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Install Updates automatic\"; ObjectID = \"Xyl-2i-I95\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Installiere Updates automatisch"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Install Updates automatic"
+          }
+        }
+      }
+    },
+    "yz4-Uu-FGL.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Daily\"; ObjectID = \"yz4-Uu-FGL\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Täglich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Daily"
           }
         }
       }

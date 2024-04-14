@@ -10,6 +10,10 @@
 
 "Cancel %@" = "Abbrechen %@";
 
+"Connections" = "Verbindungen";
+
+"General" = "Allgemein";
+
 "The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:" = "Die Authentizität dieses Hosts kann nicht bestätigt werden. Bitte bestätige, dass der Host-Schlüsselfingerabdruck unten gültig ist:";
 
 "Warning: The host key fingerprint of this server has changed. Please confirm the new host key fingerprint below is valid:" = "Warnung: Der Host-Key-Fingerabdruck dieses Servers hat sich geändert. Bitte bestätige, dass der neue Host-Key-Fingerabdruck unten gültig ist:";

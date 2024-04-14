@@ -81,14 +81,14 @@
     NSToolbarItem *item = [[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier];
     
     if ([itemIdentifier isEqualToString: TOOLBAR_CONNECTIONS]) {
-        [item setLabel:@"Connections"];
+        [item setLabel:NSLocalizedString(@"Connections", nil)];
         [item setImage: [NSImage imageNamed: NSImageNameNetwork]];
         [item setTarget: self];
         [item setAction: @selector(setPrefsView:)];
         [item setAutovalidates:NO];
     }
     else if ([itemIdentifier isEqualToString: TOOLBAR_GENERAL]) {
-        [item setLabel:@"General"];
+        [item setLabel:NSLocalizedString(@"General", nil)];
         [item setImage: [NSImage imageNamed: NSImageNamePreferencesGeneral]];
         [item setTarget: self];
         [item setAction: @selector(setPrefsView:)];
@@ -114,7 +114,7 @@
 }
 
 - (NSArray *) toolbarAllowedItemIdentifiers:(NSToolbar *)toolbar {
-    return [NSArray arrayWithObjects:TOOLBAR_CONNECTIONS, TOOLBAR_GENERAL, NSToolbarFlexibleSpaceItemIdentifier, TOOLBAR_INFO, nil];
+    return [NSArray arrayWithObjects:TOOLBAR_CONNECTIONS, TOOLBAR_GENERAL, TOOLBAR_INFO, nil];
 }
 
 - (NSArray *) toolbarSelectableItemIdentifiers:(NSToolbar *)toolbar {

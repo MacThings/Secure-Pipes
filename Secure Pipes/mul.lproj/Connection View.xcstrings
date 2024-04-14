@@ -15,7 +15,7 @@
     },
     "3Si-ME-7uZ.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Managed\"; ObjectID = \"3Si-ME-7uZ\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -33,7 +33,7 @@
     },
     "7kQ-T3-tSq.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Action\"; ObjectID = \"7kQ-T3-tSq\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -87,7 +87,7 @@
     },
     "ckK-uw-1qE.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"All\"; ObjectID = \"ckK-uw-1qE\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -177,7 +177,7 @@
     },
     "Haq-U0-PX8.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Manual\"; ObjectID = \"Haq-U0-PX8\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {

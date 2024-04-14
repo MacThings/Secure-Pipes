@@ -38,6 +38,24 @@
     // DEBUG
     //[self showPrefsWindow:self];
     
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"SUScheduledCheckInterval"]) {
+        // Wenn nicht, setze den Standardwert auf 3600 (1 Stunde)
+        [[NSUserDefaults standardUserDefaults] setInteger:3600 forKey:@"SUScheduledCheckInterval"];
+    }
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"SUAutomaticallyUpdate"]) {
+        // Wenn nicht, setze den Standardwert auf false
+        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"SUAutomaticallyUpdate"];
+    }
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"SUEnableAutomaticChecks"]) {
+        // Wenn nicht, setze den Standardwert auf true
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"SUEnableAutomaticChecks"];
+    }
+    
+    
+    
+    
 }
 
 - (IBAction)showPrefsWindow:(id)sender {
