@@ -1,6 +1,18 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "0w0-lO-iAm.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"localhost\"; ObjectID = \"0w0-lO-iAm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "localhost"
+          }
+        }
+      }
+    },
     "1.title" : {
       "comment" : "Class = \"NSWindow\"; title = \"Local Forward Connection\"; ObjectID = \"1\";",
       "extractionState" : "extracted_with_value",
@@ -909,6 +921,30 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Proxy server requires password"
+          }
+        }
+      }
+    },
+    "wN3-hE-NN9.ibShadowedIsNilPlaceholder" : {
+      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"0.0.0.0\"; ObjectID = \"wN3-hE-NN9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "0.0.0.0"
+          }
+        }
+      }
+    },
+    "wXv-cg-XNY.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind Connection to IP:\"; ObjectID = \"wXv-cg-XNY\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Bind Connection to IP:"
           }
         }
       }

@@ -40,7 +40,7 @@
     [super awakeFromNib];
     
     if (allFields == nil ) {
-        allFields = [[NSArray alloc] initWithObjects:[ super nameField], [super sshUsernameField], [super sshServerField],  [super localAddressField],  [super remoteHostField],  [super sshPortField], [super localPortField],  [super remoteHostPortField], [super sshIdentityField], [super httpProxyAddressField], [super httpProxyPortField], [super scriptField], nil];
+        allFields = [[NSArray alloc] initWithObjects:[ super nameField], [super sshUsernameField], [super bindDevice], [super sshServerField],  [super localAddressField],  [super remoteHostField],  [super sshPortField], [super localPortField],  [super remoteHostPortField], [super sshIdentityField], [super httpProxyAddressField], [super httpProxyPortField], [super scriptField], nil];
     }
     
     if (requiredFields == nil) {

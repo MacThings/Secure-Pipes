@@ -59,6 +59,7 @@
 @property (strong) IBOutlet NESPopoverTextField *localAddressField;
 @property (strong) IBOutlet NESPopoverTextField *localPortField;
 @property (strong) IBOutlet NESPopoverTextField *remoteHostField;
+@property (strong) IBOutlet NESPopoverTextField *bindDevice;
 @property (strong) IBOutlet NESPopoverTextField *remoteHostPortField;
 @property (strong) IBOutlet NSButton *autoConfigProxy;
 @property (strong) IBOutlet NESPopoverButton *autoConfigHelp;

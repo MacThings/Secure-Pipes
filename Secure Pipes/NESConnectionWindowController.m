@@ -529,6 +529,8 @@ validate:
         [self validateGeneralPortField: field];
     } else if (field == _sshUsernameField) {
         [self validateUsernameField:field];
+    } else if (field == _bindDevice) {
+        [self validateUsernameField:field];
     } else if (field == _autoReconnectTime) {
         [self validateNumberField:field withBinding:@"reconnectInterval"];
     } else if (field == _sshServerAliveCountMax) {

@@ -278,7 +278,17 @@
     
     NSString *configFile = [[NSString alloc] init];
     
-    // First the generic items
+    // First the generic item
+
+    
+    NSString *bindDevice = [connection configForKey:@"bindDevice"];
+    if (bindDevice && ![bindDevice isEqualToString:@""]) {
+        configFile = [configFile stringByAppendingFormat:@"BindAddress %@\r\n", bindDevice];
+    } else {
+        configFile = [configFile stringByAppendingFormat:@"BindAddress %@\r\n", @"0.0.0.0"];
+    }
+
+    
     configFile = [configFile stringByAppendingFormat:@"Host %@\r\n",[connection configForKey:@"UUID"]];
     configFile = [configFile stringByAppendingFormat:@"HostName %@\r\n",[connection configForKey:@"sshServer"]];
     configFile = [configFile stringByAppendingFormat:@"Port %@\r\n",[connection configForKey:@"sshPort"]];
