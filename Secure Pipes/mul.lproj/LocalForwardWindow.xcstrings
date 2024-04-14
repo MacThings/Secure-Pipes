@@ -2,13 +2,13 @@
   "sourceLanguage" : "en",
   "strings" : {
     "0w0-lO-iAm.placeholderString" : {
-      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"localhost\"; ObjectID = \"0w0-lO-iAm\";",
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"0.0.0.0\"; ObjectID = \"0w0-lO-iAm\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "localhost"
+            "value" : "0.0.0.0"
           }
         }
       }
@@ -151,6 +151,18 @@
         }
       }
     },
+    "56w-hH-eZc.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Multiline Label\"; ObjectID = \"56w-hH-eZc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Multiline Label"
+          }
+        }
+      }
+    },
     "337-JG-8nh.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Include this connection in the menu bar menu\"; ObjectID = \"337-JG-8nh\";",
       "extractionState" : "extracted_with_value",
@@ -236,7 +248,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abbrechne"
+            "value" : "Abbrechen"
           }
         },
         "en" : {
@@ -349,6 +361,24 @@
         }
       }
     },
+    "GtT-Xl-qmR.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Show IPs\"; ObjectID = \"GtT-Xl-qmR\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeige lokale IPs"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Show IPs"
+          }
+        }
+      }
+    },
     "GuW-Xo-E3Y.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"GuW-Xo-E3Y\";",
       "extractionState" : "extracted_with_value",
@@ -387,24 +417,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "SSH Username:"
-          }
-        }
-      }
-    },
-    "h6G-JR-Dyl.title" : {
-      "comment" : "Class = \"NSButtonCell\"; title = \"Allow remote management\"; ObjectID = \"h6G-JR-Dyl\";",
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erlaube Remoteverwaltung"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Allow remote management"
           }
         }
       }
@@ -459,24 +471,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : " "
-          }
-        }
-      }
-    },
-    "i7D-eE-qsr.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Management:\"; ObjectID = \"i7D-eE-qsr\";",
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Verwaltung:"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Management:"
           }
         }
       }
@@ -853,6 +847,18 @@
         }
       }
     },
+    "V3L-ah-4Xu.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Close\"; ObjectID = \"V3L-ah-4Xu\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Close"
+          }
+        }
+      }
+    },
     "vHI-ku-kcO.label" : {
       "comment" : "Class = \"NSTabViewItem\"; label = \"Connection\"; ObjectID = \"vHI-ku-kcO\";",
       "extractionState" : "extracted_with_value",
@@ -867,6 +873,18 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Connection"
+          }
+        }
+      }
+    },
+    "vHN-P3-dhz.title" : {
+      "comment" : "Class = \"NSWindow\"; title = \"Network Devices\"; ObjectID = \"vHN-P3-dhz\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Network Devices"
           }
         }
       }

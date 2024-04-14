@@ -22,6 +22,8 @@
                 <outlet property="httpProxyUsernameField" destination="r3z-O7-GjP" id="tAv-Eq-6jD"/>
                 <outlet property="httpProxyUsernameLabel" destination="Kqy-f9-Lfl" id="04L-lv-FmS"/>
                 <outlet property="includeInMenuBox" destination="0DM-K0-j6J" id="66k-U0-NmP"/>
+                <outlet property="listLokalNetworkDevices" destination="tGt-YR-X5d" id="xtP-oC-vmH"/>
+                <outlet property="listLokalNetworkDevicesWindow" destination="vHN-P3-dhz" id="fE6-Nt-Wtd"/>
                 <outlet property="localAddressField" destination="8Wz-ZY-3dJ" id="UC4-RQ-6lP"/>
                 <outlet property="localPortField" destination="uFh-CD-Bjg" id="DFK-S4-ah9"/>
                 <outlet property="nameField" destination="OLl-IW-Uez" id="nwa-qI-KpJ"/>
@@ -62,7 +64,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qad-Nf-1vZ">
-                        <rect key="frame" x="510" y="13" width="82" height="32"/>
+                        <rect key="frame" x="513" y="13" width="100" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="j2u-xp-fZp">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -73,19 +75,6 @@ DQ
                         </buttonCell>
                         <connections>
                             <action selector="addConnection:" target="-2" id="P9g-xX-ax5"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIr-Zb-Ajm">
-                        <rect key="frame" x="428" y="13" width="82" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="db0-9S-kSY">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent">.</string>
-                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="cancelWindow:" target="-2" id="b3j-vo-Ar2"/>
                         </connections>
                     </button>
                     <tabView fixedFrame="YES" initialItem="vHI-ku-kcO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-3u-AGP">
@@ -336,7 +325,7 @@ DQ
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1H-tX-cj6">
-                                            <rect key="frame" x="15" y="56" width="143" height="17"/>
+                                            <rect key="frame" x="15" y="40" width="143" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Bind Connection to IP:" id="wXv-cg-XNY">
                                                 <font key="font" metaFont="system"/>
@@ -365,7 +354,7 @@ DQ
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGV-EA-Wsk" customClass="NESPopoverTextField">
-                                            <rect key="frame" x="164" y="54" width="274" height="22"/>
+                                            <rect key="frame" x="164" y="38" width="208" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="0.0.0.0" drawsBackground="YES" id="0w0-lO-iAm">
                                                 <font key="font" metaFont="system"/>
@@ -384,12 +373,15 @@ DQ
                                             </connections>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-or-syq">
-                                            <rect key="frame" x="439" y="49" width="89" height="32"/>
+                                            <rect key="frame" x="382" y="41" width="58" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Show IPs" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GtT-Xl-qmR">
+                                            <buttonCell key="cell" type="push" title="Show IPs" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GtT-Xl-qmR">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
+                                                <font key="font" metaFont="miniSystem"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="listNetworkDevices:" target="-2" id="bcC-jc-lLO"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -951,9 +943,56 @@ IA
                             </tabViewItem>
                         </tabViewItems>
                     </tabView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIr-Zb-Ajm">
+                        <rect key="frame" x="415" y="13" width="100" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="db0-9S-kSY">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">.</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelWindow:" target="-2" id="b3j-vo-Ar2"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="97" y="4"/>
+            <point key="canvasLocation" x="-37" y="-251"/>
+        </window>
+        <window title="Network Devices" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="vHN-P3-dhz">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="999" y="620" width="211" height="206"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1285"/>
+            <view key="contentView" id="jPw-d3-U2S">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="206"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tGt-YR-X5d">
+                        <rect key="frame" x="18" y="51" width="175" height="135"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" title="Multiline Label" id="56w-hH-eZc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PF6-xd-h2E">
+                        <rect key="frame" x="64" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V3L-ah-4Xu">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">.</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderOut:" target="vHN-P3-dhz" id="cNQ-qg-BCd"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="-233.5" y="89"/>
         </window>
         <objectController automaticallyPreparesContent="YES" id="S6K-gw-Ae6">
             <connections>
