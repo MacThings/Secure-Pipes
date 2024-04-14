@@ -1,8 +1,20 @@
-"Connect %@" = "Verbinden %@";
+"Connect %@" = "Verbinde %@";
 
-"Disconnect %@" = "Trennen %@";
+"Connect" = "Verbinde";
+
+"Disconnect %@" = "Trenne %@";
+
+"Disconnect" = "Trenne";
 
 "Retry %@" = "Erneut versuchen %@";
+
+"Retry" = "Erneut versuchen";
+
+"Cancel Retry" = "Versuch abbrechen";
+
+"No Actions" = "Keine Aktionen";
+
+"Unknown Connection State" = "Unbekannter Verbindungsstatus";
 
 "Quit" = "Beenden";
 
@@ -13,6 +25,18 @@
 "Connections" = "Verbindungen";
 
 "General" = "Allgemein";
+
+"Error cleared" = "Fehler gelöscht";
+
+"%@ Copy" = "%@ Kopie";
+
+"%@ Copy %d" = "%@ Kopie %d";
+
+"Edit..." = "Bearbeiten...";
+
+"Delete..." = "Löschen..."; 
+
+"Duplicate" = "Duplizieren";
 
 "The authenticity of this host cannot be confirmed. Please confirm the host key fingerprint below is valid:" = "Die Authentizität dieses Hosts kann nicht bestätigt werden. Bitte bestätige, dass der Host-Schlüsselfingerabdruck unten gültig ist:";
 
@@ -47,3 +71,9 @@
 "Are you sure you want to quit Secure Pipes?" = "Möchtest Du Secure Pipes wirklich beenden?";
 
 "Quitting the application will force all active connections to stop." = "Beim Beenden des Programms werden alle aktiven Verbindungen getrennt.";
+
+"Authentication failed. Please try registering again." = "Authentifizierung fehlgeschlagen. Bitte registriere dich noch einmal.";
+
+"An unknown error occurred." = "Ein unbekannter Fehler ist aufgetreten.";
+
+"Are you sure you want to delete the %@ named \"%@\"?" = "Bist Du sicher, dass Du den \"%@\" mit dem Namen \"%@\" löschen möchtest?";

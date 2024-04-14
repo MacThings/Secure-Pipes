@@ -387,7 +387,7 @@
     //[sender setPopoverMessage:[NSString stringWithFormat:@"Error: %@",[connection statusForKey:@"message"]]];
     
     [sender setCompletionHandler:^{
-        [connection queueStatusUpdate:NESConnectionIdle withData:@"Error cleared"];
+        [connection queueStatusUpdate:NESConnectionIdle withData:NSLocalizedString(@"Error cleared", nil)];
     }];
     
     [sender showPopover];    
@@ -539,7 +539,7 @@
     NESConnection *container = [connection parent];
 
     confirmSheet = [[NESConfirmationSheet alloc] init];
-    [confirmSheet setConfirmationText:[NSString stringWithFormat:@"Are you sure you want to delete the %@ named \"%@\"?",[[NESConnection nameforType:[connection type]] lowercaseString] ,[connection name]]];
+    [confirmSheet setConfirmationText:[NSString stringWithFormat:NSLocalizedString(@"Are you sure you want to delete the %@ named \"%@\"?", nil),[[NESConnection nameforType:[connection type]] lowercaseString] ,[connection name]]];
     [confirmSheet setParent:_prefsWindow];
 
     [_prefsWindow beginCriticalSheet:[confirmSheet window] completionHandler:^(NSModalResponse returnCode) {
@@ -635,10 +635,10 @@
     NSMutableDictionary *config = [[NSMutableDictionary alloc] initWithDictionary:[originalConnection connectionConfig]];
     [config removeObjectForKey:@"UUID"];
     
-    NSString *dupName = [NSString stringWithFormat:@"%@ Copy",[originalConnection name]];
+    NSString *dupName = [NSString stringWithFormat:NSLocalizedString(@"%@ Copy", nil),[originalConnection name]];
     int copy = 2;
     while ([_rootContents checkDuplicateName:dupName forConnectionType:[originalConnection type]]) {
-        dupName = [NSString stringWithFormat:@"%@ Copy %d",[originalConnection name],copy++];
+        dupName = [NSString stringWithFormat:NSLocalizedString(@"%@ Copy %d", nil),[originalConnection name],copy++];
     }
     
     [config setObject:dupName forKey:@"name"];
@@ -664,28 +664,28 @@
     switch ([connection status]&CONNECTION_STATE_MASK) {
         case NESConnectionIdle:
             if ([connection reconnecting]) {
-                title = @"Cancel Retry";
+                title = NSLocalizedString(@"Cancel Retry", nil);
             } else {
-                title = @"Connect";                
+                title = NSLocalizedString(@"Connect", nil);
             }
             break;
         case NESConnectionConnected:
         case NESConnectionConnecting:
-            title = @"Disconnect";
+            title = NSLocalizedString(@"Disconnect", nil);
             break;
         case NESConnectionError:
             if ([connection reconnecting]) {
-                title = @"Cancel Retry";
+                title = NSLocalizedString(@"Cancel Retry", nil);
             } else {
-                title = @"Retry";
+                title = NSLocalizedString(@"Retry", nil);
             }
             break;
         case NESConnectionInvalid:
-            title = @"No Actions";
+            title = NSLocalizedString(@"No Actions", nil);
             enabled = NO;
             break;
         default:
-            title = @"Unknown Connection State";
+            title = NSLocalizedString(@"Unknown Connection State", nil);
             enabled = NO;
             break;
     }
@@ -704,7 +704,7 @@
     NSMenuItem *action = [[NSMenuItem alloc] init];
     // Add the other actions...
     if (!([connection status]&NESConnectionInvalid)) {
-        [action setTitle:@"Edit..."];
+        [action setTitle:NSLocalizedString(@"Edit...", nil)];
         [action setAction:@selector(editClicked:)];
 //        [action setEnabled:YES];
         [action setTarget:self];
@@ -713,7 +713,7 @@
    
 
     action = [[NSMenuItem alloc] init];
-    [action setTitle:@"Delete..."];
+    [action setTitle:NSLocalizedString(@"Delete...", nil)];
     [action setAction:@selector(minusClicked:)];
 //    [action setEnabled:YES];
     [action setTarget:self];
@@ -721,7 +721,7 @@
 
     if (![connection isManaged]) {
         action = [[NSMenuItem alloc] init];
-        [action setTitle:@"Duplicate"];
+        [action setTitle:NSLocalizedString(@"Duplicate", nil)];
         [action setAction:@selector(duplicateConnection)];
         [action setKeyEquivalent:@"d"];
 //        [action setEnabled:YES];

@@ -315,12 +315,12 @@
         NSString *errorMessage;
         switch ([_connectionManager errorCode]) {
             case NESconnectionManagerErrorAuthenticationFailed:
-                errorMessage = @"Authentication failed. Please try registering again.";
+                errorMessage = NSLocalizedString(@"Authentication failed. Please try registering again.", nil);
                 [self handleRegistrationStateChange:NO];
                 break;
                 
             default:
-                errorMessage = @"An unknown error occurred.";
+                errorMessage = NSLocalizedString(@"An unknown error occurred.", nil);
                 break;
         }
         [_connectionManagerErrorMessage setStringValue:errorMessage];
