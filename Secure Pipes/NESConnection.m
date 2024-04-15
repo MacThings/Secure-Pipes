@@ -279,16 +279,21 @@
     NSString *configFile = [[NSString alloc] init];
     
     // First the generic item
-
     
-    NSString *bindDevice = [connection configForKey:@"bindDevice"];
-    if (bindDevice && ![bindDevice isEqualToString:@""]) {
-        configFile = [configFile stringByAppendingFormat:@"BindAddress %@\r\n", bindDevice];
-    } else {
-        configFile = [configFile stringByAppendingFormat:@"BindAddress %@\r\n", @"0.0.0.0"];
+    NSString *bindToDevice = [connection configForKey:@"bindToDevice"];
+    NSRange range = [bindToDevice rangeOfString:@"("];
+    if (range.location != NSNotFound) {
+        NSUInteger start = range.location + 1;
+        NSRange endRange = [bindToDevice rangeOfString:@")" options:0 range:NSMakeRange(start, bindToDevice.length - start)];
+        if (endRange.location != NSNotFound) {
+            NSUInteger length = endRange.location - start;
+            NSString *extractedString = [bindToDevice substringWithRange:NSMakeRange(start, length)];
+            if (bindToDevice && ![bindToDevice isEqualToString:@"No"]) {
+                configFile = [configFile stringByAppendingFormat:@"BindInterface %@\r\n", extractedString];
+            }
+        }
     }
 
-    
     configFile = [configFile stringByAppendingFormat:@"Host %@\r\n",[connection configForKey:@"UUID"]];
     configFile = [configFile stringByAppendingFormat:@"HostName %@\r\n",[connection configForKey:@"sshServer"]];
     configFile = [configFile stringByAppendingFormat:@"Port %@\r\n",[connection configForKey:@"sshPort"]];

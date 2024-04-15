@@ -1,18 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "0w0-lO-iAm.placeholderString" : {
-      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"0.0.0.0\"; ObjectID = \"0w0-lO-iAm\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "0.0.0.0"
-          }
-        }
-      }
-    },
     "1.title" : {
       "comment" : "Class = \"NSWindow\"; title = \"Local Forward Connection\"; ObjectID = \"1\";",
       "extractionState" : "extracted_with_value",
@@ -259,6 +247,24 @@
         }
       }
     },
+    "dB4-73-acx.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"No\"; ObjectID = \"dB4-73-acx\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nein"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "No"
+          }
+        }
+      }
+    },
     "dFL-bI-pnY.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"server.example.com\"; ObjectID = \"dFL-bI-pnY\";",
       "extractionState" : "extracted_with_value",
@@ -363,7 +369,7 @@
     },
     "GtT-Xl-qmR.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Show IPs\"; ObjectID = \"GtT-Xl-qmR\";",
-      "extractionState" : "extracted_with_value",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -739,6 +745,24 @@
         }
       }
     },
+    "ref-uu-8HX.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind to Address:\"; ObjectID = \"ref-uu-8HX\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Binde an Gerät:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Bind to Address:"
+          }
+        }
+      }
+    },
     "RkX-zt-D9F.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Select...\"; ObjectID = \"RkX-zt-D9F\";",
       "extractionState" : "extracted_with_value",
@@ -939,30 +963,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Proxy server requires password"
-          }
-        }
-      }
-    },
-    "wN3-hE-NN9.ibShadowedIsNilPlaceholder" : {
-      "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"0.0.0.0\"; ObjectID = \"wN3-hE-NN9\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "0.0.0.0"
-          }
-        }
-      }
-    },
-    "wXv-cg-XNY.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind Connection to IP:\"; ObjectID = \"wXv-cg-XNY\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Bind Connection to IP:"
           }
         }
       }

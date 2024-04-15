@@ -469,6 +469,24 @@
         }
       }
     },
+    "Fyk-5A-lMf.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind to Address:\"; ObjectID = \"Fyk-5A-lMf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Binde an Gerät:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Bind to Address:"
+          }
+        }
+      }
+    },
     "gGq-2N-0da.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"22\"; ObjectID = \"gGq-2N-0da\";",
       "extractionState" : "extracted_with_value",
@@ -753,18 +771,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Add"
-          }
-        }
-      }
-    },
-    "MfW-BU-Om9.placeholderString" : {
-      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"0.0.0.0\"; ObjectID = \"MfW-BU-Om9\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "0.0.0.0"
           }
         }
       }
@@ -1057,30 +1063,6 @@
         }
       }
     },
-    "vyJ-R3-E6U.title" : {
-      "comment" : "Class = \"NSButtonCell\"; title = \"Show IPs\"; ObjectID = \"vyJ-R3-E6U\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Show IPs"
-          }
-        }
-      }
-    },
-    "VZe-Zd-jRA.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind Connection to IP:\"; ObjectID = \"VZe-Zd-jRA\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Bind Connection to IP:"
-          }
-        }
-      }
-    },
     "wcZ-RR-2pF.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"wcZ-RR-2pF\";",
       "extractionState" : "extracted_with_value",
@@ -1173,6 +1155,24 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Password:"
+          }
+        }
+      }
+    },
+    "zpu-ku-5JP.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"No\"; ObjectID = \"zpu-ku-5JP\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nein"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "No"
           }
         }
       }

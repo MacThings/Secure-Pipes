@@ -193,18 +193,6 @@
         }
       }
     },
-    "77l-kh-aud.placeholderString" : {
-      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"0.0.0.0\"; ObjectID = \"77l-kh-aud\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "0.0.0.0"
-          }
-        }
-      }
-    },
     "B5C-PS-gSl.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"B5C-PS-gSl\";",
       "extractionState" : "extracted_with_value",
@@ -231,18 +219,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Automatically retry connection on disconnect after"
-          }
-        }
-      }
-    },
-    "CcU-wz-Wnb.title" : {
-      "comment" : "Class = \"NSWindow\"; title = \"Network Devices\"; ObjectID = \"CcU-wz-Wnb\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Network Devices"
           }
         }
       }
@@ -387,18 +363,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "unanswered server alive messages"
-          }
-        }
-      }
-    },
-    "Flr-D7-a7a.title" : {
-      "comment" : "Class = \"NSButtonCell\"; title = \"Show IPs\"; ObjectID = \"Flr-D7-a7a\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Show IPs"
           }
         }
       }
@@ -559,18 +523,6 @@
         }
       }
     },
-    "jVF-7k-YIU.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind Connection to IP:\"; ObjectID = \"jVF-7k-YIU\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Bind Connection to IP:"
-          }
-        }
-      }
-    },
     "Lm8-gf-ebu.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"SSH Server Address:\"; ObjectID = \"Lm8-gf-ebu\";",
       "extractionState" : "extracted_with_value",
@@ -655,18 +607,6 @@
         }
       }
     },
-    "OdB-xM-Y60.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Multiline Label\"; ObjectID = \"OdB-xM-Y60\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Multiline Label"
-          }
-        }
-      }
-    },
     "oPX-2P-ntM.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Send server alive messages every \"; ObjectID = \"oPX-2P-ntM\";",
       "extractionState" : "extracted_with_value",
@@ -675,18 +615,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Send server alive messages every "
-          }
-        }
-      }
-    },
-    "PnE-uD-9fa.title" : {
-      "comment" : "Class = \"NSButtonCell\"; title = \"Close\"; ObjectID = \"PnE-uD-9fa\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Close"
           }
         }
       }
@@ -775,6 +703,24 @@
         }
       }
     },
+    "vIZ-vC-HBk.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind to Address:\"; ObjectID = \"vIZ-vC-HBk\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Binde an Gerät:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Bind to Address:"
+          }
+        }
+      }
+    },
     "XDv-Aa-yog.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"SSH Options:\"; ObjectID = \"XDv-Aa-yog\";",
       "extractionState" : "extracted_with_value",
@@ -783,6 +729,24 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "SSH Options:"
+          }
+        }
+      }
+    },
+    "xWv-2F-iBC.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"No\"; ObjectID = \"xWv-2F-iBC\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nein"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "No"
           }
         }
       }

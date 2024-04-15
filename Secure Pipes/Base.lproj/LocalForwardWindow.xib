@@ -11,6 +11,7 @@
                 <outlet property="addButton" destination="qad-Nf-1vZ" id="oFs-q0-AQr"/>
                 <outlet property="autoReconnectBox" destination="Qem-h9-diF" id="vS8-u6-r0N"/>
                 <outlet property="autoReconnectTime" destination="gTY-Fp-Htt" id="pjG-yp-MD5"/>
+                <outlet property="bindToDevice" destination="zbc-xv-zjs" id="bL0-9P-9Xo"/>
                 <outlet property="bonjourServiceField" destination="Hx9-UI-fax" id="3ts-IU-yRG"/>
                 <outlet property="bonjourServiceTextField" destination="Hx9-UI-fax" id="va4-J9-EKl"/>
                 <outlet property="cancelButton" destination="vIr-Zb-Ajm" id="CJW-2X-OPJ"/>
@@ -316,18 +317,9 @@ DQ
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8b7-xP-MuN">
-                                            <rect key="frame" x="15" y="86" width="143" height="17"/>
+                                            <rect key="frame" x="-2" y="86" width="160" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Remote Host Address:" id="toD-eB-TSy">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1H-tX-cj6">
-                                            <rect key="frame" x="15" y="40" width="143" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Bind Connection to IP:" id="wXv-cg-XNY">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -353,36 +345,35 @@ DQ
                                                 <outlet property="nextKeyView" destination="dVZ-oQ-YC2" id="Tsc-KY-EhY"/>
                                             </connections>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGV-EA-Wsk" customClass="NESPopoverTextField">
-                                            <rect key="frame" x="164" y="38" width="208" height="22"/>
+                                        <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbc-xv-zjs">
+                                            <rect key="frame" x="162" y="45" width="195" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="0.0.0.0" drawsBackground="YES" id="0w0-lO-iAm">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
+                                            <popUpButtonCell key="cell" type="push" title="No" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="dB4-73-acx" id="Pt3-au-t9R">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" id="zkb-TJ-InG">
+                                                    <items>
+                                                        <menuItem title="No" state="on" id="dB4-73-acx"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
                                             <connections>
-                                                <binding destination="S6K-gw-Ae6" name="value" keyPath="selection.bindDevice" id="wN3-hE-NN9">
+                                                <binding destination="S6K-gw-Ae6" name="selectedValue" keyPath="selection.bindToDevice" id="Miu-1x-OAe">
                                                     <dictionary key="options">
-                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                                        <string key="NSNullPlaceholder">0.0.0.0</string>
+                                                        <bool key="NSValidatesImmediately" value="YES"/>
                                                     </dictionary>
                                                 </binding>
-                                                <outlet property="delegate" destination="-2" id="utC-wj-LCM"/>
-                                                <outlet property="nextKeyView" destination="uFh-CD-Bjg" id="LKI-uc-m6A"/>
                                             </connections>
-                                        </textField>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-or-syq">
-                                            <rect key="frame" x="382" y="41" width="58" height="16"/>
+                                        </popUpButton>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A4e-Yb-x39">
+                                            <rect key="frame" x="19" y="51" width="139" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Show IPs" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GtT-Xl-qmR">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="miniSystem"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <action selector="listNetworkDevices:" target="-2" id="bcC-jc-lLO"/>
-                                            </connections>
-                                        </button>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Bind to Address:" id="ref-uu-8HX">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                 </view>
                             </tabViewItem>

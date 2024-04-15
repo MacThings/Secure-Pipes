@@ -15,6 +15,5 @@
 @property (weak) IBOutlet NSButton *toggleEnableBonjour;
 @property (weak) IBOutlet NSTextField *bonjourServiceField;
 
-@property (strong) IBOutlet NSTextField *listLokalNetworkDevices;
-@property (strong) IBOutlet NSWindow *listLokalNetworkDevicesWindow;
+@property (strong) IBOutlet NSPopUpButton *bindToDevice;
 @end
