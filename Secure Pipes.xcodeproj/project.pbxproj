@@ -234,6 +234,7 @@
 		22F8E2FA1A8BA0EB00FB45AB /* NESConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionManager.h; sourceTree = "<group>"; };
 		22F8E2FB1A8BA0EB00FB45AB /* NESConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionManager.m; sourceTree = "<group>"; };
 		2A2D12482BCB0EBC0042DEEA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2A2D12542BCD34710042DEEA /* secure-pipes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "secure-pipes.html"; sourceTree = "<group>"; };
 		2A3DE1FE2BC960A500E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2A3DE2032BC966E400E67E04 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		2A3DE2042BC9674D00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Prefs Window.xib"; sourceTree = "<group>"; };
@@ -348,6 +349,7 @@
 		2298039F187F345B00B704DD = {
 			isa = PBXGroup;
 			children = (
+				2A2D12542BCD34710042DEEA /* secure-pipes.html */,
 				229803B1187F345C00B704DD /* Secure Pipes */,
 				229803AA187F345C00B704DD /* Frameworks */,
 				229803A9187F345C00B704DD /* Products */,
@@ -503,7 +505,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2A3DE2702BCB0A2B00E67E04 /* PBXTargetDependency */,
 				223582FA1AA272F9005141B6 /* PBXTargetDependency */,
 			);
 			name = "Secure Pipes";
@@ -693,10 +694,6 @@
 			name = SocketRocketOSX;
 			targetProxy = 223582F91AA272F9005141B6 /* PBXContainerItemProxy */;
 		};
-		2A3DE2702BCB0A2B00E67E04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 2A3DE26F2BCB0A2B00E67E04 /* Sparkle */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -877,7 +874,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CODE_SIGN_FLAGS = "";
 				SDKROOT = macosx;
 			};
@@ -1028,14 +1025,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2A3DE26C2BCA854500E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.0;
-			};
-		};
 		2A3DE2712BCB0A4E00E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sparkle-project/Sparkle";
@@ -1047,11 +1036,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2A3DE26F2BCB0A2B00E67E04 /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2A3DE26C2BCA854500E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
-		};
 		2A3DE2722BCB0A4E00E67E04 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2A3DE2712BCB0A4E00E67E04 /* XCRemoteSwiftPackageReference "Sparkle" */;
