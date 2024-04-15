@@ -619,6 +619,24 @@
         }
       }
     },
+    "PcJ-r7-eOI.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Rescan Devices\"; ObjectID = \"PcJ-r7-eOI\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geräte aktualisieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rescan Devices"
+          }
+        }
+      }
+    },
     "qwK-pr-nmw.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"Enter custom SSH config options...\"; ObjectID = \"qwK-pr-nmw\";",
       "extractionState" : "extracted_with_value",

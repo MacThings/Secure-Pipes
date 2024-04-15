@@ -163,6 +163,24 @@
         }
       }
     },
+    "aZ6-XR-6Gj.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Rescan Devices\"; ObjectID = \"aZ6-XR-6Gj\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geräte aktualisieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rescan Devices"
+          }
+        }
+      }
+    },
     "b6Z-kY-cXe.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Use script for SSH server\"; ObjectID = \"b6Z-kY-cXe\";",
       "extractionState" : "extracted_with_value",
@@ -367,24 +385,6 @@
         }
       }
     },
-    "GtT-Xl-qmR.title" : {
-      "comment" : "Class = \"NSButtonCell\"; title = \"Show IPs\"; ObjectID = \"GtT-Xl-qmR\";",
-      "extractionState" : "stale",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zeige lokale IPs"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Show IPs"
-          }
-        }
-      }
-    },
     "GuW-Xo-E3Y.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"GuW-Xo-E3Y\";",
       "extractionState" : "extracted_with_value",
@@ -485,6 +485,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Add\"; ObjectID = \"j2u-xp-fZp\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hinzufügen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -849,6 +855,23 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "22"
+          }
+        }
+      }
+    },
+    "uAp-pt-Eax.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geräte aktualisieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rescan Devices"
           }
         }
       }

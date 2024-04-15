@@ -67,6 +67,24 @@
         }
       }
     },
+    "5rb-pO-y7Z.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Rescan Devices\"; ObjectID = \"5rb-pO-y7Z\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geräte aktualisieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rescan Devices"
+          }
+        }
+      }
+    },
     "5vg-5B-olq.placeholderString" : {
       "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"localhost\"; ObjectID = \"5vg-5B-olq\";",
       "extractionState" : "extracted_with_value",
