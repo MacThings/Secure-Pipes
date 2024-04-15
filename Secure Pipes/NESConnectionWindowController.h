@@ -59,12 +59,10 @@
 @property (strong) IBOutlet NESPopoverTextField *localAddressField;
 @property (strong) IBOutlet NESPopoverTextField *localPortField;
 @property (strong) IBOutlet NESPopoverTextField *remoteHostField;
-@property (strong) IBOutlet NESPopoverTextField *bindDevice;
+@property (strong) IBOutlet NESPopoverTextField *bindDeviceField;
 @property (strong) IBOutlet NESPopoverTextField *remoteHostPortField;
 @property (strong) IBOutlet NSButton *autoConfigProxy;
 @property (strong) IBOutlet NESPopoverButton *autoConfigHelp;
-@property (strong) IBOutlet NSButton *allowManagement;
-
 @property (strong) IBOutlet NSButton *useCustomIDBox;
 @property (strong) IBOutlet NESPopoverTextField *sshIdentityField;
 @property (strong) IBOutlet NSButton *useCustomSSHOptionsBox;

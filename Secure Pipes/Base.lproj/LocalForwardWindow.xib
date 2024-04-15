@@ -88,7 +88,7 @@ DQ
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sB-VC-rkx">
-                                            <rect key="frame" x="37" y="237" width="121" height="17"/>
+                                            <rect key="frame" x="7" y="237" width="151" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Connection Name:" id="BhK-3x-VVb">
                                                 <font key="font" metaFont="system"/>
@@ -97,7 +97,7 @@ DQ
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q75-sF-1GK">
-                                            <rect key="frame" x="19" y="193" width="139" height="17"/>
+                                            <rect key="frame" x="10" y="193" width="148" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SSH Server Address:" id="lIK-kC-YFz">
                                                 <font key="font" metaFont="system"/>
@@ -145,7 +145,7 @@ DQ
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjq-GG-skk">
-                                            <rect key="frame" x="42" y="163" width="116" height="17"/>
+                                            <rect key="frame" x="15" y="163" width="143" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SSH Username:" id="H2z-RB-6ma">
                                                 <font key="font" metaFont="system"/>
@@ -250,7 +250,7 @@ DQ
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mnv-9i-Lfq">
-                                            <rect key="frame" x="31" y="118" width="127" height="17"/>
+                                            <rect key="frame" x="-5" y="118" width="163" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Local Bind Address:" id="zGe-go-haH">
                                                 <font key="font" metaFont="system"/>
@@ -517,7 +517,7 @@ IA
                                             </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-h9-diF">
-                                            <rect key="frame" x="15" y="19" width="339" height="18"/>
+                                            <rect key="frame" x="15" y="19" width="395" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Automatically retry connection on disconnect after" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qVG-U8-N3w">
                                                 <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
@@ -533,7 +533,7 @@ IA
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6JA-xq-zg6">
-                                            <rect key="frame" x="420" y="20" width="62" height="17"/>
+                                            <rect key="frame" x="487" y="20" width="83" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="seconds" id="cy8-ks-F1D">
                                                 <font key="font" metaFont="system"/>
@@ -542,7 +542,7 @@ IA
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTY-Fp-Htt">
-                                            <rect key="frame" x="354" y="17" width="44" height="22"/>
+                                            <rect key="frame" x="421" y="17" width="44" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="gfN-Iz-u6T">
                                                 <numberFormatter key="formatter" formatterBehavior="custom10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="mMT-0q-foH"/>
@@ -561,7 +561,7 @@ IA
                                             </connections>
                                         </textField>
                                         <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8l-Ow-bkP">
-                                            <rect key="frame" x="398" y="14" width="19" height="27"/>
+                                            <rect key="frame" x="465" y="14" width="19" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="bUf-85-HBy"/>
                                             <connections>
@@ -573,7 +573,7 @@ IA
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <clipView key="contentView" drawsBackground="NO" id="oeD-qZ-Ca7">
                                                 <rect key="frame" x="1" y="1" width="502" height="67"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="panel" allowsUndo="YES" id="MLp-xD-TO9">
                                                         <rect key="frame" x="0.0" y="0.0" width="502" height="67"/>
@@ -601,7 +601,7 @@ IA
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="OMZ-GB-aKC">
-                                                <rect key="frame" x="502" y="1" width="16" height="67"/>
+                                                <rect key="frame" x="503" y="1" width="15" height="67"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -614,7 +614,7 @@ IA
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKj-c9-32l">
-                                            <rect key="frame" x="15" y="239" width="133" height="17"/>
+                                            <rect key="frame" x="15" y="239" width="156" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Connection Options:" id="YG2-y3-Qvr">
                                                 <font key="font" metaFont="system"/>
@@ -632,7 +632,7 @@ IA
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2B-vs-DZ9">
-                                            <rect key="frame" x="198" y="190" width="219" height="17"/>
+                                            <rect key="frame" x="198" y="190" width="316" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="unanswered server alive messages" id="vMw-KH-nN2">
                                                 <font key="font" metaFont="system"/>
@@ -688,7 +688,7 @@ IA
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-HN-LfV">
-                                            <rect key="frame" x="306" y="215" width="55" height="17"/>
+                                            <rect key="frame" x="306" y="215" width="77" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="seconds" id="nro-vp-ysi">
                                                 <font key="font" metaFont="system"/>
@@ -824,7 +824,7 @@ IA
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kqy-f9-Lfl">
-                                            <rect key="frame" x="52" y="78" width="71" height="17"/>
+                                            <rect key="frame" x="15" y="78" width="108" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Username:" id="Yao-yR-2Cz">
                                                 <font key="font" metaFont="system"/>

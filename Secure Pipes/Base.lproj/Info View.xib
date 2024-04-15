@@ -44,7 +44,7 @@
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfq-VV-TmO">
                     <rect key="frame" x="100" y="198" width="136" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 0.99.11" id="WS0-8u-keI">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.0.0" id="WS0-8u-keI">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -53,6 +53,7 @@
             </subviews>
             <point key="canvasLocation" x="140" y="154"/>
         </customView>
+        <userDefaultsController representsSharedInstance="YES" id="faQ-eW-jV4"/>
     </objects>
     <resources>
         <image name="icon_128x128" width="128" height="128"/>

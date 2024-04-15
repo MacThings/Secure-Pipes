@@ -435,6 +435,24 @@ validate:
     
 }
 
+- (void) validateBindDeviceField:(NESPopoverTextField *)field {
+    
+    NSString *error = nil;
+    NSString *name = [field stringValue];
+    
+    if ((name == nil) || ([name isEqualToString:@""])) {
+        error = NSLocalizedString(@"If this field is left blank, \"localhost\" will be used for the default value. In this configuration, only local programs will have access to the forward via the loopback interface. If you would like to make the forward available to all hosts on your network, enter \"*\" to bind to all interfaces. Or, if you would like to bind to just one of this machine's specific IP addresses, you can enter it (or it\'s associated hostname).", nil);
+        [field setButtonPopoverMessage:error withType:NESWarningPopover];
+        return;
+    } else if ((!([NESConnection isValidHost:name]||[NESConnection isValidIP:name]))&&(![name isEqualToString:@"*"])) {
+        error = [NSString stringWithFormat:NSLocalizedString(@"\"%@\" does not appear to be a valid IP or hostname. This value should be the hostname or IP address of an interface on this host. If you want only local programs to have access to the forward via the loopback interface, use \"localhost\" or 127.0.0.1 for the address (or leave the field blank). If you want all hosts on your network to have access to the forward, use \"*\".", nil),name];
+        [field setButtonPopoverMessage:error withType:NESErrorPopover];
+        return;
+    }
+    
+    [field setButtonHidden:YES];
+}
+
 - (IBAction)toggleReconnect:(id)sender {
     [self validateNumberField:_autoReconnectTime withBinding:@"reconnectInterval"];
 }
@@ -528,8 +546,8 @@ validate:
     } else if ((field == _sshPortField)||(field == _localPortField)||(field == _remoteHostPortField)) {
         [self validateGeneralPortField: field];
     } else if (field == _sshUsernameField) {
-        [self validateUsernameField:field];
-    } else if (field == _bindDevice) {
+        [self validateBindDeviceField:field];
+    } else if (field == _bindDeviceField) {
         [self validateUsernameField:field];
     } else if (field == _autoReconnectTime) {
         [self validateNumberField:field withBinding:@"reconnectInterval"];
@@ -622,7 +640,7 @@ validate:
     
     [_tabView selectFirstTabViewItem:nil];
     appConfig = [[_connectionController prefsController] appConfig];
-    [_allowManagement setEnabled:[[appConfig configForKey:@"enableManagedConnections"] boolValue]];
+    //[_allowManagement setEnabled:[[appConfig configForKey:@"enableManagedConnections"] boolValue]];
     [_config setObject:[appConfig configForKey:@"instanceUUID"] forKey:@"lastRevisionBy"];
     
     

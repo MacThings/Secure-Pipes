@@ -32,13 +32,13 @@
       }
     },
     "WS0-8u-keI.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Version 0.99.11\"; ObjectID = \"WS0-8u-keI\";",
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Version 1.0.0\"; ObjectID = \"WS0-8u-keI\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Version 0.99.11"
+            "value" : "Version 1.0.0"
           }
         }
       }

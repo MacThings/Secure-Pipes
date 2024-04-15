@@ -209,6 +209,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Automatically retry connection on disconnect after\"; ObjectID = \"BYd-EE-2k6\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisches erneutes Verbinden nach einer Trennung nach"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -221,6 +227,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Connect using web proxy\"; ObjectID = \"cqZ-Pc-rtr\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbinde über Web-Proxy"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -233,6 +245,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Use ssh identity file\"; ObjectID = \"Cth-Qi-xBM\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nutze SSH Keydatei"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -737,6 +755,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Use script for SSH server\"; ObjectID = \"Zul-fZ-6NJ\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Script für SSH Server"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",

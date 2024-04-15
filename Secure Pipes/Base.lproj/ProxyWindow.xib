@@ -50,14 +50,14 @@
         <window title="SOCKS Proxy Connection" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="oC3-dS-dxk">
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="640" height="352"/>
+            <rect key="contentRect" x="196" y="240" width="640" height="373"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1285"/>
             <view key="contentView" id="QqU-og-sSp">
-                <rect key="frame" x="0.0" y="0.0" width="640" height="352"/>
+                <rect key="frame" x="0.0" y="0.0" width="640" height="373"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView fixedFrame="YES" initialItem="o4B-Dd-QJu" translatesAutoresizingMaskIntoConstraints="NO" id="kmM-2a-Pbc">
-                        <rect key="frame" x="13" y="41" width="614" height="305"/>
+                        <rect key="frame" x="13" y="62" width="614" height="305"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
@@ -837,7 +837,7 @@ IA
                         </tabViewItems>
                     </tabView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cym-fj-14r">
-                        <rect key="frame" x="524" y="13" width="82" height="32"/>
+                        <rect key="frame" x="524" y="34" width="82" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0W9-Cj-eI2">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -851,7 +851,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCP-3S-xLm">
-                        <rect key="frame" x="442" y="13" width="82" height="32"/>
+                        <rect key="frame" x="442" y="34" width="82" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dEQ-nE-6au">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -865,7 +865,7 @@ DQ
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-14" y="315"/>
+            <point key="canvasLocation" x="-14" y="304.5"/>
         </window>
         <objectController id="HRX-O7-qtf">
             <connections>

@@ -182,7 +182,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Benutze Script für SSH Server"
+            "value" : "Script für SSH Server"
           }
         },
         "en" : {
@@ -200,7 +200,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verbindungsname"
+            "value" : "Verbindungsname:"
           }
         },
         "en" : {
@@ -710,7 +710,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Benutze SSH Identitätsdatei"
+            "value" : "Nutze SSH Keydatei"
           }
         },
         "en" : {
@@ -728,7 +728,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Versuche automatisches Wiederverbinden nach Trennung"
+            "value" : "Automatisches erneutes Verbinden nach einer Trennung nach"
           }
         },
         "en" : {
@@ -764,7 +764,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Über Bonjour"
+            "value" : "Über Bonjour mit Dienstnamen werben:"
           }
         },
         "en" : {
@@ -896,7 +896,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verbinde mittels Web-Proxy"
+            "value" : "Verbinde über Web-Proxy"
           }
         },
         "en" : {

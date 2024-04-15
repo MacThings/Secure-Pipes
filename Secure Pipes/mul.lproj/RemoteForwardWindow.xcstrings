@@ -32,7 +32,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Beim anschließenden Trennen der Verbindung automatisch einen erneuten Verbindungsversuch durchführen"
+            "value" : "Automatisches erneutes Verbinden nach einer Trennung nach"
           }
         },
         "en" : {
@@ -188,7 +188,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Benutze Script für SSH Server"
+            "value" : "Script für SSH Server"
           }
         },
         "en" : {
@@ -404,7 +404,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verbinde mittels Web-Proxy"
+            "value" : "Verbinde über Web-Proxy"
           }
         },
         "en" : {
@@ -1046,7 +1046,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Benutze SSH Identitätsdatei"
+            "value" : "Nutze SSH Keydatei"
           }
         },
         "en" : {
