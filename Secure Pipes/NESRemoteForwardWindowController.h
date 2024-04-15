@@ -11,4 +11,7 @@
 
 @interface NESRemoteForwardWindowController : NESConnectionWindowController
 
+@property (strong) IBOutlet NSTextField *listLokalNetworkDevices;
+@property (strong) IBOutlet NSWindow *listLokalNetworkDevicesWindow;
+
 @end

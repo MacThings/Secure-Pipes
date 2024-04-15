@@ -157,32 +157,43 @@
     [field setButtonHidden:YES];
 }
 
-- (IBAction)show_network:(id)sender {
+- (IBAction)listNetworkDevices:(id)sender {
+    
+    // Erstellen Sie einen leeren NSMutableString, um die Ausgabe zu sammeln
+    NSMutableString *outputString = [NSMutableString string];
     
     struct ifaddrs *interfaces = NULL;
-            struct ifaddrs *temp_addr = NULL;
-            
-            // Erhalten Sie die Liste der Netzwerkinterfaces
-            if (getifaddrs(&interfaces) == 0) {
-                // Durchlaufen Sie die Liste der Netzwerkinterfaces
-                temp_addr = interfaces;
-                while (temp_addr != NULL) {
-                    if (temp_addr->ifa_addr->sa_family == AF_INET) { // Überprüfen, ob es sich um eine IPv4-Adresse handelt
-                        // Holen Sie sich die IP-Adresse als Zeichenkette
-                        NSString *name = [NSString stringWithUTF8String:temp_addr->ifa_name];
-                        NSString *ip = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
-                        
-                        // Überprüfen, ob die IP-Adresse gültig ist
-                        if (![ip isEqualToString:@"0.0.0.0"] && ![ip isEqualToString:@"127.0.0.1"]) {
-                            // Ausgabe des gefundenen Netzwerkgeräts
-                            printf("%s, IP: %s\n", [name UTF8String], [ip UTF8String]);
-                            
-                        }
-                    }
-                    temp_addr = temp_addr->ifa_next;
+    struct ifaddrs *temp_addr = NULL;
+    
+    // Erhalten Sie die Liste der Netzwerkinterfaces
+    if (getifaddrs(&interfaces) == 0) {
+        // Durchlaufen Sie die Liste der Netzwerkinterfaces
+        temp_addr = interfaces;
+        while (temp_addr != NULL) {
+            if (temp_addr->ifa_addr->sa_family == AF_INET) { // Überprüfen, ob es sich um eine IPv4-Adresse handelt
+                // Holen Sie sich die IP-Adresse als Zeichenkette
+                NSString *name = [NSString stringWithUTF8String:temp_addr->ifa_name];
+                NSString *ip = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
+                
+                // Überprüfen, ob die IP-Adresse gültig ist
+                if (![ip isEqualToString:@"0.0.0.0"] && ![ip isEqualToString:@"127.0.0.1"]) {
+                    // Formatieren Sie den Text und fügen Sie ihn zum outputString hinzu
+                    NSString *outputLine = [NSString stringWithFormat:@"%@ (%@)\n", ip, name];
+                    [outputString appendString:outputLine];
                 }
-                freeifaddrs(interfaces); // Freigabe der Speicherressourcen
             }
+            temp_addr = temp_addr->ifa_next;
+        }
+        freeifaddrs(interfaces); // Freigabe der Speicherressourcen
+    }
+    
+    // Aktualisieren Sie das Fenster "Network Devices" mit dem outputString
+    [self.listLokalNetworkDevices setStringValue:outputString];
+    
+    // Öffnen Sie das Fenster "Network Devices", wenn es nicht bereits geöffnet ist
+    if (![self.listLokalNetworkDevicesWindow isVisible]) {
+        [self.listLokalNetworkDevicesWindow makeKeyAndOrderFront:self];
+    }
 }
 
 

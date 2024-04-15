@@ -21,6 +21,8 @@
                 <outlet property="httpProxyPortField" destination="vRq-zl-27j" id="92e-Tx-eR2"/>
                 <outlet property="httpProxyUsernameField" destination="Oej-ID-eyV" id="6Zc-Eh-uTu"/>
                 <outlet property="includeInMenuBox" destination="A8T-q3-dUZ" id="Geh-er-pVS"/>
+                <outlet property="listLokalNetworkDevices" destination="Nkq-LN-erK" id="GlF-gP-sbu"/>
+                <outlet property="listLokalNetworkDevicesWindow" destination="CcU-wz-Wnb" id="ahZ-Co-z4W"/>
                 <outlet property="localAddressField" destination="1Lv-tX-ztR" id="RpA-OQ-WmA"/>
                 <outlet property="localPortField" destination="qxC-wY-RkZ" id="GZR-ue-gNn"/>
                 <outlet property="nameField" destination="AEc-eh-7Pu" id="uEP-O9-Hkh"/>
@@ -295,7 +297,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qkj-F0-Gb7">
-                                            <rect key="frame" x="31" y="62" width="407" height="18"/>
+                                            <rect key="frame" x="31" y="30" width="407" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Automatically configure SOCKS proxy in Network Preferences" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="DNt-g6-vZN">
                                                 <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
@@ -306,7 +308,7 @@
                                             </connections>
                                         </button>
                                         <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iyd-Am-TUk" customClass="NESPopoverButton">
-                                            <rect key="frame" x="442" y="58" width="25" height="25"/>
+                                            <rect key="frame" x="445" y="26" width="25" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="help" bezelStyle="helpButton" imagePosition="only" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Don-zt-RzT">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -314,6 +316,43 @@
                                             </buttonCell>
                                             <connections>
                                                 <action selector="clickHelpButton:" target="-2" id="cfy-0c-vWA"/>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7k-Bm-tWV">
+                                            <rect key="frame" x="15" y="70" width="143" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Bind Connection to IP:" id="jVF-7k-YIU">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhn-Vp-wqt" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="164" y="68" width="208" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="0.0.0.0" drawsBackground="YES" id="77l-kh-aud">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="HRX-O7-qtf" name="value" keyPath="selection.bindDevice" id="O61-Ij-sUe">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="H8U-Fr-B8x"/>
+                                            </connections>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLu-IC-ari">
+                                            <rect key="frame" x="382" y="70" width="58" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Show IPs" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Flr-D7-a7a">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="miniSystem"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="listNetworkDevices:" target="-2" id="Je8-0M-acJ"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -872,5 +911,39 @@ DQ
                 <binding destination="-2" name="contentObject" keyPath="self.config" id="07Q-jl-Gcy"/>
             </connections>
         </objectController>
+        <window title="Network Devices" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="CcU-wz-Wnb">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="999" y="620" width="211" height="206"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1285"/>
+            <view key="contentView" id="eVD-O3-Fmy">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="206"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-LN-erK">
+                        <rect key="frame" x="18" y="51" width="175" height="135"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" title="Multiline Label" id="OdB-xM-Y60">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7vX-c1-xqf">
+                        <rect key="frame" x="64" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PnE-uD-9fa">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">.</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderOut:" target="CcU-wz-Wnb" id="TVs-Lg-D4H"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="-133" y="658"/>
+        </window>
     </objects>
 </document>

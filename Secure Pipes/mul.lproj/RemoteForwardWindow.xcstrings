@@ -457,6 +457,18 @@
         }
       }
     },
+    "FTz-rM-qOn.title" : {
+      "comment" : "Class = \"NSWindow\"; title = \"Network Devices\"; ObjectID = \"FTz-rM-qOn\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Network Devices"
+          }
+        }
+      }
+    },
     "gGq-2N-0da.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"22\"; ObjectID = \"gGq-2N-0da\";",
       "extractionState" : "extracted_with_value",
@@ -745,6 +757,18 @@
         }
       }
     },
+    "MfW-BU-Om9.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"0.0.0.0\"; ObjectID = \"MfW-BU-Om9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "0.0.0.0"
+          }
+        }
+      }
+    },
     "mq6-na-bEY.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Port:\"; ObjectID = \"mq6-na-bEY\";",
       "extractionState" : "extracted_with_value",
@@ -943,6 +967,18 @@
         }
       }
     },
+    "Szf-az-5wa.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Close\"; ObjectID = \"Szf-az-5wa\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Close"
+          }
+        }
+      }
+    },
     "t4o-0J-GXQ.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \"Enter custom SSH config options...\"; ObjectID = \"t4o-0J-GXQ\";",
       "extractionState" : "extracted_with_value",
@@ -979,6 +1015,18 @@
         }
       }
     },
+    "uLl-hh-oIa.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Multiline Label\"; ObjectID = \"uLl-hh-oIa\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Multiline Label"
+          }
+        }
+      }
+    },
     "v2d-A9-T2r.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Select...\"; ObjectID = \"v2d-A9-T2r\";",
       "extractionState" : "extracted_with_value",
@@ -1005,6 +1053,30 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "80"
+          }
+        }
+      }
+    },
+    "vyJ-R3-E6U.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Show IPs\"; ObjectID = \"vyJ-R3-E6U\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Show IPs"
+          }
+        }
+      }
+    },
+    "VZe-Zd-jRA.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind Connection to IP:\"; ObjectID = \"VZe-Zd-jRA\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Bind Connection to IP:"
           }
         }
       }

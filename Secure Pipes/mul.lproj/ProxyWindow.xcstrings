@@ -193,6 +193,18 @@
         }
       }
     },
+    "77l-kh-aud.placeholderString" : {
+      "comment" : "Class = \"NSTextFieldCell\"; placeholderString = \"0.0.0.0\"; ObjectID = \"77l-kh-aud\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "0.0.0.0"
+          }
+        }
+      }
+    },
     "B5C-PS-gSl.ibShadowedIsNilPlaceholder" : {
       "comment" : "Class = \"CocoaBindingsConnection\"; ibShadowedIsNilPlaceholder = \" \"; ObjectID = \"B5C-PS-gSl\";",
       "extractionState" : "extracted_with_value",
@@ -219,6 +231,18 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Automatically retry connection on disconnect after"
+          }
+        }
+      }
+    },
+    "CcU-wz-Wnb.title" : {
+      "comment" : "Class = \"NSWindow\"; title = \"Network Devices\"; ObjectID = \"CcU-wz-Wnb\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Network Devices"
           }
         }
       }
@@ -363,6 +387,18 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "unanswered server alive messages"
+          }
+        }
+      }
+    },
+    "Flr-D7-a7a.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Show IPs\"; ObjectID = \"Flr-D7-a7a\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Show IPs"
           }
         }
       }
@@ -523,6 +559,18 @@
         }
       }
     },
+    "jVF-7k-YIU.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Bind Connection to IP:\"; ObjectID = \"jVF-7k-YIU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Bind Connection to IP:"
+          }
+        }
+      }
+    },
     "Lm8-gf-ebu.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"SSH Server Address:\"; ObjectID = \"Lm8-gf-ebu\";",
       "extractionState" : "extracted_with_value",
@@ -607,6 +655,18 @@
         }
       }
     },
+    "OdB-xM-Y60.title" : {
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Multiline Label\"; ObjectID = \"OdB-xM-Y60\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Multiline Label"
+          }
+        }
+      }
+    },
     "oPX-2P-ntM.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Send server alive messages every \"; ObjectID = \"oPX-2P-ntM\";",
       "extractionState" : "extracted_with_value",
@@ -615,6 +675,18 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Send server alive messages every "
+          }
+        }
+      }
+    },
+    "PnE-uD-9fa.title" : {
+      "comment" : "Class = \"NSButtonCell\"; title = \"Close\"; ObjectID = \"PnE-uD-9fa\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Close"
           }
         }
       }

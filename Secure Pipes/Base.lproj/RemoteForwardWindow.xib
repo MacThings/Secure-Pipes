@@ -19,6 +19,8 @@
                 <outlet property="httpProxyPortField" destination="VFB-jL-gTk" id="Tgt-1D-JDM"/>
                 <outlet property="httpProxyUsernameField" destination="jwL-vg-HsQ" id="bg6-lf-lYm"/>
                 <outlet property="includeInMenuBox" destination="S2A-8L-NHw" id="Bb9-tc-Oi7"/>
+                <outlet property="listLokalNetworkDevices" destination="kMv-2l-A9e" id="YFF-MP-s7C"/>
+                <outlet property="listLokalNetworkDevicesWindow" destination="FTz-rM-qOn" id="82p-wo-qch"/>
                 <outlet property="localAddressField" destination="RHB-ek-i3L" id="hhG-hx-5bb"/>
                 <outlet property="localPortField" destination="H9M-Fv-Am3" id="Gwe-NK-bVs"/>
                 <outlet property="nameField" destination="4Is-yg-BwB" id="DHl-Dv-jfd"/>
@@ -67,7 +69,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOK-I7-dHo">
-                                            <rect key="frame" x="37" y="236" width="121" height="17"/>
+                                            <rect key="frame" x="-5" y="236" width="163" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Connection Name:" id="ES2-b6-qrz">
                                                 <font key="font" metaFont="system"/>
@@ -76,7 +78,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zab-3a-YhV">
-                                            <rect key="frame" x="25" y="193" width="134" height="17"/>
+                                            <rect key="frame" x="-5" y="193" width="164" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SSH Server Address:" id="azN-CZ-YUJ">
                                                 <font key="font" metaFont="system"/>
@@ -145,7 +147,7 @@
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ZR-fy-vw4">
-                                            <rect key="frame" x="49" y="163" width="109" height="17"/>
+                                            <rect key="frame" x="-5" y="163" width="163" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SSH Username:" id="aYl-J8-O6t">
                                                 <font key="font" metaFont="system"/>
@@ -252,7 +254,7 @@
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3o-Bv-iNh">
-                                            <rect key="frame" x="15" y="118" width="143" height="17"/>
+                                            <rect key="frame" x="-5" y="118" width="163" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Remote Bind Address:" id="5vj-py-msl">
                                                 <font key="font" metaFont="system"/>
@@ -290,7 +292,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C23-PC-UdV">
-                                            <rect key="frame" x="15" y="86" width="143" height="17"/>
+                                            <rect key="frame" x="-5" y="86" width="163" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Local Host Address:" id="wOd-2V-FRW">
                                                 <font key="font" metaFont="system"/>
@@ -327,6 +329,43 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-ON-WUM">
+                                            <rect key="frame" x="15" y="40" width="143" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Bind Connection to IP:" id="VZe-Zd-jRA">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8o0-3V-xFe" customClass="NESPopoverTextField">
+                                            <rect key="frame" x="164" y="38" width="208" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="0.0.0.0" drawsBackground="YES" id="MfW-BU-Om9">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="Cte-bK-Fka" name="value" keyPath="selection.bindDevice" id="hAc-5M-UmT">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                                <outlet property="delegate" destination="-2" id="Jp6-tO-vdN"/>
+                                            </connections>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gra-K9-Snw">
+                                            <rect key="frame" x="382" y="39" width="58" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Show IPs" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vyJ-R3-E6U">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="miniSystem"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="listNetworkDevices:" target="-2" id="azn-nu-0q3"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -336,7 +375,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOh-WG-E62">
-                                            <rect key="frame" x="15" y="239" width="121" height="17"/>
+                                            <rect key="frame" x="15" y="239" width="143" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SSH Options:" id="8pZ-gd-SxW">
                                                 <font key="font" metaFont="system"/>
@@ -856,5 +895,39 @@ DQ
                 <binding destination="-2" name="contentObject" keyPath="self.config" id="4a1-dB-F7J"/>
             </connections>
         </objectController>
+        <window title="Network Devices" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="FTz-rM-qOn">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="999" y="620" width="211" height="206"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1285"/>
+            <view key="contentView" id="Qqi-Pm-d4r">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="206"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kMv-2l-A9e">
+                        <rect key="frame" x="18" y="51" width="175" height="135"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" title="Multiline Label" id="uLl-hh-oIa">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fph-Xd-fED">
+                        <rect key="frame" x="64" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Szf-az-5wa">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">.</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="orderOut:" target="FTz-rM-qOn" id="nnh-pj-DAN"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="-46" y="553"/>
+        </window>
     </objects>
 </document>

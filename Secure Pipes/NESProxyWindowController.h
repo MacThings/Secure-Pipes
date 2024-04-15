@@ -12,4 +12,7 @@
 
 - (IBAction)clickHelpButton:(id)sender;
 
+
+@property (strong) IBOutlet NSTextField *listLokalNetworkDevices;
+@property (strong) IBOutlet NSWindow *listLokalNetworkDevicesWindow;
 @end
