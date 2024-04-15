@@ -142,7 +142,7 @@ NSString * const ticketPath = TICKET_PATH;
         } else {
             NSLog(@"Error fetching config!");
             //[self setStatus:NESConnectionSyncFailure];
-            errorString = @"Unable to get managed connection configuration from remote server.";
+            errorString = NSLocalizedString(@"Unable to get managed connection configuration from remote server.", nil);
             [self queueStatusUpdate:NESConnectionSyncFailure withData:errorString];
             completionHandler(nil);
         }

@@ -94,7 +94,7 @@
     [env setObject:(passwd?passwd:@"") forKey:@"SSH_PASSWD"];
     if ([_connection needsAdministratorRights]) {
         if (_passwd == nil) {
-            [_connection queueStatusUpdate:NESConnectionError withData:@"An administrative password for this computer is required for this connection. Please enter the password when starting the connection."];
+            [_connection queueStatusUpdate:NESConnectionError withData:NSLocalizedString(@"An administrative password for this computer is required for this connection. Please enter the password when starting the connection.", nil)];
             return;
         } else {
             [env setObject:_passwd forKey:@"ADMIN_PASSWD"];
@@ -290,11 +290,11 @@
     
     NSLog(@"Connection %@ terminated with status %u %@ reason: %ld...",[_connection name],[task terminationStatus],[notif name],[task terminationReason]);
     if ([task terminationReason] == NSTaskTerminationReasonUncaughtSignal) {
-        [_connection queueStatusUpdate:NESConnectionError withData:@"SSH process killed unexpectedly."];
+        [_connection queueStatusUpdate:NESConnectionError withData:NSLocalizedString(@"SSH process killed unexpectedly.", nil)];
     }
     
     if (([task terminationReason] == NSTaskTerminationReasonExit) && ([task terminationStatus] == 1)) {
-        [_connection queueStatusUpdate:NESConnectionError withData:@"SSH process exited with error. Check the connection and server configuration parameters."];
+        [_connection queueStatusUpdate:NESConnectionError withData:NSLocalizedString(@"SSH process exited with error. Check the connection and server configuration parameters.", nil)];
     }
     
     _isRunning = NO;

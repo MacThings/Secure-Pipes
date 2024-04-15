@@ -1,3 +1,7 @@
+"Apply" = "Anwenden";
+
+"Add" = "Hinzufügen";
+
 "Connect %@" = "Verbinde %@";
 
 "Connect" = "Verbinde";
@@ -77,3 +81,73 @@
 "An unknown error occurred." = "Ein unbekannter Fehler ist aufgetreten.";
 
 "Are you sure you want to delete the %@ named \"%@\"?" = "Bist Du sicher, dass Du den \"%@\" mit dem Namen \"%@\" löschen möchtest?";
+
+"The specified script file no longer exists. Please select a new file." = "Die angegebene Skriptdatei existiert nicht mehr. Bitte wähle eine neue Datei aus.";
+
+"The specified script is not executable. Please change the permissions of the file or select a new one." = "Das angegebene Skript ist nicht ausführbar. Bitte ändere die Berechtigungen der Datei oder wähle eine neue aus.";
+
+"The specified script did not return a valid hostname or IP address. The returned value was:\n\n %@" = "Das angegebene Skript hat keinen gültigen Hostnamen oder keine gültige IP-Adresse zurückgegeben. Der zurückgegebene Wert ist:\n\n %@";
+
+"When using an SSH key for authentication, only public key authentication is attempted. If your key is secured with a password, please enter it in the connection tab." = "Bei Verwendung eines SSH-Schlüssels zur Authentifizierung wird nur eine Authentifizierung mit öffentlichem Schlüssel versucht. Wenn Dein Schlüssel mit einem Passwort geschützt ist, gib es bitte in der Registerkarte „Verbindung“ ein.";
+
+"The connection \"%@\" is currently active. You must reconnect it for any network related changes to take effect." = "Die Verbindung \"%@\" ist derzeit aktiv. Du musst die Verbindung erneut herstellen, damit netzwerkbezogene Änderungen wirksam werden.";
+
+"If this field is left blank, \"localhost\" will be used for the default value. In this configuration, only local programs will have access to the forward via the loopback interface. If you would like to make the forward available to all hosts on your network, enter \"*\" to bind to all interfaces. Or, if you would like to bind to just one of this machine's specific IP addresses, you can enter it (or it\'s associated hostname)." = "Wenn dieses Feld leer gelassen wird, wird \"localhost\" als Standardwert verwendet. In dieser Konfiguration haben nur lokale Programme über die Loopback-Schnittstelle Zugriff auf die Weiterleitung. Wenn Du die Weiterleitung allen Hosts in Ihrem Netzwerk zur Verfügung stellen möchtest, gib Sie \"*\" ein, um sie an alle Schnittstellen zu binden. Wenn Du nur an eine der spezifischen IP-Adressen dieses Computers binden möchten, können Sie diese (oder den zugehörigen Hostnamen) eingeben.";
+
+"\"%@\" does not appear to be a valid IP or hostname. This value should be the hostname or IP address of an interface on this host. If you want only local programs to have access to the forward via the loopback interface, use \"localhost\" or 127.0.0.1 for the address (or leave the field blank). If you want all hosts on your network to have access to the forward, use \"*\"." = "\"%@\" scheint keine gültige IP-Adresse oder Hostname zu sein. Dieser Wert sollte der Hostname oder die IP-Adresse einer Schnittstelle auf diesem Host sein. Wenn Du möchtest, dass nur lokale Programme über die Loopback-Schnittstelle auf die Weiterleitung zugreifen können, verwenden Sie \"localhost\" oder 127.0.0.1 als Adresse (oder lasse das Feld leer). Wenn Du möchtest, dass alle Hosts in Ihrem Netzwerk auf die Weiterleitung zugreifen können, verwende \"*\".";
+
+"The default port for this field has been chosen randomly. Please confirm it is the desired port and modify if necessary." = "Der Standardport für dieses Feld wurde zufällig ausgewählt. Bitte bestätige, dass es sich um den gewünschten Port handelt, und ändere ihn bei Bedarf.";
+
+"\"%@\" is not a valid port number. Please enter a number between 1 and 65535." = "\"%@\" ist keine gültige Portnummer. Bitte gib eine Zahl zwischen 1 und 65535 ein.";
+
+"Please note binding to ports less than 1024 requires administrative privileges. You will be prompted for your password when the connection starts. If the account \"%@\" loses administrative privileges, the connection will fail." = "Bitte beachte, dass für die Bindung an Ports unter 1024 Administratorrechte erforderlich sind. Du wirst beim Verbindungsaufbau nach Deinem Passwort gefragt. Wenn das Konto \"%@\" die Administratorrechte verliert, schlägt die Verbindung fehl.";
+
+"The current account \"%@\" does not have the administrative privileges required to bind to ports less than 1024. Please make this account an administrator or log in as a user with administrative privileges." = "Das aktuelle Konto \"%@\" verfügt nicht über die erforderlichen Administratorrechte zum Binden an Ports unter 1024. Bitte mache dieses Konto zu einem Administrator oder melde Dich als Benutzer mit Administratorrechten an.";
+
+"The remote host host name or IP address to forward the connection to is required. Please enter a valid host name or IP address. In some cases this may be the SSH server itself, in which case \"localhost\" can be specified. In other cases it may be a server only accessible to the SSH server via one of it\'s networks." = "Der Hostname oder die IP-Adresse des Remote-Hosts, an den die Verbindung weitergeleitet werden soll, ist erforderlich. Bitte gib einen gültigen Hostnamen oder eine gültige IP-Adresse ein. In einigen Fällen kann dies der SSH-Server selbst sein. In diesem Fall kann \"localhost\" angegeben werden. In anderen Fällen kann es sich um einen Server handeln, auf den der SSH-Server nur über eines seiner Netzwerke zugreifen kann.";
+
+"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters." = "\"%@\" cheint keine gültige IP-Adresse oder Hostname zu sein. Bitte überprüf deine Eingabe, um sicherzustellen, dass sie korrekt formatiert ist und keine illegalen Zeichen enthält.";
+
+"The proxy server host name or IP address is required. Please enter a valid host name or IP address." = "Der Hostname oder die IP-Adresse des Proxy-Servers wird benötigt. Bitte gib einen gültigen Hostnamen oder eine gültige IP-Adresse ein.";
+
+"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters." = "\"%@\" Die Eingabe scheint keine gültige IP-Adresse oder Hostname zu sein. Bitte überprüfe deine Eingabe, um sicherzustellen, dass sie korrekt formatiert ist und keine unzulässigen Zeichen enthält.";
+
+"The remote SSH server host name or IP address is required. Please enter a valid host name or IP address." = "Der entfernte SSH-Server-Hostname oder die IP-Adresse wird benötigt. Bitte gib einen gültigen Hostnamen oder eine gültige IP-Adresse ein.";
+
+"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters." = "\"%@\" scheint keine gültige IP-Adresse oder Hostname zu sein. Bitte überprüfe deine Eingabe, um sicherzustellen, dass sie korrekt formatiert ist und keine ungültigen Zeichen enthält.";
+
+"An SSH username must be supplied for the connection." = "Für die Verbindung muss ein SSH-Benutzername angegeben werden.";
+
+"Click the button to the right to specify the location of a valid SSH identitfy file." = "Klicke auf die Schaltfläche rechts, um den Speicherort einer gültigen SSH-Identitätsdatei anzugeben.";
+
+"Specified file no longer exists. Please choose another file using the button to the right." = "Die angegebene Datei existiert nicht mehr. Bitte wähle eine andere Datei über die Schaltfläche rechts aus.";
+
+"A name must be supplied for the connection. Please enter a descriptive label to identify the connection such as \"Authentication Server\", \"Cloud Intranet\", etc." = "Für die Verbindung muss ein Name angegeben werden. Bitte gib einen aussagekräftigen Namen ein, um die Verbindung zu identifizieren, z. B.  \"Authentication Server\", \"Cloud Intranet\", etc.";
+
+"A local forward connection with the name \"%@\" already exists. Please select another name." = "Eine lokale Weiterleitungsverbindung mit dem Namen \"%@\" existiert bereits. Bitte wähle einen anderen Namen aus.";
+
+"A name must be supplied for the connection. Please enter a descriptive label to identify the connection such as \"Mail Edge Service\", \"Web Edge Service\", etc." = "Ein Name muss für die Verbindung angegeben werden. Bitte gib einen beschreibenden Namen ein, um die Verbindung zu identifizieren, wie zum Beispiel: \"Mail Edge Service\", \"Web Edge Service\", etc.";
+
+"A remote forward connection with the name \"%@\" already exists. Please select another name." = "Eine entfernte Weiterleitungsverbindung mit dem Namen \"%@\" existiert bereits. Bitte wähle einen anderen Namen aus.";
+
+"The local host host name or IP address to forward the connection to is required. Please enter a valid host name or IP address. In some cases this may be this computer, in which case \"localhost\" can be specified. In other cases it may be a server only accessible by one of this computer's accessible networks." = "Die lokale Host-Hostname oder IP-Adresse, zu der die Verbindung weitergeleitet werden soll, ist erforderlich. Bitte gib einen gültigen Hostnamen oder eine gültige IP-Adresse ein. In einigen Fällen kann dies dieser Computer sein, in diesem Fall kann \"localhost\" angegeben werden. In anderen Fällen kann es sich um einen Server handeln, der nur von einem der zugänglichen Netzwerke dieses Computers aus erreichbar ist.";
+
+"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters." = "\"%@\" scheint keine gültige IP-Adresse oder Hostname zu sein. Bitte überprüfe deine Eingabe, um sicherzustellen, dass sie korrekt formatiert ist und keine ungültigen Zeichen enthält.";
+
+"Please note binding to ports less than 1024 typically requires administrative (root) privileges. If the SSH account does not have privileges to bind to this port, the connection will fail." = "Bitte beachte, dass das Binden an Ports unter 1024 normalerweise administrative (Root-)Privilegien erfordert. Wenn das SSH-Konto nicht über die Berechtigungen verfügt, um an diesen Port zu binden, wird die Verbindung fehlschlagen.";
+
+"If this field is left blank, \"localhost\" will be used for the default value. In this configuration, only programs local to the SSH server will have access to the forward via the loopback interface. If you would like to make the forward available to all hosts on the server's network, enter \"*\" to bind to all interfaces. Or, if you would like to bind to just one of the server's specific IP addresses, you can enter it (or it's associated hostname)." = "Wenn dieses Feld leer gelassen wird, wird standardmäßig \"localhost\" verwendet. In dieser Konfiguration haben nur Programme, die lokal auf dem SSH-Server ausgeführt werden, über die Loopback-Schnittstelle Zugriff auf die Weiterleitung. Wenn du die Weiterleitung für alle Hosts im Netzwerk des Servers verfügbar machen möchtest, gib \"*\" ein, um an alle Schnittstellen zu binden. Oder, wenn du die Weiterleitung nur an eine bestimmte IP-Adresse des Servers binden möchtest, kannst du diese eingeben (oder den zugehörigen Hostnamen).";
+
+"\"%@\" does not appear to be a valid IP or hostname. This value should be the hostname or IP address of an interface on the SSH server. If you want only programs local to the SSH server have access to the forward via the loopback interface, use \"localhost\" or 127.0.0.1 for the address (or leave the field blank). If you want all hosts on the server's network to have access to the forward, use \"*\"." = "\"%@\" Die Eingabe scheint keine gültige IP-Adresse oder Hostname zu sein. Dieser Wert sollte der Hostname oder die IP-Adresse einer Schnittstelle auf dem SSH-Server sein. Wenn du möchtest, dass nur Programme, die lokal auf dem SSH-Server ausgeführt werden, über die Loopback-Schnittstelle Zugriff auf die Weiterleitung haben, verwende \"localhost\" oder 127.0.0.1 für die Adresse (oder lasse das Feld leer). Wenn du möchtest, dass alle Hosts im Netzwerk des Servers Zugriff auf die Weiterleitung haben, verwende \"*\".";
+
+"When this option is enabled, the Network Preferences will automatically be configured to use the proxy when the connection is active. When the proxy connection is disconnected, the original settings will be restored. Please note this function requires administrative privileges." = "Wenn diese Option aktiviert ist, werden die Netzwerkeinstellungen automatisch so konfiguriert, dass der Proxy verwendet wird, wenn die Verbindung aktiv ist. Wenn die Proxy-Verbindung getrennt ist, werden die ursprünglichen Einstellungen wiederhergestellt. Bitte beachte, dass diese Funktion administrative Privilegien erfordert.";
+
+"Unable to get managed connection configuration from remote server." = "Es konnte keine verwaltete Verbindungskonfiguration vom Remote-Server abgerufen werden.";
+
+"An administrative password for this computer is required for this connection. Please enter the password when starting the connection." = "Für diese Verbindung wird ein Administrationspasswort für diesen Computer benötigt. Bitte gib das Passwort ein, wenn du die Verbindung startest.";
+
+"SSH process killed unexpectedly." = "Der SSH-Prozess wurde unerwartet beendet.";
+
+"SSH process exited with error. Check the connection and server configuration parameters." = "Der SSH-Prozess wurde mit einem Fehler beendet. Überprüfe die Verbindung und die Serverkonfigurationsparameter.";
+
+"stat on remote store failed" = "Status des Remote-Speichers konnte nicht abgerufen werden.";

@@ -95,10 +95,10 @@
     __block NSString *address, *error = nil;
     
     if (![testRun scriptExists]) {
-        error = @"The specified script file no longer exists. Please select a new file.";
+        error = NSLocalizedString(@"The specified script file no longer exists. Please select a new file.", nil);
         goto validate;
     } else if (![testRun scriptIsExecutable]) {
-        error = @"The specified script is not executable. Please change the permissions of the file or select a new one.";
+        error = NSLocalizedString(@"The specified script is not executable. Please change the permissions of the file or select a new one.", nil);
         goto validate;;
     }
     
@@ -111,7 +111,7 @@
         }
         
         if (!([NESConnection isValidHost:output]||[NESConnection isValidIP:output])) {
-            error = [NSString stringWithFormat:@"The specified script did not return a valid hostname or IP address. The returned value was:\n\n %@",output];
+            error = [NSString stringWithFormat:NSLocalizedString(@"The specified script did not return a valid hostname or IP address. The returned value was:\n\n %@", nil),output];
         }
         
         address = output;
@@ -219,7 +219,7 @@ validate:
         [_selectIDButton setEnabled:YES];
         if (([[appConfig configForKey:@"showPasswordDialog"] boolValue] == YES) && (sender)) {
             confirmSheet = [[NESConfirmationSheet alloc] init];
-            [confirmSheet setConfirmationText:[NSString stringWithFormat:@"When using an SSH key for authentication, only public key authentication is attempted. If your key is secured with a password, please enter it in the connection tab."]];
+            [confirmSheet setConfirmationText:[NSString stringWithFormat:NSLocalizedString(@"When using an SSH key for authentication, only public key authentication is attempted. If your key is secured with a password, please enter it in the connection tab.", nil)]];
             [confirmSheet setParent:[self window]];
             [[confirmSheet cancelButton] setHidden:YES];
             [[confirmSheet showAgainBox] setHidden:NO];
@@ -269,7 +269,7 @@ validate:
     if (isConnectionEdit) {
         if ((([connection status]&CONNECTION_STATE_MASK) == NESConnectionConnected)||(([connection status]&CONNECTION_STATE_MASK) == NESConnectionConnecting)) {
             confirmSheet = [[NESConfirmationSheet alloc] init];
-            [confirmSheet setConfirmationText:[NSString stringWithFormat:@"The connection \"%@\" is currently active. You must reconnect it for any network related changes to take effect.", [connection name]]];
+            [confirmSheet setConfirmationText:[NSString stringWithFormat:NSLocalizedString(@"The connection \"%@\" is currently active. You must reconnect it for any network related changes to take effect.", nil), [connection name]]];
             [confirmSheet setParent:[self window]];
             [[self window] beginCriticalSheet:[confirmSheet window] completionHandler:^(NSModalResponse returnCode) {
                 if (returnCode == NSModalResponseOK) {
@@ -303,11 +303,11 @@ validate:
     NSString *name = [field stringValue];
     
     if ((name == nil) || ([name isEqualToString:@""])) {
-        error = @"If this field is left blank, \"localhost\" will be used for the default value. In this configuration, only local programs will have access to the forward via the loopback interface. If you would like to make the forward available to all hosts on your network, enter \"*\" to bind to all interfaces. Or, if you would like to bind to just one of this machine's specific IP addresses, you can enter it (or it\'s associated hostname).";
+        error = NSLocalizedString(@"If this field is left blank, \"localhost\" will be used for the default value. In this configuration, only local programs will have access to the forward via the loopback interface. If you would like to make the forward available to all hosts on your network, enter \"*\" to bind to all interfaces. Or, if you would like to bind to just one of this machine's specific IP addresses, you can enter it (or it\'s associated hostname).", nil);
         [field setButtonPopoverMessage:error withType:NESWarningPopover];
         return;
     } else if ((!([NESConnection isValidHost:name]||[NESConnection isValidIP:name]))&&(![name isEqualToString:@"*"])) {
-        error = [NSString stringWithFormat:@"\"%@\" does not appear to be a valid IP or hostname. This value should be the hostname or IP address of an interface on this host. If you want only local programs to have access to the forward via the loopback interface, use \"localhost\" or 127.0.0.1 for the address (or leave the field blank). If you want all hosts on your network to have access to the forward, use \"*\".",name];
+        error = [NSString stringWithFormat:NSLocalizedString(@"\"%@\" does not appear to be a valid IP or hostname. This value should be the hostname or IP address of an interface on this host. If you want only local programs to have access to the forward via the loopback interface, use \"localhost\" or 127.0.0.1 for the address (or leave the field blank). If you want all hosts on your network to have access to the forward, use \"*\".", nil),name];
         [field setButtonPopoverMessage:error withType:NESErrorPopover];
         return;
     }
@@ -326,20 +326,20 @@ validate:
     }
     
     if ((name == nil) || ([name isEqualToString:@""])) {
-        error = @"The default port for this field has been chosen randomly. Please confirm it is the desired port and modify if necessary.";
+        error = NSLocalizedString(@"The default port for this field has been chosen randomly. Please confirm it is the desired port and modify if necessary.", nil);
         if (field != _sshPortField)
             [field setButtonPopoverMessage:error withType:NESWarningPopover];
         return;
     } else if (![NESConnection isValidPort:name]) {
-        error = [NSString stringWithFormat:@"\"%@\" is not a valid port number. Please enter a number between 1 and 65535.",name];
+        error = [NSString stringWithFormat:NSLocalizedString(@"\"%@\" is not a valid port number. Please enter a number between 1 and 65535.", nil),name];
         [field setButtonPopoverMessage:error withType:NESErrorPopover];
         return;
     } else if (([name integerValue]<1024)&&(field == _localPortField)) {
         if ([[NESUser currentUser] isMemberOfAdminGroup]) {
-            error = [NSString stringWithFormat:@"Please note binding to ports less than 1024 requires administrative privileges. You will be prompted for your password when the connection starts. If the account \"%@\" loses administrative privileges, the connection will fail.",NSFullUserName()];
+            error = [NSString stringWithFormat:NSLocalizedString(@"Please note binding to ports less than 1024 requires administrative privileges. You will be prompted for your password when the connection starts. If the account \"%@\" loses administrative privileges, the connection will fail.", nil),NSFullUserName()];
             [field setButtonPopoverMessage:error withType:NESWarningPopover];
         } else {
-            error = [NSString stringWithFormat:@"The current account \"%@\" does not have the administrative privileges required to bind to ports less than 1024. Please make this account an administrator or log in as a user with administrative privileges.",NSFullUserName()];
+            error = [NSString stringWithFormat:NSLocalizedString(@"The current account \"%@\" does not have the administrative privileges required to bind to ports less than 1024. Please make this account an administrator or log in as a user with administrative privileges.", nil),NSFullUserName()];
             [field setButtonPopoverMessage:error withType:NESErrorPopover];
         }
         
@@ -358,9 +358,9 @@ validate:
     NSString *name = [field stringValue];
     
     if ((name == nil) || ([name isEqualToString:@""]))
-        error = @"The remote host host name or IP address to forward the connection to is required. Please enter a valid host name or IP address. In some cases this may be the SSH server itself, in which case \"localhost\" can be specified. In other cases it may be a server only accessible to the SSH server via one of it\'s networks.";
+        error = NSLocalizedString(@"The remote host host name or IP address to forward the connection to is required. Please enter a valid host name or IP address. In some cases this may be the SSH server itself, in which case \"localhost\" can be specified. In other cases it may be a server only accessible to the SSH server via one of it\'s networks.", nil);
     else if (!([NESConnection isValidHost:name]||[NESConnection isValidIP:name])) {
-        error = [NSString stringWithFormat:@"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters.",name];
+        error = [NSString stringWithFormat:NSLocalizedString(@"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters.", nil),name];
     }
     
     if (error != nil) {
@@ -379,9 +379,9 @@ validate:
     NSString *name = [field stringValue];
     
     if ((name == nil) || ([name isEqualToString:@""]))
-        error = @"The proxy server host name or IP address is required. Please enter a valid host name or IP address.";
+        error = NSLocalizedString(@"The proxy server host name or IP address is required. Please enter a valid host name or IP address.", nil);
     else if (!([NESConnection isValidHost:name]||[NESConnection isValidIP:name])) {
-        error = [NSString stringWithFormat:@"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters.",name];
+        error = [NSString stringWithFormat:NSLocalizedString(@"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters.", nil),name];
     }
     
     if ((error != nil) && ([_useHTTPProxyBox integerValue] == YES)) {
@@ -402,9 +402,9 @@ validate:
     NSString *name = [field stringValue];
     
     if (((name == nil) || ([name isEqualToString:@""])) && ([_useScriptBox integerValue] != YES))
-        error = @"The remote SSH server host name or IP address is required. Please enter a valid host name or IP address.";
+        error = NSLocalizedString(@"The remote SSH server host name or IP address is required. Please enter a valid host name or IP address.", nil);
     else if (!([NESConnection isValidHost:name]||[NESConnection isValidIP:name])) {
-        error = [NSString stringWithFormat:@"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters.",name];
+        error = [NSString stringWithFormat:NSLocalizedString(@"\"%@\" does not appear to be a valid IP or hostname. Please check your entry to make sure it is well-formed and does not contain any illegal characters.", nil),name];
     }
     
     if (error != nil) {
@@ -423,7 +423,7 @@ validate:
     NSString *name = [field stringValue];
     
     if ((name == nil) || ([name isEqualToString:@""]))
-        error = @"An SSH username must be supplied for the connection.";
+        error = NSLocalizedString(@"An SSH username must be supplied for the connection.", nil);
     
     if (error != nil) {
         [field setButtonPopoverMessage:error withType:NESErrorPopover];
@@ -465,9 +465,9 @@ validate:
     }
     
     if ([fieldValue isEqualToString:@""]) {
-            error = @"Click the button to the right to specify the location of a valid SSH identitfy file.";
+            error = NSLocalizedString(@"Click the button to the right to specify the location of a valid SSH identitfy file.", nil);
     } else if (![fileManager fileExistsAtPath:supportPath isDirectory:&isDir]) {
-        error = @"Specified file no longer exists. Please choose another file using the button to the right.";
+        error = NSLocalizedString(@"Specified file no longer exists. Please choose another file using the button to the right.", nil);
     }
 
     skip_check:
@@ -490,9 +490,9 @@ validate:
     NSString *name = [field stringValue];
     
     if ((name == nil) || ([name isEqualToString:@""]))
-        error = @"A name must be supplied for the connection. Please enter a descriptive label to identify the connection such as \"Authentication Server\", \"Cloud Intranet\", etc.";
+        error = NSLocalizedString(@"A name must be supplied for the connection. Please enter a descriptive label to identify the connection such as \"Authentication Server\", \"Cloud Intranet\", etc.", nil);
     else if (![self checkConnectionName:name]) {
-        error = [NSString stringWithFormat:@"A local forward connection with the name \"%@\" already exists. Please select another name.",name];
+        error = [NSString stringWithFormat:NSLocalizedString(@"A local forward connection with the name \"%@\" already exists. Please select another name.", nil),name];
     }
     
     if (error != nil) {
@@ -590,7 +590,7 @@ validate:
         // This is an edit
         connection = conn;
         _config = [[NSMutableDictionary alloc] initWithDictionary:[connection connectionConfig]];
-        [_addButton setTitle:@"Apply"];
+        [_addButton setTitle:NSLocalizedString(@"Apply", nil)];
         [_addButton setEnabled:YES];
         
         isConnectionEdit = YES; // There is probably some way we can sniff this out, but let's just make it clear
@@ -599,7 +599,7 @@ validate:
         //_config = [[NSMutableDictionary alloc] init];
         _config = [NESConnection defaultConfigForType:_type];
         connection = nil;
-        [_addButton setTitle:@"Add"];
+        [_addButton setTitle:NSLocalizedString(@"Add", nil)];
         [_addButton setEnabled:NO];
         isConnectionEdit = NO;
     }

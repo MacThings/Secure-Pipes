@@ -341,7 +341,7 @@
         
         if ((!success)||(!data)) {
             NSLog(@"ERROR: stat on remote store failed (1)");
-            _errorMessage = @"stat on remote store failed";
+            _errorMessage = NSLocalizedString(@"stat on remote store failed", nil);
             _errorCode = NESconnectionManagerErrorStatFailed;
             [self setError:YES];
             return;

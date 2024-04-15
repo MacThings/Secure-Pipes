@@ -67,7 +67,7 @@
     NESPopoverButton *button = [super autoConfigHelp];
     
     [button setPopoverDismissText:@"Close"];
-    [button setPopoverMessage:@"When this option is enabled, the Network Preferences will automatically be configured to use the proxy when the connection is active. When the proxy connection is disconnected, the original settings will be restored. Please note this function requires administrative privileges."];
+    [button setPopoverMessage:NSLocalizedString(@"When this option is enabled, the Network Preferences will automatically be configured to use the proxy when the connection is active. When the proxy connection is disconnected, the original settings will be restored. Please note this function requires administrative privileges.", nil)];
     [button showPopover];
     
 }
