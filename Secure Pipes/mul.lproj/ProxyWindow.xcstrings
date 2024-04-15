@@ -41,6 +41,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Proxy server requires password\"; ObjectID = \"5bu-9d-IeY\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proxyserver benötigt Passwort"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -287,6 +293,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Automatically configure SOCKS proxy in Network Preferences\"; ObjectID = \"DNt-g6-vZN\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SOCKS-Proxy-Einstellungen in den Netzwerkeinst. automatisch konfigurieren"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -563,6 +575,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Compress data\"; ObjectID = \"NEh-Zp-p3V\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daten komprimieren"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -575,6 +593,12 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"seconds\"; ObjectID = \"Nre-ta-Uux\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekunden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -587,6 +611,12 @@
       "comment" : "Class = \"NSTabViewItem\"; label = \"Connection\"; ObjectID = \"o4B-Dd-QJu\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -599,6 +629,12 @@
       "comment" : "Class = \"NSWindow\"; title = \"SOCKS Proxy Connection\"; ObjectID = \"oC3-dS-dxk\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SOCKS Proxy Verbindung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
