@@ -81,8 +81,8 @@
     [_text setFrame:NSMakeRect(POPUP_PADDING, POPUP_BUTTON_AREA_HEIGHT, POPUP_WIDTH-(2*POPUP_PADDING), textHeight)];
     
     _dismiss = [[NSButton alloc] init];
-    [_dismiss setButtonType:NSMomentaryPushInButton];
-    [_dismiss setBezelStyle:NSInlineBezelStyle];
+    [_dismiss setButtonType:NSButtonTypeMomentaryPushIn];
+    [_dismiss setBezelStyle:NSBezelStyleBadge];
     [_dismiss setFont:[NSFont messageFontOfSize:POPUP_FONT_SIZE]];
     [_dismiss setTitle:POPUP_DISMISS_LABEL];
     [_dismiss sizeToFit];
@@ -116,7 +116,7 @@
     self = [super initWithFrame:frame];
     if( !self ) return nil;
     
-    [self setButtonType:NSMomentaryPushInButton];
+    [self setButtonType:NSButtonTypeMomentaryPushIn];
     [self setBordered:NO];
     [self setHidden:YES];
     [self setAutoresizingMask:NSViewMinXMargin | NSViewMinYMargin | NSViewMaxYMargin];

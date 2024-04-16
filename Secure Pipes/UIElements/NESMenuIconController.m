@@ -41,8 +41,8 @@
     currentFrame += direction;
     NSImage* image = [NSImage imageNamed:[NSString stringWithFormat:@"menu_connecting%d",(int)currentFrame]];
     NSImage* altImage = [NSImage imageNamed:[NSString stringWithFormat:@"menu_connecting%d_inverse",(int)currentFrame]];
-    [_statusBarItem setImage:image];
-    [_statusBarItem setAlternateImage:altImage];
+    [_statusBarItem.button setImage:image];
+    [_statusBarItem.button setAlternateImage:altImage];
     
     if (currentFrame == 5)
         direction = -1;
@@ -75,8 +75,9 @@
     
     NSImage* image = [NSImage imageNamed:imageName];
     NSImage* altImage = [NSImage imageNamed:[NSString stringWithFormat:@"%@_inverse",imageName]];
-    [_statusBarItem setImage:image];
-    [_statusBarItem setAlternateImage:altImage];
+    [_statusBarItem.button setImage:image];
+    [_statusBarItem.button setAlternateImage:altImage];
+
     
     [lock unlock];
     

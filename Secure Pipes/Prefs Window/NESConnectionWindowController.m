@@ -73,17 +73,17 @@
     [panel setDirectoryURL:homeURL];
     [panel beginSheetModalForWindow:[self window] completionHandler:^(NSInteger result) {
         
-        if (result == NSFileHandlingPanelCancelButton) {
+        if (result == NSModalResponseCancel) {
             return;
         }
         
         if ([panel URL]) {
-            [_config setObject:[[panel URL] path] forKey:@"hostnameScriptFile"];
+            [self->_config setObject:[[panel URL] path] forKey:@"hostnameScriptFile"];
         } else {
-            [_config setObject:@"" forKey:@"hostnameScriptFile"];
+            [self->_config setObject:@"" forKey:@"hostnameScriptFile"];
         }
         
-        [self controlTextDidEndEditing:[NSNotification notificationWithName:@"selectHostnameScript" object:_scriptField]];
+        [self controlTextDidEndEditing:[NSNotification notificationWithName:@"selectHostnameScript" object:self->_scriptField]];
     }];
     
 }
@@ -143,16 +143,16 @@ validate:
     [panel setDirectoryURL:homeURL];
     [panel beginSheetModalForWindow:[self window] completionHandler:^(NSInteger result) {
         
-        if (result == NSFileHandlingPanelCancelButton) {
+        if (result == NSModalResponseCancel) {
             return;
         }
         
         if ([panel URL]) {
-            [_config setObject:[[panel URL] path] forKey:@"sshIdentityFile"];
+            [self->_config setObject:[[panel URL] path] forKey:@"sshIdentityFile"];
         } else {
-            [_config setObject:@"" forKey:@"sshIdentityFile"];
+            [self->_config setObject:@"" forKey:@"sshIdentityFile"];
         }
-        [self validateSSHIdentityField:_sshIdentityField];
+        [self validateSSHIdentityField:self->_sshIdentityField];
     }];
     
 }
@@ -223,12 +223,12 @@ validate:
             [confirmSheet setParent:[self window]];
             [[confirmSheet cancelButton] setHidden:YES];
             [[confirmSheet showAgainBox] setHidden:NO];
-            [[confirmSheet showAgainBox] setState:NSOffState];
+            [[confirmSheet showAgainBox] setState:NSControlStateValueOff];
             [[self window] beginCriticalSheet:[confirmSheet window] completionHandler:^(NSModalResponse returnCode) {
-                if ([[confirmSheet showAgainBox] state] == NSOnState) {
+                if ([[self->confirmSheet showAgainBox] state] == NSControlStateValueOn) {
                     // Update the appConfig here
-                    [appConfig setConfigForKey:@"showPasswordDialog" withValue:@NO];
-                    [appConfig saveConfig];
+                    [self->appConfig setConfigForKey:@"showPasswordDialog" withValue:@NO];
+                    [self->appConfig saveConfig];
                 }
             }];
         }
@@ -274,7 +274,7 @@ validate:
             [[self window] beginCriticalSheet:[confirmSheet window] completionHandler:^(NSModalResponse returnCode) {
                 if (returnCode == NSModalResponseOK) {
                     [[self myParent] endSheet:[self window] returnCode:NSModalResponseOK];
-                    connection = nil;
+                    self->connection = nil;
                 }
             }];
             // Completion routine will pass status to perform add (if confirmed), otherwise sheet just disappears.

@@ -1281,7 +1281,7 @@
     for (id container in rootContainers) {
         if (([[container children] count] > 0) && ([[container name] hasPrefix:@"Managed"])) {
             for (NESManagedConnection *connection in [container children]) {
-                NESConnectionStatus oldStatus = [connection status];
+                //NESConnectionStatus oldStatus = [connection status];
                 [connection queueStatusUpdate:NESConnectionUpdatingConfig withData:@"Updating connection"];
                 [connection updateConfiguration:^(NSMutableDictionary *config) {
                     if (config) {

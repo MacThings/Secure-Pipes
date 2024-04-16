@@ -50,7 +50,7 @@
         
         if ((!success)||([rerror isNotEqualTo:[NSNull null]])) {
             NSLog(@"TRANSPORT ERROR: deregister() failed.");
-            _errorCode = NESConnectionManagerCommandFailed;
+            self->_errorCode = NESConnectionManagerCommandFailed;
             [self setError:YES];
             callback(NO, nil);
         } else {
@@ -67,7 +67,7 @@
     if (clientInfo != nil) {
         [self deregister:^(BOOL success, id data) {
             if (success) {
-                clientInfo = nil;
+                self->clientInfo = nil;
                 [self setRegistered:NO];
             }
         }];
@@ -92,12 +92,12 @@
         
         if ((!success)||([rerror isNotEqualTo:[NSNull null]])) {
             NSLog(@"TRANSPORT ERROR: clients() failed.");
-            _errorCode = NESConnectionManagerCommandFailed;
+            self->_errorCode = NESConnectionManagerCommandFailed;
             [self setError:YES];
             callback(NO, nil);
         } else {
-            clientInfo = ((NSArray *)[reply objectForKey:@"data"])[0];
-            callback(YES, clientInfo);
+            self->clientInfo = ((NSArray *)[reply objectForKey:@"data"])[0];
+            callback(YES, self->clientInfo);
         }
         
     }];
@@ -115,7 +115,7 @@
         
         if ((!success)||([rerror isNotEqualTo:[NSNull null]])) {
             NSLog(@"TRANSPORT ERROR: set() failed.");
-            _errorCode = NESConnectionManagerCommandFailed;
+            self->_errorCode = NESConnectionManagerCommandFailed;
             [self setError:YES];
             callback(NO, nil);
         } else {
@@ -144,16 +144,16 @@
 //        NSLog(@"Back from register (%hhd,%@). Do anything in one step, or wait for server to call to us?",success,data);
         
         NSDictionary *reply = (NSDictionary *)data;
-        registrationToken = [reply objectForKey:@"token"]?:nil;
-        if (!registrationToken) {
+        self->registrationToken = [reply objectForKey:@"token"]?:nil;
+        if (!self->registrationToken) {
             NSLog(@"Registration (authentication) error: %@",[reply objectForKey:@"error"]);
-            _errorMessage = [reply objectForKey:@"error"];
-            _errorCode = NESconnectionManagerErrorAuthenticationFailed;
+            self->_errorMessage = [reply objectForKey:@"error"];
+            self->_errorCode = NESconnectionManagerErrorAuthenticationFailed;
             [self setError:YES];
         } else {
             // TODO: need to do some verfication on the token here?
-            NSLog(@"new-client: %hhd",newClient);
-            newClient = [[reply objectForKey:@"new-client"] boolValue];
+            NSLog(@"new-client: %hhd",self->newClient);
+            self->newClient = [[reply objectForKey:@"new-client"] boolValue];
             
             // Set the client information
             [self clientInfo:^(BOOL success, id data) {
@@ -161,7 +161,7 @@
                 if (!success) {
                     NSLog(@"WARNING: Could not get detailed clientInfo.");
                 } else {
-                    if (!newClient&&rebuild) {
+                    if (!self->newClient&&self->rebuild) {
                         [self rebuild];
                     } else {
                         [self setRegistered:YES];
@@ -203,7 +203,7 @@
 
 - (void) pushManagedConnections {
     
-    NSMutableDictionary *cdict = [[NSMutableDictionary alloc] initWithDictionary:[_connections connectionsToDictionary]];
+    //NSMutableDictionary *cdict = [[NSMutableDictionary alloc] initWithDictionary:[_connections connectionsToDictionary]];
     NSMutableDictionary *tdict = [[NSMutableDictionary alloc] init];
 
     for (NESConnection *container in [_connections children]) {
@@ -226,8 +226,8 @@
         NSString *rerror = [data objectForKey:@"error"];
         
         if ((!success)||([rerror isNotEqualTo:[NSNull null]])) {
-            NSLog(@"TRANSPORT ERROR: get for key %@ failed.",[uuid UUIDString]);
-            _errorCode = NESConnectionManagerCommandFailed;
+            NSLog(@"TRANSPORT ERROR: get for key %@ failed.",[self->uuid UUIDString]);
+            self->_errorCode = NESConnectionManagerCommandFailed;
             [self setError:YES];
         } else {
             NSLog(@"Top level saved. Now push connections...");
@@ -265,12 +265,12 @@
         NSDictionary *rdata = [data objectForKey:@"data"];
         
         if ((!success)||([rerror isNotEqualTo:[NSNull null]])) {
-            NSLog(@"TRANSPORT ERROR: get for key %@ failed.",[uuid UUIDString]);
-            _errorCode = NESConnectionManagerCommandFailed;
+            NSLog(@"TRANSPORT ERROR: get for key %@ failed.",[self->uuid UUIDString]);
+            self->_errorCode = NESConnectionManagerCommandFailed;
             [self setError:YES];
         } else {
-            NSDictionary *key = [rdata objectForKey:[uuid UUIDString]];
-            NSLog(@"Contents of key %@: %@",[uuid UUIDString],key);
+            NSDictionary *key = [rdata objectForKey:[self->uuid UUIDString]];
+            NSLog(@"Contents of key %@: %@",[self->uuid UUIDString],key);
             if ([[key objectForKey:@"data"] isEqualTo:[NSNull null]]) {
                 NSLog(@"Key data is null, save our data...");
                 [self pushManagedConnections];
@@ -341,8 +341,8 @@
         
         if ((!success)||(!data)) {
             NSLog(@"ERROR: stat on remote store failed (1)");
-            _errorMessage = NSLocalizedString(@"stat on remote store failed", nil);
-            _errorCode = NESconnectionManagerErrorStatFailed;
+            self->_errorMessage = NSLocalizedString(@"stat on remote store failed", nil);
+            self->_errorCode = NESconnectionManagerErrorStatFailed;
             [self setError:YES];
             return;
         }
@@ -351,8 +351,8 @@
         
         if ([reply objectForKey:@"error"] == nil) {
             NSLog(@"ERROR: stat on remote store failed (2)");
-            _errorMessage = [reply objectForKey:@"error"];
-            _errorCode = NESconnectionManagerErrorStatFailed;
+            self->_errorMessage = [reply objectForKey:@"error"];
+            self->_errorCode = NESconnectionManagerErrorStatFailed;
             [self setError:YES];
             return;
         } else {
@@ -518,9 +518,9 @@
         [workQueue removeObjectAtIndex:0];
         [currentRequest setState:NESMR_PROCESSING];
         [socket sendEvent:[currentRequest command] withData:[currentRequest data] andAcknowledge:^(id argsData) {
-            [currentRequest setState:NESMR_COMPLETED];
-            void(^callback)(BOOL,id) = [currentRequest callback];
-            currentRequest = nil;
+            [self->currentRequest setState:NESMR_COMPLETED];
+            void(^callback)(BOOL,id) = [self->currentRequest callback];
+            self->currentRequest = nil;
             [self runQueue];
             if (callback) {
                 callback(YES,argsData);

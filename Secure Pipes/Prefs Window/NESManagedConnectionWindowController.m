@@ -208,7 +208,7 @@ setbutton:
         
         if (configData != nil) {
             [[self config] addEntriesFromDictionary:configData];
-            [[self config] setObject:[communicator ticketServer] forKey:@"managedConnectionServer"];
+            [[self config] setObject:[self->communicator ticketServer] forKey:@"managedConnectionServer"];
             [self finishAddConnection];
         } else {
             [self showErrorSheet:errorString];

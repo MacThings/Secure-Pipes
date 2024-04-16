@@ -111,7 +111,7 @@ NSString * const ticketPath = TICKET_PATH;
             } else if (localVersion > serverVersion) {
                 NSLog(@"Local version > server version - Posting ticket");
                 // Push local config here and update status if needed
-                [communicator postConnectionStatusForConnection:self completionHandler:^(NSString *serverErrorString) {
+                [self->communicator postConnectionStatusForConnection:self completionHandler:^(NSString *serverErrorString) {
                     if (serverErrorString) {
                         NSLog(@"Error posting config!");
                         //[self setStatus:NESConnectionInvalidated];
@@ -195,7 +195,7 @@ NSString * const ticketPath = TICKET_PATH;
             completionHandler(errorString);
         } else {
             NSError *jsonError = nil;
-            postResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
+            self->postResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
             
             if (jsonError) {
                 [errorString setString:[jsonError description]];
@@ -225,7 +225,7 @@ NSString * const ticketPath = TICKET_PATH;
             NSLog(@"Error getting JSON config from server: %@",error);
             [errorString setString:@"There was an error communicating with the ticket server. Please check your network connection/settings and retry your request."];
         } else {
-            configData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
+            self->configData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
             if (jsonError != nil) {
                 NSLog(@"Error converting JSON config from server: %@",jsonError);
                 [errorString setString:@"The ticket server returned a malformed response. Please retry your request or contact the ticket vendor for support."];
@@ -234,7 +234,7 @@ NSString * const ticketPath = TICKET_PATH;
                 return;
             }
         }
-        configData = nil;
+        self->configData = nil;
         completionHandler(errorString);
         
     }];
@@ -273,18 +273,18 @@ NSString * const ticketPath = TICKET_PATH;
     NSString *statusURL = [NSString stringWithFormat:@"%@/%@/%@/%@/status",_ticketServer,ticketPath,ticket,uuid];
     
     [self getDictionaryFromURLString:statusURL completionHandler:^(NSMutableString *errorString) {
-        if (configData == nil) {
+        if (self->configData == nil) {
             completionHandler(nil, errorString);
         } else {
-            NSLog(@"Config from JSON: %@",configData);
-            if ([[configData objectForKey:@"statusCode"] intValue] == 500) {
+            NSLog(@"Config from JSON: %@",self->configData);
+            if ([[self->configData objectForKey:@"statusCode"] intValue] == 500) {
                 [errorString setString:@"There is a problem with this ticket."];
-                NSLog(@"This ticket has a problem: %@",[configData objectForKey:@"errorMessage"]);
-            } else if ([[configData objectForKey:@"statusCode"] intValue] == 404) {
+                NSLog(@"This ticket has a problem: %@",[self->configData objectForKey:@"errorMessage"]);
+            } else if ([[self->configData objectForKey:@"statusCode"] intValue] == 404) {
                 [errorString setString:@"This ticket number supplied cannot be found."];
             } else {
                 // Do some ticket validation here? (Yes, see below)
-                completionHandler(configData,errorString);
+                completionHandler(self->configData,errorString);
                 return;
             }
             completionHandler(nil,errorString);
@@ -306,15 +306,15 @@ NSString * const ticketPath = TICKET_PATH;
             completionHandler(errorString);
         } else {
             // Post succeded, let's check application level response.
-            if (postResponse != nil) {
-                int statusCode = [[postResponse objectForKey:@"statusCode"] intValue];
+            if (self->postResponse != nil) {
+                int statusCode = [[self->postResponse objectForKey:@"statusCode"] intValue];
                 
                 if (statusCode == 500) {
                     errorString = [[NSMutableString alloc] init];
-                    [errorString setString:[NSString stringWithFormat:NSLocalizedString(@"There was an error updating the configuration on the server: %@", nil),[postResponse objectForKey:@"errorMessage"]]];
+                    [errorString setString:[NSString stringWithFormat:NSLocalizedString(@"There was an error updating the configuration on the server: %@", nil),[self->postResponse objectForKey:@"errorMessage"]]];
                 }
             }
-            postResponse = nil;
+            self->postResponse = nil;
             completionHandler(errorString);
         }
         
@@ -329,23 +329,23 @@ NSString * const ticketPath = TICKET_PATH;
     NSString *registerURL = [NSString stringWithFormat:@"%@/%@/%@/%@/register",_ticketServer,ticketPath,ticket,uuid];
     
     [self getDictionaryFromURLString:registerURL completionHandler:^(NSMutableString *errorString) {
-        if (configData == nil) {
+        if (self->configData == nil) {
             completionHandler(nil, errorString);
         } else {
-            NSLog(@"Config from JSON: %@",configData);
-            if ([[configData objectForKey:@"statusCode"] intValue] == 500) {
+            NSLog(@"Config from JSON: %@",self->configData);
+            if ([[self->configData objectForKey:@"statusCode"] intValue] == 500) {
                 [errorString setString:@"This ticket number supplied is already in use or expired. Please contact the ticket vendor for a new ticket."];
-                NSLog(@"This ticket has a problem: %@",[configData objectForKey:@"errorMessage"]);
-            } else if ([[configData objectForKey:@"statusCode"] intValue] == 501) {
+                NSLog(@"This ticket has a problem: %@",[self->configData objectForKey:@"errorMessage"]);
+            } else if ([[self->configData objectForKey:@"statusCode"] intValue] == 501) {
                 [errorString setString:@"There was a problem configuring the SSH server for this ticket. Please contact the ticket vendor or try again later."];
-            } else if ([[configData objectForKey:@"statusCode"] intValue] == 404) {
+            } else if ([[self->configData objectForKey:@"statusCode"] intValue] == 404) {
                 [errorString setString:@"This ticket number supplied cannot be found. Please check the number or contact the ticket vendor for a new ticket."];
-            } else if ([[configData objectForKey:@"statusCode"] intValue] == 502) {
+            } else if ([[self->configData objectForKey:@"statusCode"] intValue] == 502) {
                 [errorString setString:@"This version of Secure Pipes does not support the requested ticket. Please upgrade to a newer version."];
             } else {
                 // Do some ticket validation here? (Yes, see below)
-                configData = [self mungeManagedProxyConfigFromServer:configData withErrorString:errorString];
-                completionHandler(configData,errorString);
+                self->configData = [self mungeManagedProxyConfigFromServer:self->configData withErrorString:errorString];
+                completionHandler(self->configData,errorString);
                 return;
             }
             completionHandler(nil,errorString);

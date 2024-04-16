@@ -94,7 +94,7 @@
     
 	LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
 	if ([self loginItemExists:loginItems ForPath:appPath]) {
-		[_loginLaunchCheckBox setState:NSOnState];
+        [_loginLaunchCheckBox setState:NSControlStateValueOn];
 	}
 	CFRelease(loginItems);
 
@@ -130,7 +130,7 @@
 
 - (void) setManagedConnectionFields {
     
-    if ([_enableMangedConnectionsCheckBox integerValue] == NSOffState) {
+    if ([_enableMangedConnectionsCheckBox integerValue] == NSControlStateValueOff) {
         [_connectionManager setReconnectOnDisconnect:NO];
         [_connectionManager stop];
         [_managedStatusLight setHidden:YES];
@@ -166,13 +166,13 @@
         NSString * appPath = [[NSBundle mainBundle] bundlePath];
         LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
         
-        if ([_loginLaunchCheckBox integerValue] == NSOnState) {
+        if ([_loginLaunchCheckBox integerValue] == NSControlStateValueOn) {
 			[self enableLoginItem:loginItems ForPath:appPath];
         } else {
 			[self disableLoginItem:loginItems ForPath:appPath];
         }
     } else if (sender == _allowSavePasswordCheckBox) {
-        if ([_allowSavePasswordCheckBox integerValue] == NSOffState) {
+        if ([_allowSavePasswordCheckBox integerValue] == NSControlStateValueOff) {
           [NESKeychain removeKeyChainItem:APP_NAME andType:0];
         }
     } else if (sender == _enableMangedConnectionsCheckBox) {
@@ -198,16 +198,16 @@
     
     [[[self view] window] beginSheet:[registrationSheet window] completionHandler:^(NSModalResponse returnCode) {
         if (returnCode == NSModalResponseOK) {
-            NSString *account = [[registrationSheet userNameField] stringValue];
-            NSString *password = [[registrationSheet passwordField] stringValue];
-            [_appConfig setConfigForKey:@"managedConnectionAccount" withValue:account];
-            NSString *keyChainName = [_appConfig configForKey:@"managedConnectionKeyChainName"];
+            NSString *account = [[self->registrationSheet userNameField] stringValue];
+            NSString *password = [[self->registrationSheet passwordField] stringValue];
+            [self->_appConfig setConfigForKey:@"managedConnectionAccount" withValue:account];
+            NSString *keyChainName = [self->_appConfig configForKey:@"managedConnectionKeyChainName"];
             // Remove the old keychain item if it exists
             if ([NESKeychain keyChainItemExists:keyChainName withType:0]) {
                 [NESKeychain removeKeyChainItem:keyChainName andType:0];
             }
             [NESKeychain addKeyChainItem:keyChainName withUser:account andPassword:password andType:0];
-            [_appConfig saveConfig];
+            [self->_appConfig saveConfig];
             // Now we have all the registration info, let's update the UI.
             [self handleConnectStateChange:YES];
         }

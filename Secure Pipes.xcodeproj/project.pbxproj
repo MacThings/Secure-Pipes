@@ -71,9 +71,7 @@
 		2AA65CD82BCE6F60000A35CB /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CD02BCE6F60000A35CB /* SocketIOPacket.m */; };
 		2AA65CD92BCE6F60000A35CB /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CD32BCE6F60000A35CB /* SocketIOTransportXHR.m */; };
 		2AA65CDC2BCE6FC1000A35CB /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CDB2BCE6FC1000A35CB /* Log.m */; };
-		2AA65CE02BCE6FFF000A35CB /* corkscrew_x86 in Resources */ = {isa = PBXBuildFile; fileRef = 2AA65CDD2BCE6FFF000A35CB /* corkscrew_x86 */; };
 		2AA65CE12BCE6FFF000A35CB /* corkscrew in Resources */ = {isa = PBXBuildFile; fileRef = 2AA65CDE2BCE6FFF000A35CB /* corkscrew */; };
-		2AA65CE22BCE6FFF000A35CB /* corkscrew_arm in Resources */ = {isa = PBXBuildFile; fileRef = 2AA65CDF2BCE6FFF000A35CB /* corkscrew_arm */; };
 		2AA65CE52BCE7033000A35CB /* NESUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CE32BCE7033000A35CB /* NESUser.m */; };
 		2AA65CF02BCE71ED000A35CB /* NESController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CEE2BCE71ED000A35CB /* NESController.m */; };
 		2AA65CF12BCE71ED000A35CB /* NESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CEF2BCE71ED000A35CB /* NESAppDelegate.m */; };
@@ -601,7 +599,6 @@
 				2AA65CE12BCE6FFF000A35CB /* corkscrew in Resources */,
 				229803BC187F345C00B704DD /* Credits.rtf in Resources */,
 				2A3DE21E2BC9677000E67E04 /* General View.xib in Resources */,
-				2AA65CE22BCE6FFF000A35CB /* corkscrew_arm in Resources */,
 				2A3DE2302BC97F9E00E67E04 /* NESAdminPasswordDialog.xib in Resources */,
 				2AA65CD72BCE6F60000A35CB /* LICENSE in Resources */,
 				2A3DE20E2BC9676000E67E04 /* LocalForwardWindow.xib in Resources */,
@@ -609,7 +606,6 @@
 				2A3DE2222BC9677300E67E04 /* Info View.xib in Resources */,
 				229803C2187F345C00B704DD /* MainMenu.xib in Resources */,
 				2A3DE2062BC9674D00E67E04 /* Prefs Window.xib in Resources */,
-				2AA65CE02BCE6FFF000A35CB /* corkscrew_x86 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

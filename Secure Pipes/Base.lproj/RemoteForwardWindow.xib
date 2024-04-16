@@ -793,7 +793,7 @@ IA
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBV-3I-hnw">
-                                            <rect key="frame" x="52" y="78" width="71" height="17"/>
+                                            <rect key="frame" x="15" y="78" width="108" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Username:" id="RRm-k3-9Ss">
                                                 <font key="font" metaFont="system"/>

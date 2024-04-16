@@ -186,7 +186,7 @@ static NSString* kSecureXHRPortURL = @"https://%@:%d%@/socket.io/1/xhr-polling/%
             // stop connecting; no more delegate messages
             [connection cancel];
             
-            NSString *error = [NSString stringWithFormat:NSLocalizedString(@"Server returned status code %d", @""), statusCode];
+            NSString *error = [NSString stringWithFormat:NSLocalizedString(@"Server returned status code %ld", @""), (long)statusCode];
             NSDictionary *errorInfo = [NSDictionary dictionaryWithObject:error forKey:NSLocalizedDescriptionKey];
             NSError *statusError = [NSError errorWithDomain:SocketIOError
                                                        code:statusCode
