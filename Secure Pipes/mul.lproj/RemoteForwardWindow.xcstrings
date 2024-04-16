@@ -479,6 +479,12 @@
       "comment" : "Class = \"NSWindow\"; title = \"Network Devices\"; ObjectID = \"FTz-rM-qOn\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netzwerkgeräte"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -995,6 +1001,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Close\"; ObjectID = \"Szf-az-5wa\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schließen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",

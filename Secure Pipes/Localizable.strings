@@ -56,6 +56,12 @@
 
 "The %@ connection \"%@\" connected successfully." = "Die %@ Verbindung \"%@\" wurde erfolgreich hergestellt.";
 
+"Secure Connection Successful" = "Die sichere Verbindung war erfolgreich";
+
+"Secure Connection Failure" = "Die sichere Verbindung ist fehlgeschlagen.";
+
+"Secure Connection Disconnected" = "Secure Connection wurde getrennt";
+
 "The %@ connection \"%@\" failed to connect (Permission denied)." = "Die %@ Verbindung \"%@\" wurde nicht hergestellt (Erlaubnis verweigert).";
 
 "The %@ connection \"%@\" unexpectedly disconnected." = "Die %@ Verbindung \"%@\" wurde unerwartet geschlossen.";
@@ -153,3 +159,9 @@
 "SSH process exited with error. Check the connection and server configuration parameters." = "Der SSH-Prozess wurde mit einem Fehler beendet. Überprüfe die Verbindung und die Serverkonfigurationsparameter.";
 
 "stat on remote store failed" = "Status des Remote-Speichers konnte nicht abgerufen werden.";
+
+"Local bind %@:%@ forwards to %@:%@ via %@:%@" = "Lokales Binden %@:%@ leitet weiter zu %@:%@ über %@:%@";
+
+"Remote bind %@:%@ on %@:%@ forwards to %@:%@" = "Die entfernte Bindung %@:%@ auf %@:%@ leitet weiter zu %@:%@";
+
+"The specified script file no longer exists. Please select a new file." = "Die angegebene Skriptdatei existiert nicht mehr. Bitte wähle eine neue Datei aus.";

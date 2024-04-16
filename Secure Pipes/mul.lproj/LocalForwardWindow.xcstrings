@@ -155,6 +155,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Include this connection in the menu bar menu\"; ObjectID = \"337-JG-8nh\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Füge diese Verbindung in das Menü der Menüleiste ein"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -898,6 +904,12 @@
       "comment" : "Class = \"NSButtonCell\"; title = \"Close\"; ObjectID = \"V3L-ah-4Xu\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schließen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -928,6 +940,12 @@
       "comment" : "Class = \"NSWindow\"; title = \"Network Devices\"; ObjectID = \"vHN-P3-dhz\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netzwerkgeräte"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",

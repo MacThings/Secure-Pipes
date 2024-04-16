@@ -17,6 +17,12 @@
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Are you sure you want to delete the connection \\\"Local Connection\\\"? \"; ObjectID = \"3dJ-h9-1yi\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bist du sicher, dass du die Verbindung 'Lokale Verbindung' löschen möchtest?"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",

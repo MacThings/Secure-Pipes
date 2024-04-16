@@ -406,16 +406,16 @@ static const int NESConnectionRestartDelay = 30;
     title = [NSString stringWithFormat:@"\"%@\" Status Update",[connection name]];
     switch ([connection status]&CONNECTION_STATE_MASK) {
         case NESConnectionConnected:
-            title = @"Secure Connection Successful";
+            title = NSLocalizedString(@"Secure Connection Successful", nil);
             subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" connected successfully.", nil), type, [connection name]];
 
             break;
         case NESConnectionAuthenticationFailed:
-            title = @"Secure Connection Failure";
+            title = NSLocalizedString(@"Secure Connection Failure", nil);
             subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" failed to connect (Permission denied).", nil),type,[connection name]];
             break;
         case NESConnectionError:
-            title = @"Secure Connection Failure";
+            title = NSLocalizedString(@"Secure Connection Failure", nil);
             if (oldStatus&NESConnectionConnected) {
                 subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" unexpectedly disconnected.", nil),type,[connection name]];
             } else {
@@ -423,7 +423,7 @@ static const int NESConnectionRestartDelay = 30;
             }
             break;
         case NESConnectionIdle:
-            title = @"Secure Connection Disconnected";
+            title = NSLocalizedString(@"Secure Connection Disconnected", nil);
             subtitle = [NSString stringWithFormat:NSLocalizedString(@"The %@ connection \"%@\" was disconnected.", nil),type,[connection name]];
             break;
         case NESConnectionConnecting:

@@ -540,13 +540,13 @@
     switch ([self type]) {
         case NESConnectionLocalForward:
         case NESConnectionManagedLocalForward:
-            formatString = @"Local bind %@:%@ forwards to %@:%@ via %@:%@";
+            formatString = NSLocalizedString(@"Local bind %@:%@ forwards to %@:%@ via %@:%@", nil);
         
         return [NSString stringWithFormat:formatString,[self configForKey:@"localBindAddress"],[self configForKey:@"localBindPort"], [self configForKey:@"remoteHost"], [self configForKey:@"remotePort"],[self configForKey:@"sshServer"],[self configForKey:@"sshPort"]];
         break;
         case NESConnectionRemoteForward:
         case NESConnectionManagedRemoteForward:
-            formatString = @"Remote bind %@:%@ on %@:%@ forwards to %@:%@";
+            formatString = NSLocalizedString(@"Remote bind %@:%@ on %@:%@ forwards to %@:%@", nil);
             
             return [NSString stringWithFormat:formatString,[self configForKey:@"remoteBindAddress"],
                     [self configForKey:@"remoteBindPort"],[self configForKey:@"sshServer"],
@@ -777,7 +777,7 @@
         __block NSString *address, *error = nil;
         
         if ((![testRun scriptExists]) || (![testRun scriptIsExecutable])) {
-            error = @"The specified script file no longer exists. Please select a new file.";
+            error = NSLocalizedString(@"The specified script file no longer exists. Please select a new file.", nil);
             
         }
         
