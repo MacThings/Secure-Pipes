@@ -32,11 +32,11 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGP-RX-g0q">
-                    <rect key="frame" x="100" y="20" width="394" height="165"/>
+                    <rect key="frame" x="100" y="10" width="394" height="175"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="jx6-9h-MeG">
                         <font key="font" metaFont="smallSystem"/>
-                        <string key="title">Copyright © 2014-2020 Timothy Stonis, All rights reserved. http://www.opoet.com  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website.</string>
+                        <mutableString key="title">Copyright © 2014-2020 Timothy Stonis, All rights reserved. https://www.opoet.com  2024 Sascha Lamprecht https://www.sl-soft.de  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website.</mutableString>
                         <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
