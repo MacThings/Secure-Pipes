@@ -524,10 +524,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = NES;
 				LastUpgradeCheck = 1530;
-				ORGANIZATIONNAME = "Timothy Stonis";
+				ORGANIZATIONNAME = "Sascha Lamprecht";
 			};
 			buildConfigurationList = 229803A3187F345B00B704DD /* Build configuration list for PBXProject "Secure Pipes" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
