@@ -303,6 +303,10 @@
 		2234C982189480AA000DEB44 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				2A3DE2372BC97FA700E67E04 /* ConfirmationSheet.xib */,
+				2A3DE22F2BC97F9E00E67E04 /* NESAdminPasswordDialog.xib */,
+				2A3DE2332BC97FA200E67E04 /* NESConfirmationDialogWindow.xib */,
+				2A3DE23B2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib */,
 				2AA65CB12BCE6EF4000A35CB /* FilterBarView.h */,
 				2AA65CB82BCE6EF5000A35CB /* FilterBarView.m */,
 				2AA65CA72BCE6EF4000A35CB /* NESAdminPasswordDialogWindowController.h */,
@@ -326,10 +330,6 @@
 				2AA65CAA2BCE6EF4000A35CB /* NESPopoverTextFieldButton.m */,
 				2AA65CAD2BCE6EF4000A35CB /* NESPopoverTextFieldCell.h */,
 				2AA65CAB2BCE6EF4000A35CB /* NESPopoverTextFieldCell.m */,
-				2A3DE22F2BC97F9E00E67E04 /* NESAdminPasswordDialog.xib */,
-				2A3DE2332BC97FA200E67E04 /* NESConfirmationDialogWindow.xib */,
-				2A3DE2372BC97FA700E67E04 /* ConfirmationSheet.xib */,
-				2A3DE23B2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib */,
 			);
 			name = UIElements;
 			sourceTree = "<group>";
@@ -391,18 +391,18 @@
 				221A0B5718870BDE0008EBDC /* Model */,
 				229803E2187F3E9200B704DD /* Prefs Window */,
 				229803C0187F345C00B704DD /* MainMenu.xib */,
-				229803C6187F345C00B704DD /* Images.xcassets */,
 				2A2D12482BCB0EBC0042DEEA /* Localizable.strings */,
+				229803C6187F345C00B704DD /* Images.xcassets */,
 				22B6B4C32432465E00FC75A0 /* Secure Pipes.entitlements */,
 				229803C3187F345C00B704DD /* Secure_Pipes.xcdatamodeld */,
 				2A2D12542BCD34710042DEEA /* secure-pipes.html */,
+				2AA65CDE2BCE6FFF000A35CB /* corkscrew */,
+				2AA65CDF2BCE6FFF000A35CB /* corkscrew_arm */,
+				2AA65CDD2BCE6FFF000A35CB /* corkscrew_x86 */,
 				2AA65CEC2BCE71ED000A35CB /* NESAppDelegate.h */,
 				2AA65CEF2BCE71ED000A35CB /* NESAppDelegate.m */,
 				2AA65CED2BCE71ED000A35CB /* NESController.h */,
 				2AA65CEE2BCE71ED000A35CB /* NESController.m */,
-				2AA65CDE2BCE6FFF000A35CB /* corkscrew */,
-				2AA65CDF2BCE6FFF000A35CB /* corkscrew_arm */,
-				2AA65CDD2BCE6FFF000A35CB /* corkscrew_x86 */,
 				229803B2187F345C00B704DD /* Supporting Files */,
 			);
 			path = "Secure Pipes";
@@ -433,6 +433,13 @@
 		229803E2187F3E9200B704DD /* Prefs Window */ = {
 			isa = PBXGroup;
 			children = (
+				2A3DE2092BC9675B00E67E04 /* Connection View.xib */,
+				2A3DE21D2BC9677000E67E04 /* General View.xib */,
+				2A3DE2212BC9677300E67E04 /* Info View.xib */,
+				2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */,
+				2A3DE2052BC9674D00E67E04 /* Prefs Window.xib */,
+				2A3DE2152BC9676800E67E04 /* ProxyWindow.xib */,
+				2A3DE2112BC9676400E67E04 /* RemoteForwardWindow.xib */,
 				2AA65C832BCE6E0B000A35CB /* NESConnectionCellView.h */,
 				2AA65C842BCE6E0B000A35CB /* NESConnectionCellView.m */,
 				2AA65C7F2BCE6E0B000A35CB /* NESConnectionViewController.h */,
@@ -455,13 +462,6 @@
 				2AA65C792BCE6E0B000A35CB /* NESSelectHostnameScriptDelegate.m */,
 				2AA65C7A2BCE6E0B000A35CB /* NESSelectIdentityDelegate.h */,
 				2AA65C7B2BCE6E0B000A35CB /* NESSelectIdentityDelegate.m */,
-				2A3DE2052BC9674D00E67E04 /* Prefs Window.xib */,
-				2A3DE2092BC9675B00E67E04 /* Connection View.xib */,
-				2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */,
-				2A3DE2112BC9676400E67E04 /* RemoteForwardWindow.xib */,
-				2A3DE2152BC9676800E67E04 /* ProxyWindow.xib */,
-				2A3DE21D2BC9677000E67E04 /* General View.xib */,
-				2A3DE2212BC9677300E67E04 /* Info View.xib */,
 			);
 			name = "Prefs Window";
 			sourceTree = "<group>";
