@@ -8,60 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2206D45D18A8260E00FB3E65 /* getopt.tcl in Resources */ = {isa = PBXBuildFile; fileRef = 22E8C2E418A67E7000506AB8 /* getopt.tcl */; };
-		220DF523188C668400AA9D50 /* NESConnectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220DF522188C668400AA9D50 /* NESConnectionCellView.m */; };
-		221A0B5A18870C150008EBDC /* NESConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A0B5918870C150008EBDC /* NESConnection.m */; };
-		221A0BA718882CFD0008EBDC /* NESConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A0BA618882CFD0008EBDC /* NESConnectionViewController.m */; };
-		2234C989189480BF000DEB44 /* NESPopoverTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C984189480BF000DEB44 /* NESPopoverTextField.m */; };
-		2234C98A189480BF000DEB44 /* NESPopoverTextFieldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C986189480BF000DEB44 /* NESPopoverTextFieldButton.m */; };
-		2234C98B189480BF000DEB44 /* NESPopoverTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2234C988189480BF000DEB44 /* NESPopoverTextFieldCell.m */; };
 		224200A71A93D5FF00D0E56A /* home-sharing_helper.exp in Resources */ = {isa = PBXBuildFile; fileRef = 224200A21A93D49300D0E56A /* home-sharing_helper.exp */; };
-		224200AB1A97ACBC00D0E56A /* NESManagedRegistrationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 224200A91A97ACBC00D0E56A /* NESManagedRegistrationSheet.m */; };
-		22455D4118A43DA50057F353 /* NESConnectionProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 22455D4018A43DA50057F353 /* NESConnectionProcess.m */; };
-		2246F95F1991D36800A53B83 /* NESManagedConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246F95E1991D36800A53B83 /* NESManagedConnection.m */; };
-		22488D9B18AD8B11003F5B68 /* NESAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 22488D9A18AD8B11003F5B68 /* NESAppConfig.m */; };
-		22488D9E18AD8E13003F5B68 /* NESGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22488D9D18AD8E13003F5B68 /* NESGeneralViewController.m */; };
-		224D8708195B2D1800C0B6D8 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 224D8707195B2D1800C0B6D8 /* Log.m */; };
 		22575C5418AC26BB00B00006 /* ssh_manager.exp in Resources */ = {isa = PBXBuildFile; fileRef = 22575C5218AC267E00B00006 /* ssh_manager.exp */; };
-		2266BEAF18AAD3E600F4ED58 /* NESUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2266BEAE18AAD3E600F4ED58 /* NESUser.m */; };
-		2266BEB218AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2266BEB118AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.m */; };
 		2266BEB418AADCFF00F4ED58 /* Collaboration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2266BEB318AADCFF00F4ED58 /* Collaboration.framework */; };
-		2273B3BB1989A21A00654C17 /* NESManagedConnectionWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273B3B91989A21A00654C17 /* NESManagedConnectionWindowController.m */; };
-		2273B3C1198E8DF600654C17 /* NESEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273B3C0198E8DF600654C17 /* NESEmptyView.m */; };
-		22759899189DA9CA00E42ADD /* NESKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 22759898189DA9CA00E42ADD /* NESKeychain.m */; };
 		2275989B189DC08700E42ADD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2275989A189DC08700E42ADD /* Security.framework */; };
 		227E54921AA2776F00DF77AC /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228FC41A1A8ABD85000BEC34 /* SocketRocket.framework */; };
 		227E54951AA2786100DF77AC /* SocketRocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 228FC41A1A8ABD85000BEC34 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2284C65C18B18683005C34E1 /* NESPopoverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284C65B18B18683005C34E1 /* NESPopoverButton.m */; };
-		2284C66118B1C090005C34E1 /* NESRemoteForwardWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284C66018B1C090005C34E1 /* NESRemoteForwardWindowController.m */; };
-		2288F40518A027C600C0331C /* NESController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2288F40418A027C600C0331C /* NESController.m */; };
-		228E61C0188F2B1E00864214 /* NESLocalForwardWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228E61BF188F2B1E00864214 /* NESLocalForwardWindowController.m */; };
 		228FC4211A8AC372000BEC34 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228FC4201A8AC372000BEC34 /* SystemConfiguration.framework */; };
 		229803AC187F345C00B704DD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229803AB187F345C00B704DD /* Cocoa.framework */; };
 		229803B6187F345C00B704DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 229803B4187F345C00B704DD /* InfoPlist.strings */; };
-		229803B8187F345C00B704DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229803B7187F345C00B704DD /* main.m */; };
 		229803BC187F345C00B704DD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 229803BA187F345C00B704DD /* Credits.rtf */; };
-		229803BF187F345C00B704DD /* NESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 229803BE187F345C00B704DD /* NESAppDelegate.m */; };
 		229803C2187F345C00B704DD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229803C0187F345C00B704DD /* MainMenu.xib */; };
 		229803C5187F345C00B704DD /* Secure_Pipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 229803C3187F345C00B704DD /* Secure_Pipes.xcdatamodeld */; };
 		229803C7187F345C00B704DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229803C6187F345C00B704DD /* Images.xcassets */; };
-		229803E8187F3F2A00B704DD /* NESPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229803E7187F3F2A00B704DD /* NESPrefsWindowController.m */; };
-		229F49A01984464B003BC1D2 /* FilterBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229F499D1984464A003BC1D2 /* FilterBarView.m */; };
-		22A0577018A9833100553E75 /* NESConfirmationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A0576F18A9833100553E75 /* NESConfirmationSheet.m */; };
 		22AB38AB1A1299CE0030926C /* proxy_helper.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22AB38AA1A117A150030926C /* proxy_helper.sh */; };
-		22B4BB0518B3E25C0052B33E /* NESConnectionWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4BB0418B3E25C0052B33E /* NESConnectionWindowController.m */; };
-		22CE2F6B1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE2F6A1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m */; };
-		22DA06581A8532D700F85E56 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 22DA06491A8532D700F85E56 /* LICENSE */; };
-		22DA065A1A8532D700F85E56 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DA064C1A8532D700F85E56 /* SocketIO.m */; };
-		22DA065B1A8532D700F85E56 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DA064E1A8532D700F85E56 /* SocketIOJSONSerialization.m */; };
-		22DA065C1A8532D700F85E56 /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DA06501A8532D700F85E56 /* SocketIOPacket.m */; };
-		22DA065D1A8532D700F85E56 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DA06531A8532D700F85E56 /* SocketIOTransportWebsocket.m */; };
-		22DA065E1A8532D700F85E56 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DA06551A8532D700F85E56 /* SocketIOTransportXHR.m */; };
-		22DBDA0C18EFBC8600A7013F /* NESConfirmationDialogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBDA0B18EFBC8600A7013F /* NESConfirmationDialogWindowController.m */; };
-		22DC63B31A16839E000064F3 /* NESGetScriptOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DC63B21A16839E000064F3 /* NESGetScriptOutput.m */; };
-		22E199EF18B5698B001B60C0 /* NESProxyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E199EE18B5698B001B60C0 /* NESProxyWindowController.m */; };
-		22ED982518A9349E005F9C1C /* NESMenuIconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ED982418A9349E005F9C1C /* NESMenuIconController.m */; };
-		22F4F4A718F0530C004D21E4 /* NESSelectIdentityDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4F4A618F0530C004D21E4 /* NESSelectIdentityDelegate.m */; };
-		22F8E2FC1A8BA0EB00FB45AB /* NESConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8E2FB1A8BA0EB00FB45AB /* NESConnectionManager.m */; };
 		2A2D12492BCB0EBC0042DEEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D12482BCB0EBC0042DEEA /* Localizable.strings */; };
 		2A3DE2062BC9674D00E67E04 /* Prefs Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2052BC9674D00E67E04 /* Prefs Window.xib */; };
 		2A3DE20A2BC9675B00E67E04 /* Connection View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2092BC9675B00E67E04 /* Connection View.xib */; };
@@ -70,12 +30,54 @@
 		2A3DE2162BC9676800E67E04 /* ProxyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2152BC9676800E67E04 /* ProxyWindow.xib */; };
 		2A3DE21E2BC9677000E67E04 /* General View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE21D2BC9677000E67E04 /* General View.xib */; };
 		2A3DE2222BC9677300E67E04 /* Info View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2212BC9677300E67E04 /* Info View.xib */; };
-		2A3DE22D2BC96EC500E67E04 /* corkscrew in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE22C2BC96EC500E67E04 /* corkscrew */; };
 		2A3DE2302BC97F9E00E67E04 /* NESAdminPasswordDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE22F2BC97F9E00E67E04 /* NESAdminPasswordDialog.xib */; };
 		2A3DE2342BC97FA200E67E04 /* NESConfirmationDialogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2332BC97FA200E67E04 /* NESConfirmationDialogWindow.xib */; };
 		2A3DE2382BC97FA700E67E04 /* ConfirmationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE2372BC97FA700E67E04 /* ConfirmationSheet.xib */; };
 		2A3DE23C2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DE23B2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib */; };
 		2A3DE2732BCB0A4E00E67E04 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2A3DE2722BCB0A4E00E67E04 /* Sparkle */; };
+		2AA65C862BCE6E0B000A35CB /* NESPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C722BCE6E0B000A35CB /* NESPrefsWindowController.m */; };
+		2AA65C872BCE6E0B000A35CB /* NESLocalForwardWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C742BCE6E0B000A35CB /* NESLocalForwardWindowController.m */; };
+		2AA65C882BCE6E0B000A35CB /* NESConnectionWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C762BCE6E0B000A35CB /* NESConnectionWindowController.m */; };
+		2AA65C892BCE6E0B000A35CB /* NESSelectHostnameScriptDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C792BCE6E0B000A35CB /* NESSelectHostnameScriptDelegate.m */; };
+		2AA65C8A2BCE6E0B000A35CB /* NESSelectIdentityDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C7B2BCE6E0B000A35CB /* NESSelectIdentityDelegate.m */; };
+		2AA65C8B2BCE6E0B000A35CB /* NESRemoteForwardWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C7E2BCE6E0B000A35CB /* NESRemoteForwardWindowController.m */; };
+		2AA65C8C2BCE6E0B000A35CB /* NESManagedConnectionWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C802BCE6E0B000A35CB /* NESManagedConnectionWindowController.m */; };
+		2AA65C8D2BCE6E0B000A35CB /* NESProxyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C812BCE6E0B000A35CB /* NESProxyWindowController.m */; };
+		2AA65C8E2BCE6E0B000A35CB /* NESGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C822BCE6E0B000A35CB /* NESGeneralViewController.m */; };
+		2AA65C8F2BCE6E0B000A35CB /* NESConnectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C842BCE6E0B000A35CB /* NESConnectionCellView.m */; };
+		2AA65C902BCE6E0B000A35CB /* NESConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C852BCE6E0B000A35CB /* NESConnectionViewController.m */; };
+		2AA65C9F2BCE6E81000A35CB /* NESAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C922BCE6E81000A35CB /* NESAppConfig.m */; };
+		2AA65CA02BCE6E81000A35CB /* NESConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C952BCE6E81000A35CB /* NESConnection.m */; };
+		2AA65CA12BCE6E81000A35CB /* NESGetScriptOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C962BCE6E81000A35CB /* NESGetScriptOutput.m */; };
+		2AA65CA22BCE6E81000A35CB /* NESManagedConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C992BCE6E81000A35CB /* NESManagedConnection.m */; };
+		2AA65CA32BCE6E81000A35CB /* NESKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C9B2BCE6E81000A35CB /* NESKeychain.m */; };
+		2AA65CA42BCE6E81000A35CB /* NESConnectionProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C9D2BCE6E81000A35CB /* NESConnectionProcess.m */; };
+		2AA65CA52BCE6E82000A35CB /* NESConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65C9E2BCE6E81000A35CB /* NESConnectionManager.m */; };
+		2AA65CBD2BCE6EF5000A35CB /* NESManagedRegistrationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CA62BCE6EF4000A35CB /* NESManagedRegistrationSheet.m */; };
+		2AA65CBE2BCE6EF5000A35CB /* NESPopoverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CA92BCE6EF4000A35CB /* NESPopoverButton.m */; };
+		2AA65CBF2BCE6EF5000A35CB /* NESPopoverTextFieldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CAA2BCE6EF4000A35CB /* NESPopoverTextFieldButton.m */; };
+		2AA65CC02BCE6EF5000A35CB /* NESPopoverTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CAB2BCE6EF4000A35CB /* NESPopoverTextFieldCell.m */; };
+		2AA65CC12BCE6EF5000A35CB /* NESEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CAC2BCE6EF4000A35CB /* NESEmptyView.m */; };
+		2AA65CC22BCE6EF5000A35CB /* NESConfirmationDialogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CB02BCE6EF4000A35CB /* NESConfirmationDialogWindowController.m */; };
+		2AA65CC32BCE6EF5000A35CB /* NESConfirmationSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CB42BCE6EF4000A35CB /* NESConfirmationSheet.m */; };
+		2AA65CC42BCE6EF5000A35CB /* NESMenuIconController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CB52BCE6EF5000A35CB /* NESMenuIconController.m */; };
+		2AA65CC52BCE6EF5000A35CB /* FilterBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CB82BCE6EF5000A35CB /* FilterBarView.m */; };
+		2AA65CC62BCE6EF5000A35CB /* NESPopoverTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CBA2BCE6EF5000A35CB /* NESPopoverTextField.m */; };
+		2AA65CC72BCE6EF5000A35CB /* NESAdminPasswordDialogWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CBB2BCE6EF5000A35CB /* NESAdminPasswordDialogWindowController.m */; };
+		2AA65CD42BCE6F60000A35CB /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CC82BCE6F60000A35CB /* SocketIO.m */; };
+		2AA65CD52BCE6F60000A35CB /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CCA2BCE6F60000A35CB /* SocketIOTransportWebsocket.m */; };
+		2AA65CD62BCE6F60000A35CB /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CCE2BCE6F60000A35CB /* SocketIOJSONSerialization.m */; };
+		2AA65CD72BCE6F60000A35CB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AA65CCF2BCE6F60000A35CB /* LICENSE */; };
+		2AA65CD82BCE6F60000A35CB /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CD02BCE6F60000A35CB /* SocketIOPacket.m */; };
+		2AA65CD92BCE6F60000A35CB /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CD32BCE6F60000A35CB /* SocketIOTransportXHR.m */; };
+		2AA65CDC2BCE6FC1000A35CB /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CDB2BCE6FC1000A35CB /* Log.m */; };
+		2AA65CE02BCE6FFF000A35CB /* corkscrew_x86 in Resources */ = {isa = PBXBuildFile; fileRef = 2AA65CDD2BCE6FFF000A35CB /* corkscrew_x86 */; };
+		2AA65CE12BCE6FFF000A35CB /* corkscrew in Resources */ = {isa = PBXBuildFile; fileRef = 2AA65CDE2BCE6FFF000A35CB /* corkscrew */; };
+		2AA65CE22BCE6FFF000A35CB /* corkscrew_arm in Resources */ = {isa = PBXBuildFile; fileRef = 2AA65CDF2BCE6FFF000A35CB /* corkscrew_arm */; };
+		2AA65CE52BCE7033000A35CB /* NESUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CE32BCE7033000A35CB /* NESUser.m */; };
+		2AA65CF02BCE71ED000A35CB /* NESController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CEE2BCE71ED000A35CB /* NESController.m */; };
+		2AA65CF12BCE71ED000A35CB /* NESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CEF2BCE71ED000A35CB /* NESAppDelegate.m */; };
+		2AA65CF32BCE720C000A35CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA65CF22BCE720C000A35CB /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,52 +132,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		220DF521188C668400AA9D50 /* NESConnectionCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionCellView.h; sourceTree = "<group>"; };
-		220DF522188C668400AA9D50 /* NESConnectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionCellView.m; sourceTree = "<group>"; };
-		221A0B5818870C150008EBDC /* NESConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnection.h; sourceTree = "<group>"; };
-		221A0B5918870C150008EBDC /* NESConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnection.m; sourceTree = "<group>"; };
-		221A0BA518882CFD0008EBDC /* NESConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionViewController.h; sourceTree = "<group>"; };
-		221A0BA618882CFD0008EBDC /* NESConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionViewController.m; sourceTree = "<group>"; };
-		2234C983189480BF000DEB44 /* NESPopoverTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPopoverTextField.h; sourceTree = "<group>"; };
-		2234C984189480BF000DEB44 /* NESPopoverTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPopoverTextField.m; sourceTree = "<group>"; };
-		2234C985189480BF000DEB44 /* NESPopoverTextFieldButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPopoverTextFieldButton.h; sourceTree = "<group>"; };
-		2234C986189480BF000DEB44 /* NESPopoverTextFieldButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPopoverTextFieldButton.m; sourceTree = "<group>"; };
-		2234C987189480BF000DEB44 /* NESPopoverTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPopoverTextFieldCell.h; sourceTree = "<group>"; };
-		2234C988189480BF000DEB44 /* NESPopoverTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPopoverTextFieldCell.m; sourceTree = "<group>"; };
 		224200A21A93D49300D0E56A /* home-sharing_helper.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = "home-sharing_helper.exp"; sourceTree = "<group>"; };
-		224200A81A97ACBC00D0E56A /* NESManagedRegistrationSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESManagedRegistrationSheet.h; sourceTree = "<group>"; };
-		224200A91A97ACBC00D0E56A /* NESManagedRegistrationSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESManagedRegistrationSheet.m; sourceTree = "<group>"; };
-		22455D3F18A43DA50057F353 /* NESConnectionProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionProcess.h; sourceTree = "<group>"; };
-		22455D4018A43DA50057F353 /* NESConnectionProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionProcess.m; sourceTree = "<group>"; };
-		2246F95D1991D36800A53B83 /* NESManagedConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESManagedConnection.h; sourceTree = "<group>"; };
-		2246F95E1991D36800A53B83 /* NESManagedConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESManagedConnection.m; sourceTree = "<group>"; };
-		22488D9918AD8B11003F5B68 /* NESAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESAppConfig.h; sourceTree = "<group>"; };
-		22488D9A18AD8B11003F5B68 /* NESAppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESAppConfig.m; sourceTree = "<group>"; };
-		22488D9C18AD8E13003F5B68 /* NESGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESGeneralViewController.h; sourceTree = "<group>"; };
-		22488D9D18AD8E13003F5B68 /* NESGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESGeneralViewController.m; sourceTree = "<group>"; };
-		224D8706195B2D1800C0B6D8 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
-		224D8707195B2D1800C0B6D8 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		22575C5218AC267E00B00006 /* ssh_manager.exp */ = {isa = PBXFileReference; explicitFileType = text.script.sh; fileEncoding = 4; name = ssh_manager.exp; path = ../ssh_manager.exp; sourceTree = "<group>"; };
-		2266BEAD18AAD3E600F4ED58 /* NESUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESUser.h; sourceTree = "<group>"; };
-		2266BEAE18AAD3E600F4ED58 /* NESUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESUser.m; sourceTree = "<group>"; };
-		2266BEB018AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESAdminPasswordDialogWindowController.h; sourceTree = "<group>"; };
-		2266BEB118AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESAdminPasswordDialogWindowController.m; sourceTree = "<group>"; };
 		2266BEB318AADCFF00F4ED58 /* Collaboration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Collaboration.framework; path = System/Library/Frameworks/Collaboration.framework; sourceTree = SDKROOT; };
-		2273B3B81989A21A00654C17 /* NESManagedConnectionWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESManagedConnectionWindowController.h; sourceTree = "<group>"; };
-		2273B3B91989A21A00654C17 /* NESManagedConnectionWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESManagedConnectionWindowController.m; sourceTree = "<group>"; };
-		2273B3BF198E8DF600654C17 /* NESEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESEmptyView.h; sourceTree = "<group>"; };
-		2273B3C0198E8DF600654C17 /* NESEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESEmptyView.m; sourceTree = "<group>"; };
-		22759897189DA9CA00E42ADD /* NESKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESKeychain.h; sourceTree = "<group>"; };
-		22759898189DA9CA00E42ADD /* NESKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESKeychain.m; sourceTree = "<group>"; };
 		2275989A189DC08700E42ADD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		2284C65A18B18683005C34E1 /* NESPopoverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPopoverButton.h; sourceTree = "<group>"; };
-		2284C65B18B18683005C34E1 /* NESPopoverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPopoverButton.m; sourceTree = "<group>"; };
-		2284C65F18B1C090005C34E1 /* NESRemoteForwardWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESRemoteForwardWindowController.h; sourceTree = "<group>"; };
-		2284C66018B1C090005C34E1 /* NESRemoteForwardWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESRemoteForwardWindowController.m; sourceTree = "<group>"; };
-		2288F40318A027C600C0331C /* NESController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESController.h; sourceTree = "<group>"; };
-		2288F40418A027C600C0331C /* NESController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESController.m; sourceTree = "<group>"; };
-		228E61BE188F2B1E00864214 /* NESLocalForwardWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESLocalForwardWindowController.h; sourceTree = "<group>"; };
-		228E61BF188F2B1E00864214 /* NESLocalForwardWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESLocalForwardWindowController.m; sourceTree = "<group>"; };
 		228FC4101A8ABD85000BEC34 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = SocketRocket/SocketRocket.xcodeproj; sourceTree = SOURCE_ROOT; };
 		228FC4201A8AC372000BEC34 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		229803A8187F345C00B704DD /* Secure Pipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secure Pipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,54 +145,13 @@
 		229803B0187F345C00B704DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		229803B3187F345C00B704DD /* Secure Pipes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Secure Pipes-Info.plist"; sourceTree = "<group>"; };
 		229803B5187F345C00B704DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		229803B7187F345C00B704DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		229803B9187F345C00B704DD /* Secure Pipes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secure Pipes-Prefix.pch"; sourceTree = "<group>"; };
 		229803BB187F345C00B704DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		229803BD187F345C00B704DD /* NESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NESAppDelegate.h; sourceTree = "<group>"; };
-		229803BE187F345C00B704DD /* NESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESAppDelegate.m; sourceTree = "<group>"; };
 		229803C4187F345C00B704DD /* Secure_Pipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Secure_Pipes.xcdatamodel; sourceTree = "<group>"; };
 		229803C6187F345C00B704DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		229803E6187F3F2A00B704DD /* NESPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPrefsWindowController.h; sourceTree = "<group>"; };
-		229803E7187F3F2A00B704DD /* NESPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPrefsWindowController.m; sourceTree = "<group>"; };
-		229F499C1984464A003BC1D2 /* FilterBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterBarView.h; sourceTree = "<group>"; };
-		229F499D1984464A003BC1D2 /* FilterBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterBarView.m; sourceTree = "<group>"; };
-		22A0576E18A9833100553E75 /* NESConfirmationSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConfirmationSheet.h; sourceTree = "<group>"; };
-		22A0576F18A9833100553E75 /* NESConfirmationSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConfirmationSheet.m; sourceTree = "<group>"; };
-		22A9C8111898574400F1999D /* NESPopoverTextField+FirstResponderNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NESPopoverTextField+FirstResponderNotification.h"; sourceTree = "<group>"; };
 		22AB38AA1A117A150030926C /* proxy_helper.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = proxy_helper.sh; sourceTree = "<group>"; };
-		22B4BB0318B3E25C0052B33E /* NESConnectionWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionWindowController.h; sourceTree = "<group>"; };
-		22B4BB0418B3E25C0052B33E /* NESConnectionWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionWindowController.m; sourceTree = "<group>"; };
 		22B6B4C32432465E00FC75A0 /* Secure Pipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Secure Pipes.entitlements"; sourceTree = "<group>"; };
-		22CE2F691A155ACA003A19CB /* NESSelectHostnameScriptDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESSelectHostnameScriptDelegate.h; sourceTree = "<group>"; };
-		22CE2F6A1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSelectHostnameScriptDelegate.m; sourceTree = "<group>"; };
-		22DA06471A8532D700F85E56 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		22DA06481A8532D700F85E56 /* CONTRIBUTORS.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTORS.md; sourceTree = "<group>"; };
-		22DA06491A8532D700F85E56 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		22DA064A1A8532D700F85E56 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		22DA064B1A8532D700F85E56 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
-		22DA064C1A8532D700F85E56 /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
-		22DA064D1A8532D700F85E56 /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = "<group>"; };
-		22DA064E1A8532D700F85E56 /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOJSONSerialization.m; sourceTree = "<group>"; };
-		22DA064F1A8532D700F85E56 /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOPacket.h; sourceTree = "<group>"; };
-		22DA06501A8532D700F85E56 /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOPacket.m; sourceTree = "<group>"; };
-		22DA06511A8532D700F85E56 /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransport.h; sourceTree = "<group>"; };
-		22DA06521A8532D700F85E56 /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
-		22DA06531A8532D700F85E56 /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
-		22DA06541A8532D700F85E56 /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportXHR.h; sourceTree = "<group>"; };
-		22DA06551A8532D700F85E56 /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
-		22DBDA0A18EFBC8600A7013F /* NESConfirmationDialogWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConfirmationDialogWindowController.h; sourceTree = "<group>"; };
-		22DBDA0B18EFBC8600A7013F /* NESConfirmationDialogWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConfirmationDialogWindowController.m; sourceTree = "<group>"; };
-		22DC63B11A16839E000064F3 /* NESGetScriptOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESGetScriptOutput.h; sourceTree = "<group>"; };
-		22DC63B21A16839E000064F3 /* NESGetScriptOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESGetScriptOutput.m; sourceTree = "<group>"; };
-		22E199ED18B5698B001B60C0 /* NESProxyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESProxyWindowController.h; sourceTree = "<group>"; };
-		22E199EE18B5698B001B60C0 /* NESProxyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESProxyWindowController.m; sourceTree = "<group>"; };
 		22E8C2E418A67E7000506AB8 /* getopt.tcl */ = {isa = PBXFileReference; lastKnownFileType = text; name = getopt.tcl; path = ../getopt.tcl; sourceTree = "<group>"; };
-		22ED982318A9349E005F9C1C /* NESMenuIconController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESMenuIconController.h; sourceTree = "<group>"; };
-		22ED982418A9349E005F9C1C /* NESMenuIconController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESMenuIconController.m; sourceTree = "<group>"; };
-		22F4F4A518F0530C004D21E4 /* NESSelectIdentityDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESSelectIdentityDelegate.h; sourceTree = "<group>"; };
-		22F4F4A618F0530C004D21E4 /* NESSelectIdentityDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSelectIdentityDelegate.m; sourceTree = "<group>"; };
-		22F8E2FA1A8BA0EB00FB45AB /* NESConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESConnectionManager.h; sourceTree = "<group>"; };
-		22F8E2FB1A8BA0EB00FB45AB /* NESConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESConnectionManager.m; sourceTree = "<group>"; };
 		2A2D12482BCB0EBC0042DEEA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2A2D12542BCD34710042DEEA /* secure-pipes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "secure-pipes.html"; sourceTree = "<group>"; };
 		2A3DE1FE2BC960A500E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -250,9 +169,6 @@
 		2A3DE21F2BC9677000E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = "mul.lproj/General View.xcstrings"; sourceTree = "<group>"; };
 		2A3DE2202BC9677300E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Info View.xib"; sourceTree = "<group>"; };
 		2A3DE2232BC9677300E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = "mul.lproj/Info View.xcstrings"; sourceTree = "<group>"; };
-		2A3DE2282BC96DCF00E67E04 /* corkscrew_arm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = corkscrew_arm; sourceTree = "<group>"; };
-		2A3DE22A2BC96DD600E67E04 /* corkscrew_x86 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = corkscrew_x86; sourceTree = "<group>"; };
-		2A3DE22C2BC96EC500E67E04 /* corkscrew */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = corkscrew; sourceTree = "<group>"; };
 		2A3DE22E2BC97F9E00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NESAdminPasswordDialog.xib; sourceTree = "<group>"; };
 		2A3DE2312BC97F9E00E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/NESAdminPasswordDialog.xcstrings; sourceTree = "<group>"; };
 		2A3DE2322BC97FA200E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NESConfirmationDialogWindow.xib; sourceTree = "<group>"; };
@@ -261,6 +177,89 @@
 		2A3DE2392BC97FA700E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/ConfirmationSheet.xcstrings; sourceTree = "<group>"; };
 		2A3DE23A2BC97FAC00E67E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NESManagedRegistrationSheet.xib; sourceTree = "<group>"; };
 		2A3DE23D2BC97FAC00E67E04 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/NESManagedRegistrationSheet.xcstrings; sourceTree = "<group>"; };
+		2AA65C702BCE6E0B000A35CB /* NESPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESPrefsWindowController.h; path = "Prefs Window/NESPrefsWindowController.h"; sourceTree = "<group>"; };
+		2AA65C712BCE6E0B000A35CB /* NESManagedConnectionWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESManagedConnectionWindowController.h; path = "Prefs Window/NESManagedConnectionWindowController.h"; sourceTree = "<group>"; };
+		2AA65C722BCE6E0B000A35CB /* NESPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESPrefsWindowController.m; path = "Prefs Window/NESPrefsWindowController.m"; sourceTree = "<group>"; };
+		2AA65C732BCE6E0B000A35CB /* NESGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESGeneralViewController.h; path = "Prefs Window/NESGeneralViewController.h"; sourceTree = "<group>"; };
+		2AA65C742BCE6E0B000A35CB /* NESLocalForwardWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESLocalForwardWindowController.m; path = "Prefs Window/NESLocalForwardWindowController.m"; sourceTree = "<group>"; };
+		2AA65C752BCE6E0B000A35CB /* NESLocalForwardWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESLocalForwardWindowController.h; path = "Prefs Window/NESLocalForwardWindowController.h"; sourceTree = "<group>"; };
+		2AA65C762BCE6E0B000A35CB /* NESConnectionWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESConnectionWindowController.m; path = "Prefs Window/NESConnectionWindowController.m"; sourceTree = "<group>"; };
+		2AA65C772BCE6E0B000A35CB /* NESConnectionWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESConnectionWindowController.h; path = "Prefs Window/NESConnectionWindowController.h"; sourceTree = "<group>"; };
+		2AA65C782BCE6E0B000A35CB /* NESProxyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESProxyWindowController.h; path = "Prefs Window/NESProxyWindowController.h"; sourceTree = "<group>"; };
+		2AA65C792BCE6E0B000A35CB /* NESSelectHostnameScriptDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESSelectHostnameScriptDelegate.m; path = "Prefs Window/NESSelectHostnameScriptDelegate.m"; sourceTree = "<group>"; };
+		2AA65C7A2BCE6E0B000A35CB /* NESSelectIdentityDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESSelectIdentityDelegate.h; path = "Prefs Window/NESSelectIdentityDelegate.h"; sourceTree = "<group>"; };
+		2AA65C7B2BCE6E0B000A35CB /* NESSelectIdentityDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESSelectIdentityDelegate.m; path = "Prefs Window/NESSelectIdentityDelegate.m"; sourceTree = "<group>"; };
+		2AA65C7C2BCE6E0B000A35CB /* NESSelectHostnameScriptDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESSelectHostnameScriptDelegate.h; path = "Prefs Window/NESSelectHostnameScriptDelegate.h"; sourceTree = "<group>"; };
+		2AA65C7D2BCE6E0B000A35CB /* NESRemoteForwardWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESRemoteForwardWindowController.h; path = "Prefs Window/NESRemoteForwardWindowController.h"; sourceTree = "<group>"; };
+		2AA65C7E2BCE6E0B000A35CB /* NESRemoteForwardWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESRemoteForwardWindowController.m; path = "Prefs Window/NESRemoteForwardWindowController.m"; sourceTree = "<group>"; };
+		2AA65C7F2BCE6E0B000A35CB /* NESConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESConnectionViewController.h; path = "Prefs Window/NESConnectionViewController.h"; sourceTree = "<group>"; };
+		2AA65C802BCE6E0B000A35CB /* NESManagedConnectionWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESManagedConnectionWindowController.m; path = "Prefs Window/NESManagedConnectionWindowController.m"; sourceTree = "<group>"; };
+		2AA65C812BCE6E0B000A35CB /* NESProxyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESProxyWindowController.m; path = "Prefs Window/NESProxyWindowController.m"; sourceTree = "<group>"; };
+		2AA65C822BCE6E0B000A35CB /* NESGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESGeneralViewController.m; path = "Prefs Window/NESGeneralViewController.m"; sourceTree = "<group>"; };
+		2AA65C832BCE6E0B000A35CB /* NESConnectionCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESConnectionCellView.h; path = "Prefs Window/NESConnectionCellView.h"; sourceTree = "<group>"; };
+		2AA65C842BCE6E0B000A35CB /* NESConnectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESConnectionCellView.m; path = "Prefs Window/NESConnectionCellView.m"; sourceTree = "<group>"; };
+		2AA65C852BCE6E0B000A35CB /* NESConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESConnectionViewController.m; path = "Prefs Window/NESConnectionViewController.m"; sourceTree = "<group>"; };
+		2AA65C912BCE6E81000A35CB /* NESAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESAppConfig.h; path = Model/NESAppConfig.h; sourceTree = "<group>"; };
+		2AA65C922BCE6E81000A35CB /* NESAppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESAppConfig.m; path = Model/NESAppConfig.m; sourceTree = "<group>"; };
+		2AA65C932BCE6E81000A35CB /* NESConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESConnection.h; path = Model/NESConnection.h; sourceTree = "<group>"; };
+		2AA65C942BCE6E81000A35CB /* NESConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESConnectionManager.h; path = Model/NESConnectionManager.h; sourceTree = "<group>"; };
+		2AA65C952BCE6E81000A35CB /* NESConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESConnection.m; path = Model/NESConnection.m; sourceTree = "<group>"; };
+		2AA65C962BCE6E81000A35CB /* NESGetScriptOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESGetScriptOutput.m; path = Model/NESGetScriptOutput.m; sourceTree = "<group>"; };
+		2AA65C972BCE6E81000A35CB /* NESManagedConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESManagedConnection.h; path = Model/NESManagedConnection.h; sourceTree = "<group>"; };
+		2AA65C982BCE6E81000A35CB /* NESConnectionProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESConnectionProcess.h; path = Model/NESConnectionProcess.h; sourceTree = "<group>"; };
+		2AA65C992BCE6E81000A35CB /* NESManagedConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESManagedConnection.m; path = Model/NESManagedConnection.m; sourceTree = "<group>"; };
+		2AA65C9A2BCE6E81000A35CB /* NESKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESKeychain.h; path = Model/NESKeychain.h; sourceTree = "<group>"; };
+		2AA65C9B2BCE6E81000A35CB /* NESKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESKeychain.m; path = Model/NESKeychain.m; sourceTree = "<group>"; };
+		2AA65C9C2BCE6E81000A35CB /* NESGetScriptOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESGetScriptOutput.h; path = Model/NESGetScriptOutput.h; sourceTree = "<group>"; };
+		2AA65C9D2BCE6E81000A35CB /* NESConnectionProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESConnectionProcess.m; path = Model/NESConnectionProcess.m; sourceTree = "<group>"; };
+		2AA65C9E2BCE6E81000A35CB /* NESConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESConnectionManager.m; path = Model/NESConnectionManager.m; sourceTree = "<group>"; };
+		2AA65CA62BCE6EF4000A35CB /* NESManagedRegistrationSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESManagedRegistrationSheet.m; path = UIElements/NESManagedRegistrationSheet.m; sourceTree = "<group>"; };
+		2AA65CA72BCE6EF4000A35CB /* NESAdminPasswordDialogWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESAdminPasswordDialogWindowController.h; path = UIElements/NESAdminPasswordDialogWindowController.h; sourceTree = "<group>"; };
+		2AA65CA82BCE6EF4000A35CB /* NESEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESEmptyView.h; path = UIElements/NESEmptyView.h; sourceTree = "<group>"; };
+		2AA65CA92BCE6EF4000A35CB /* NESPopoverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESPopoverButton.m; path = UIElements/NESPopoverButton.m; sourceTree = "<group>"; };
+		2AA65CAA2BCE6EF4000A35CB /* NESPopoverTextFieldButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESPopoverTextFieldButton.m; path = UIElements/NESPopoverTextFieldButton.m; sourceTree = "<group>"; };
+		2AA65CAB2BCE6EF4000A35CB /* NESPopoverTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESPopoverTextFieldCell.m; path = UIElements/NESPopoverTextFieldCell.m; sourceTree = "<group>"; };
+		2AA65CAC2BCE6EF4000A35CB /* NESEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESEmptyView.m; path = UIElements/NESEmptyView.m; sourceTree = "<group>"; };
+		2AA65CAD2BCE6EF4000A35CB /* NESPopoverTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESPopoverTextFieldCell.h; path = UIElements/NESPopoverTextFieldCell.h; sourceTree = "<group>"; };
+		2AA65CAE2BCE6EF4000A35CB /* NESConfirmationDialogWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESConfirmationDialogWindowController.h; path = UIElements/NESConfirmationDialogWindowController.h; sourceTree = "<group>"; };
+		2AA65CAF2BCE6EF4000A35CB /* NESPopoverTextFieldButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESPopoverTextFieldButton.h; path = UIElements/NESPopoverTextFieldButton.h; sourceTree = "<group>"; };
+		2AA65CB02BCE6EF4000A35CB /* NESConfirmationDialogWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESConfirmationDialogWindowController.m; path = UIElements/NESConfirmationDialogWindowController.m; sourceTree = "<group>"; };
+		2AA65CB12BCE6EF4000A35CB /* FilterBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilterBarView.h; path = UIElements/FilterBarView.h; sourceTree = "<group>"; };
+		2AA65CB22BCE6EF4000A35CB /* NESManagedRegistrationSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESManagedRegistrationSheet.h; path = UIElements/NESManagedRegistrationSheet.h; sourceTree = "<group>"; };
+		2AA65CB32BCE6EF4000A35CB /* NESConfirmationSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESConfirmationSheet.h; path = UIElements/NESConfirmationSheet.h; sourceTree = "<group>"; };
+		2AA65CB42BCE6EF4000A35CB /* NESConfirmationSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESConfirmationSheet.m; path = UIElements/NESConfirmationSheet.m; sourceTree = "<group>"; };
+		2AA65CB52BCE6EF5000A35CB /* NESMenuIconController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESMenuIconController.m; path = UIElements/NESMenuIconController.m; sourceTree = "<group>"; };
+		2AA65CB62BCE6EF5000A35CB /* NESPopoverTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESPopoverTextField.h; path = UIElements/NESPopoverTextField.h; sourceTree = "<group>"; };
+		2AA65CB72BCE6EF5000A35CB /* NESPopoverTextField+FirstResponderNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NESPopoverTextField+FirstResponderNotification.h"; path = "UIElements/NESPopoverTextField+FirstResponderNotification.h"; sourceTree = "<group>"; };
+		2AA65CB82BCE6EF5000A35CB /* FilterBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilterBarView.m; path = UIElements/FilterBarView.m; sourceTree = "<group>"; };
+		2AA65CB92BCE6EF5000A35CB /* NESPopoverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESPopoverButton.h; path = UIElements/NESPopoverButton.h; sourceTree = "<group>"; };
+		2AA65CBA2BCE6EF5000A35CB /* NESPopoverTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESPopoverTextField.m; path = UIElements/NESPopoverTextField.m; sourceTree = "<group>"; };
+		2AA65CBB2BCE6EF5000A35CB /* NESAdminPasswordDialogWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESAdminPasswordDialogWindowController.m; path = UIElements/NESAdminPasswordDialogWindowController.m; sourceTree = "<group>"; };
+		2AA65CBC2BCE6EF5000A35CB /* NESMenuIconController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESMenuIconController.h; path = UIElements/NESMenuIconController.h; sourceTree = "<group>"; };
+		2AA65CC82BCE6F60000A35CB /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIO.m; path = SocketIO/SocketIO.m; sourceTree = "<group>"; };
+		2AA65CC92BCE6F60000A35CB /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIO.h; path = SocketIO/SocketIO.h; sourceTree = "<group>"; };
+		2AA65CCA2BCE6F60000A35CB /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportWebsocket.m; path = SocketIO/SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		2AA65CCB2BCE6F60000A35CB /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportWebsocket.h; path = SocketIO/SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		2AA65CCC2BCE6F60000A35CB /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOJSONSerialization.h; path = SocketIO/SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		2AA65CCD2BCE6F60000A35CB /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOPacket.h; path = SocketIO/SocketIOPacket.h; sourceTree = "<group>"; };
+		2AA65CCE2BCE6F60000A35CB /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOJSONSerialization.m; path = SocketIO/SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		2AA65CCF2BCE6F60000A35CB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = SocketIO/LICENSE; sourceTree = "<group>"; };
+		2AA65CD02BCE6F60000A35CB /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOPacket.m; path = SocketIO/SocketIOPacket.m; sourceTree = "<group>"; };
+		2AA65CD12BCE6F60000A35CB /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransport.h; path = SocketIO/SocketIOTransport.h; sourceTree = "<group>"; };
+		2AA65CD22BCE6F60000A35CB /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportXHR.h; path = SocketIO/SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		2AA65CD32BCE6F60000A35CB /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportXHR.m; path = SocketIO/SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		2AA65CDA2BCE6FC1000A35CB /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Log.h; path = Log/Log.h; sourceTree = "<group>"; };
+		2AA65CDB2BCE6FC1000A35CB /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Log.m; path = Log/Log.m; sourceTree = "<group>"; };
+		2AA65CDD2BCE6FFF000A35CB /* corkscrew_x86 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = corkscrew_x86; path = corkscrew/corkscrew_x86; sourceTree = "<group>"; };
+		2AA65CDE2BCE6FFF000A35CB /* corkscrew */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = corkscrew; path = corkscrew/corkscrew; sourceTree = "<group>"; };
+		2AA65CDF2BCE6FFF000A35CB /* corkscrew_arm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = corkscrew_arm; path = corkscrew/corkscrew_arm; sourceTree = "<group>"; };
+		2AA65CE32BCE7033000A35CB /* NESUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESUser.m; path = Misc/NESUser.m; sourceTree = "<group>"; };
+		2AA65CE42BCE7033000A35CB /* NESUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESUser.h; path = Misc/NESUser.h; sourceTree = "<group>"; };
+		2AA65CEC2BCE71ED000A35CB /* NESAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESAppDelegate.h; path = Misc/NESAppDelegate.h; sourceTree = "<group>"; };
+		2AA65CED2BCE71ED000A35CB /* NESController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NESController.h; path = Misc/NESController.h; sourceTree = "<group>"; };
+		2AA65CEE2BCE71ED000A35CB /* NESController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESController.m; path = Misc/NESController.m; sourceTree = "<group>"; };
+		2AA65CEF2BCE71ED000A35CB /* NESAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NESAppDelegate.m; path = Misc/NESAppDelegate.m; sourceTree = "<group>"; };
+		2AA65CF22BCE720C000A35CB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Misc/main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,20 +282,20 @@
 		221A0B5718870BDE0008EBDC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22759897189DA9CA00E42ADD /* NESKeychain.h */,
-				22759898189DA9CA00E42ADD /* NESKeychain.m */,
-				221A0B5818870C150008EBDC /* NESConnection.h */,
-				221A0B5918870C150008EBDC /* NESConnection.m */,
-				2246F95D1991D36800A53B83 /* NESManagedConnection.h */,
-				2246F95E1991D36800A53B83 /* NESManagedConnection.m */,
-				22488D9918AD8B11003F5B68 /* NESAppConfig.h */,
-				22488D9A18AD8B11003F5B68 /* NESAppConfig.m */,
-				22455D3F18A43DA50057F353 /* NESConnectionProcess.h */,
-				22455D4018A43DA50057F353 /* NESConnectionProcess.m */,
-				22DC63B11A16839E000064F3 /* NESGetScriptOutput.h */,
-				22DC63B21A16839E000064F3 /* NESGetScriptOutput.m */,
-				22F8E2FA1A8BA0EB00FB45AB /* NESConnectionManager.h */,
-				22F8E2FB1A8BA0EB00FB45AB /* NESConnectionManager.m */,
+				2AA65C912BCE6E81000A35CB /* NESAppConfig.h */,
+				2AA65C922BCE6E81000A35CB /* NESAppConfig.m */,
+				2AA65C932BCE6E81000A35CB /* NESConnection.h */,
+				2AA65C952BCE6E81000A35CB /* NESConnection.m */,
+				2AA65C942BCE6E81000A35CB /* NESConnectionManager.h */,
+				2AA65C9E2BCE6E81000A35CB /* NESConnectionManager.m */,
+				2AA65C982BCE6E81000A35CB /* NESConnectionProcess.h */,
+				2AA65C9D2BCE6E81000A35CB /* NESConnectionProcess.m */,
+				2AA65C9C2BCE6E81000A35CB /* NESGetScriptOutput.h */,
+				2AA65C962BCE6E81000A35CB /* NESGetScriptOutput.m */,
+				2AA65C9A2BCE6E81000A35CB /* NESKeychain.h */,
+				2AA65C9B2BCE6E81000A35CB /* NESKeychain.m */,
+				2AA65C972BCE6E81000A35CB /* NESManagedConnection.h */,
+				2AA65C992BCE6E81000A35CB /* NESManagedConnection.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -304,32 +303,32 @@
 		2234C982189480AA000DEB44 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
-				2273B3BF198E8DF600654C17 /* NESEmptyView.h */,
-				2273B3C0198E8DF600654C17 /* NESEmptyView.m */,
+				2AA65CB12BCE6EF4000A35CB /* FilterBarView.h */,
+				2AA65CB82BCE6EF5000A35CB /* FilterBarView.m */,
+				2AA65CA72BCE6EF4000A35CB /* NESAdminPasswordDialogWindowController.h */,
+				2AA65CBB2BCE6EF5000A35CB /* NESAdminPasswordDialogWindowController.m */,
+				2AA65CAE2BCE6EF4000A35CB /* NESConfirmationDialogWindowController.h */,
+				2AA65CB02BCE6EF4000A35CB /* NESConfirmationDialogWindowController.m */,
+				2AA65CB32BCE6EF4000A35CB /* NESConfirmationSheet.h */,
+				2AA65CB42BCE6EF4000A35CB /* NESConfirmationSheet.m */,
+				2AA65CA82BCE6EF4000A35CB /* NESEmptyView.h */,
+				2AA65CAC2BCE6EF4000A35CB /* NESEmptyView.m */,
+				2AA65CB22BCE6EF4000A35CB /* NESManagedRegistrationSheet.h */,
+				2AA65CA62BCE6EF4000A35CB /* NESManagedRegistrationSheet.m */,
+				2AA65CBC2BCE6EF5000A35CB /* NESMenuIconController.h */,
+				2AA65CB52BCE6EF5000A35CB /* NESMenuIconController.m */,
+				2AA65CB92BCE6EF5000A35CB /* NESPopoverButton.h */,
+				2AA65CA92BCE6EF4000A35CB /* NESPopoverButton.m */,
+				2AA65CB62BCE6EF5000A35CB /* NESPopoverTextField.h */,
+				2AA65CBA2BCE6EF5000A35CB /* NESPopoverTextField.m */,
+				2AA65CB72BCE6EF5000A35CB /* NESPopoverTextField+FirstResponderNotification.h */,
+				2AA65CAF2BCE6EF4000A35CB /* NESPopoverTextFieldButton.h */,
+				2AA65CAA2BCE6EF4000A35CB /* NESPopoverTextFieldButton.m */,
+				2AA65CAD2BCE6EF4000A35CB /* NESPopoverTextFieldCell.h */,
+				2AA65CAB2BCE6EF4000A35CB /* NESPopoverTextFieldCell.m */,
 				2A3DE22F2BC97F9E00E67E04 /* NESAdminPasswordDialog.xib */,
 				2A3DE2332BC97FA200E67E04 /* NESConfirmationDialogWindow.xib */,
-				2266BEB018AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.h */,
-				2266BEB118AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.m */,
-				22DBDA0A18EFBC8600A7013F /* NESConfirmationDialogWindowController.h */,
-				22DBDA0B18EFBC8600A7013F /* NESConfirmationDialogWindowController.m */,
-				22A9C8111898574400F1999D /* NESPopoverTextField+FirstResponderNotification.h */,
-				2234C983189480BF000DEB44 /* NESPopoverTextField.h */,
-				2234C984189480BF000DEB44 /* NESPopoverTextField.m */,
-				2234C985189480BF000DEB44 /* NESPopoverTextFieldButton.h */,
-				2234C986189480BF000DEB44 /* NESPopoverTextFieldButton.m */,
-				2234C987189480BF000DEB44 /* NESPopoverTextFieldCell.h */,
-				2234C988189480BF000DEB44 /* NESPopoverTextFieldCell.m */,
-				22ED982318A9349E005F9C1C /* NESMenuIconController.h */,
-				22ED982418A9349E005F9C1C /* NESMenuIconController.m */,
-				22A0576E18A9833100553E75 /* NESConfirmationSheet.h */,
-				22A0576F18A9833100553E75 /* NESConfirmationSheet.m */,
 				2A3DE2372BC97FA700E67E04 /* ConfirmationSheet.xib */,
-				2284C65A18B18683005C34E1 /* NESPopoverButton.h */,
-				2284C65B18B18683005C34E1 /* NESPopoverButton.m */,
-				229F499C1984464A003BC1D2 /* FilterBarView.h */,
-				229F499D1984464A003BC1D2 /* FilterBarView.m */,
-				224200A81A97ACBC00D0E56A /* NESManagedRegistrationSheet.h */,
-				224200A91A97ACBC00D0E56A /* NESManagedRegistrationSheet.m */,
 				2A3DE23B2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib */,
 			);
 			name = UIElements;
@@ -349,7 +348,6 @@
 		2298039F187F345B00B704DD = {
 			isa = PBXGroup;
 			children = (
-				2A2D12542BCD34710042DEEA /* secure-pipes.html */,
 				229803B1187F345C00B704DD /* Secure Pipes */,
 				229803AA187F345C00B704DD /* Frameworks */,
 				229803A9187F345C00B704DD /* Products */,
@@ -389,21 +387,22 @@
 		229803B1187F345C00B704DD /* Secure Pipes */ = {
 			isa = PBXGroup;
 			children = (
-				2A3DE22C2BC96EC500E67E04 /* corkscrew */,
-				2A3DE2282BC96DCF00E67E04 /* corkscrew_arm */,
-				2A3DE22A2BC96DD600E67E04 /* corkscrew_x86 */,
-				22B6B4C32432465E00FC75A0 /* Secure Pipes.entitlements */,
 				2234C982189480AA000DEB44 /* UIElements */,
 				221A0B5718870BDE0008EBDC /* Model */,
 				229803E2187F3E9200B704DD /* Prefs Window */,
-				229803BD187F345C00B704DD /* NESAppDelegate.h */,
-				229803BE187F345C00B704DD /* NESAppDelegate.m */,
-				2288F40318A027C600C0331C /* NESController.h */,
-				2288F40418A027C600C0331C /* NESController.m */,
 				229803C0187F345C00B704DD /* MainMenu.xib */,
 				229803C6187F345C00B704DD /* Images.xcassets */,
 				2A2D12482BCB0EBC0042DEEA /* Localizable.strings */,
+				22B6B4C32432465E00FC75A0 /* Secure Pipes.entitlements */,
 				229803C3187F345C00B704DD /* Secure_Pipes.xcdatamodeld */,
+				2A2D12542BCD34710042DEEA /* secure-pipes.html */,
+				2AA65CEC2BCE71ED000A35CB /* NESAppDelegate.h */,
+				2AA65CEF2BCE71ED000A35CB /* NESAppDelegate.m */,
+				2AA65CED2BCE71ED000A35CB /* NESController.h */,
+				2AA65CEE2BCE71ED000A35CB /* NESController.m */,
+				2AA65CDE2BCE6FFF000A35CB /* corkscrew */,
+				2AA65CDF2BCE6FFF000A35CB /* corkscrew_arm */,
+				2AA65CDD2BCE6FFF000A35CB /* corkscrew_x86 */,
 				229803B2187F345C00B704DD /* Supporting Files */,
 			);
 			path = "Secure Pipes";
@@ -414,19 +413,19 @@
 			children = (
 				22DA06461A8532B300F85E56 /* socket.IO-objc */,
 				228FC4101A8ABD85000BEC34 /* SocketRocket.xcodeproj */,
-				22575C5218AC267E00B00006 /* ssh_manager.exp */,
-				224200A21A93D49300D0E56A /* home-sharing_helper.exp */,
-				22AB38AA1A117A150030926C /* proxy_helper.sh */,
-				2266BEAD18AAD3E600F4ED58 /* NESUser.h */,
-				2266BEAE18AAD3E600F4ED58 /* NESUser.m */,
 				229803B3187F345C00B704DD /* Secure Pipes-Info.plist */,
 				22E8C2E418A67E7000506AB8 /* getopt.tcl */,
 				229803B4187F345C00B704DD /* InfoPlist.strings */,
-				229803B7187F345C00B704DD /* main.m */,
-				229803B9187F345C00B704DD /* Secure Pipes-Prefix.pch */,
 				229803BA187F345C00B704DD /* Credits.rtf */,
-				224D8706195B2D1800C0B6D8 /* Log.h */,
-				224D8707195B2D1800C0B6D8 /* Log.m */,
+				22575C5218AC267E00B00006 /* ssh_manager.exp */,
+				22AB38AA1A117A150030926C /* proxy_helper.sh */,
+				224200A21A93D49300D0E56A /* home-sharing_helper.exp */,
+				2AA65CF22BCE720C000A35CB /* main.m */,
+				2AA65CE42BCE7033000A35CB /* NESUser.h */,
+				2AA65CE32BCE7033000A35CB /* NESUser.m */,
+				2AA65CDA2BCE6FC1000A35CB /* Log.h */,
+				2AA65CDB2BCE6FC1000A35CB /* Log.m */,
+				229803B9187F345C00B704DD /* Secure Pipes-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -434,28 +433,28 @@
 		229803E2187F3E9200B704DD /* Prefs Window */ = {
 			isa = PBXGroup;
 			children = (
-				22CE2F691A155ACA003A19CB /* NESSelectHostnameScriptDelegate.h */,
-				22CE2F6A1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m */,
-				22F4F4A518F0530C004D21E4 /* NESSelectIdentityDelegate.h */,
-				22F4F4A618F0530C004D21E4 /* NESSelectIdentityDelegate.m */,
-				22488D9C18AD8E13003F5B68 /* NESGeneralViewController.h */,
-				22488D9D18AD8E13003F5B68 /* NESGeneralViewController.m */,
-				221A0BA518882CFD0008EBDC /* NESConnectionViewController.h */,
-				221A0BA618882CFD0008EBDC /* NESConnectionViewController.m */,
-				22B4BB0318B3E25C0052B33E /* NESConnectionWindowController.h */,
-				22B4BB0418B3E25C0052B33E /* NESConnectionWindowController.m */,
-				2284C65F18B1C090005C34E1 /* NESRemoteForwardWindowController.h */,
-				2284C66018B1C090005C34E1 /* NESRemoteForwardWindowController.m */,
-				228E61BE188F2B1E00864214 /* NESLocalForwardWindowController.h */,
-				228E61BF188F2B1E00864214 /* NESLocalForwardWindowController.m */,
-				22E199ED18B5698B001B60C0 /* NESProxyWindowController.h */,
-				22E199EE18B5698B001B60C0 /* NESProxyWindowController.m */,
-				2273B3B81989A21A00654C17 /* NESManagedConnectionWindowController.h */,
-				2273B3B91989A21A00654C17 /* NESManagedConnectionWindowController.m */,
-				220DF521188C668400AA9D50 /* NESConnectionCellView.h */,
-				220DF522188C668400AA9D50 /* NESConnectionCellView.m */,
-				229803E6187F3F2A00B704DD /* NESPrefsWindowController.h */,
-				229803E7187F3F2A00B704DD /* NESPrefsWindowController.m */,
+				2AA65C832BCE6E0B000A35CB /* NESConnectionCellView.h */,
+				2AA65C842BCE6E0B000A35CB /* NESConnectionCellView.m */,
+				2AA65C7F2BCE6E0B000A35CB /* NESConnectionViewController.h */,
+				2AA65C852BCE6E0B000A35CB /* NESConnectionViewController.m */,
+				2AA65C772BCE6E0B000A35CB /* NESConnectionWindowController.h */,
+				2AA65C762BCE6E0B000A35CB /* NESConnectionWindowController.m */,
+				2AA65C732BCE6E0B000A35CB /* NESGeneralViewController.h */,
+				2AA65C822BCE6E0B000A35CB /* NESGeneralViewController.m */,
+				2AA65C752BCE6E0B000A35CB /* NESLocalForwardWindowController.h */,
+				2AA65C742BCE6E0B000A35CB /* NESLocalForwardWindowController.m */,
+				2AA65C712BCE6E0B000A35CB /* NESManagedConnectionWindowController.h */,
+				2AA65C802BCE6E0B000A35CB /* NESManagedConnectionWindowController.m */,
+				2AA65C702BCE6E0B000A35CB /* NESPrefsWindowController.h */,
+				2AA65C722BCE6E0B000A35CB /* NESPrefsWindowController.m */,
+				2AA65C782BCE6E0B000A35CB /* NESProxyWindowController.h */,
+				2AA65C812BCE6E0B000A35CB /* NESProxyWindowController.m */,
+				2AA65C7D2BCE6E0B000A35CB /* NESRemoteForwardWindowController.h */,
+				2AA65C7E2BCE6E0B000A35CB /* NESRemoteForwardWindowController.m */,
+				2AA65C7C2BCE6E0B000A35CB /* NESSelectHostnameScriptDelegate.h */,
+				2AA65C792BCE6E0B000A35CB /* NESSelectHostnameScriptDelegate.m */,
+				2AA65C7A2BCE6E0B000A35CB /* NESSelectIdentityDelegate.h */,
+				2AA65C7B2BCE6E0B000A35CB /* NESSelectIdentityDelegate.m */,
 				2A3DE2052BC9674D00E67E04 /* Prefs Window.xib */,
 				2A3DE2092BC9675B00E67E04 /* Connection View.xib */,
 				2A3DE20D2BC9676000E67E04 /* LocalForwardWindow.xib */,
@@ -470,21 +469,18 @@
 		22DA06461A8532B300F85E56 /* socket.IO-objc */ = {
 			isa = PBXGroup;
 			children = (
-				22DA06471A8532D700F85E56 /* CHANGELOG.md */,
-				22DA06481A8532D700F85E56 /* CONTRIBUTORS.md */,
-				22DA06491A8532D700F85E56 /* LICENSE */,
-				22DA064A1A8532D700F85E56 /* README.md */,
-				22DA064B1A8532D700F85E56 /* SocketIO.h */,
-				22DA064C1A8532D700F85E56 /* SocketIO.m */,
-				22DA064D1A8532D700F85E56 /* SocketIOJSONSerialization.h */,
-				22DA064E1A8532D700F85E56 /* SocketIOJSONSerialization.m */,
-				22DA064F1A8532D700F85E56 /* SocketIOPacket.h */,
-				22DA06501A8532D700F85E56 /* SocketIOPacket.m */,
-				22DA06511A8532D700F85E56 /* SocketIOTransport.h */,
-				22DA06521A8532D700F85E56 /* SocketIOTransportWebsocket.h */,
-				22DA06531A8532D700F85E56 /* SocketIOTransportWebsocket.m */,
-				22DA06541A8532D700F85E56 /* SocketIOTransportXHR.h */,
-				22DA06551A8532D700F85E56 /* SocketIOTransportXHR.m */,
+				2AA65CCF2BCE6F60000A35CB /* LICENSE */,
+				2AA65CC92BCE6F60000A35CB /* SocketIO.h */,
+				2AA65CC82BCE6F60000A35CB /* SocketIO.m */,
+				2AA65CCC2BCE6F60000A35CB /* SocketIOJSONSerialization.h */,
+				2AA65CCE2BCE6F60000A35CB /* SocketIOJSONSerialization.m */,
+				2AA65CCD2BCE6F60000A35CB /* SocketIOPacket.h */,
+				2AA65CD02BCE6F60000A35CB /* SocketIOPacket.m */,
+				2AA65CD12BCE6F60000A35CB /* SocketIOTransport.h */,
+				2AA65CCB2BCE6F60000A35CB /* SocketIOTransportWebsocket.h */,
+				2AA65CCA2BCE6F60000A35CB /* SocketIOTransportWebsocket.m */,
+				2AA65CD22BCE6F60000A35CB /* SocketIOTransportXHR.h */,
+				2AA65CD32BCE6F60000A35CB /* SocketIOTransportXHR.m */,
 			);
 			name = "socket.IO-objc";
 			sourceTree = "<group>";
@@ -593,7 +589,6 @@
 				22AB38AB1A1299CE0030926C /* proxy_helper.sh in Resources */,
 				2A3DE2162BC9676800E67E04 /* ProxyWindow.xib in Resources */,
 				2A2D12492BCB0EBC0042DEEA /* Localizable.strings in Resources */,
-				22DA06581A8532D700F85E56 /* LICENSE in Resources */,
 				22575C5418AC26BB00B00006 /* ssh_manager.exp in Resources */,
 				224200A71A93D5FF00D0E56A /* home-sharing_helper.exp in Resources */,
 				2206D45D18A8260E00FB3E65 /* getopt.tcl in Resources */,
@@ -602,16 +597,19 @@
 				2A3DE23C2BC97FAC00E67E04 /* NESManagedRegistrationSheet.xib in Resources */,
 				229803C7187F345C00B704DD /* Images.xcassets in Resources */,
 				2A3DE2122BC9676400E67E04 /* RemoteForwardWindow.xib in Resources */,
-				2A3DE22D2BC96EC500E67E04 /* corkscrew in Resources */,
 				2A3DE2342BC97FA200E67E04 /* NESConfirmationDialogWindow.xib in Resources */,
+				2AA65CE12BCE6FFF000A35CB /* corkscrew in Resources */,
 				229803BC187F345C00B704DD /* Credits.rtf in Resources */,
 				2A3DE21E2BC9677000E67E04 /* General View.xib in Resources */,
+				2AA65CE22BCE6FFF000A35CB /* corkscrew_arm in Resources */,
 				2A3DE2302BC97F9E00E67E04 /* NESAdminPasswordDialog.xib in Resources */,
+				2AA65CD72BCE6F60000A35CB /* LICENSE in Resources */,
 				2A3DE20E2BC9676000E67E04 /* LocalForwardWindow.xib in Resources */,
 				2A3DE2382BC97FA700E67E04 /* ConfirmationSheet.xib in Resources */,
 				2A3DE2222BC9677300E67E04 /* Info View.xib in Resources */,
 				229803C2187F345C00B704DD /* MainMenu.xib in Resources */,
 				2A3DE2062BC9674D00E67E04 /* Prefs Window.xib in Resources */,
+				2AA65CE02BCE6FFF000A35CB /* corkscrew_x86 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,7 +632,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\nSSHTUNNEL_USER=$(id -un)\n\nif [ -d /Volumes/Homeshare/Xcode/Secure-Pipes/upload ]; then\n    cp /Users/$SSHTUNNEL_USER/Documents/Xcode/Secure-Pipes/secure-pipes.html /Volumes/Homeshare/Xcode/Secure-Pipes/upload/\n    codesign --force --deep --sign - \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"\n    ditto -c -k --sequesterRsrc --keepParent \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/Secure-Pipes/upload/secure-pipes.zip\nfi\n\nif [ -d /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\" ]; then\n  rm -rf /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\nfi\n\ncp -a \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Users/$SSHTUNNEL_USER/Desktop/.\ncodesign --force --deep --sign - /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\nSSHTUNNEL_USER=$(id -un)\n\nif [ -d /Volumes/Homeshare/Xcode/Secure-Pipes/upload ]; then\n    cp /Users/$SSHTUNNEL_USER/Documents/Xcode/Secure-Pipes/Secure\\ Pipes/secure-pipes.html /Volumes/Homeshare/Xcode/Secure-Pipes/upload/\n    codesign --force --deep --sign - \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"\n    ditto -c -k --sequesterRsrc --keepParent \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/Secure-Pipes/upload/secure-pipes.zip\nfi\n\nif [ -d /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\" ]; then\n  rm -rf /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\nfi\n\ncp -a \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Users/$SSHTUNNEL_USER/Desktop/.\ncodesign --force --deep --sign - /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -643,46 +641,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22455D4118A43DA50057F353 /* NESConnectionProcess.m in Sources */,
-				2273B3C1198E8DF600654C17 /* NESEmptyView.m in Sources */,
-				220DF523188C668400AA9D50 /* NESConnectionCellView.m in Sources */,
-				2284C65C18B18683005C34E1 /* NESPopoverButton.m in Sources */,
-				22DA065E1A8532D700F85E56 /* SocketIOTransportXHR.m in Sources */,
-				22A0577018A9833100553E75 /* NESConfirmationSheet.m in Sources */,
-				221A0B5A18870C150008EBDC /* NESConnection.m in Sources */,
-				2246F95F1991D36800A53B83 /* NESManagedConnection.m in Sources */,
-				2266BEAF18AAD3E600F4ED58 /* NESUser.m in Sources */,
-				2273B3BB1989A21A00654C17 /* NESManagedConnectionWindowController.m in Sources */,
-				228E61C0188F2B1E00864214 /* NESLocalForwardWindowController.m in Sources */,
-				221A0BA718882CFD0008EBDC /* NESConnectionViewController.m in Sources */,
-				2266BEB218AAD90800F4ED58 /* NESAdminPasswordDialogWindowController.m in Sources */,
-				22DA065B1A8532D700F85E56 /* SocketIOJSONSerialization.m in Sources */,
-				22DA065C1A8532D700F85E56 /* SocketIOPacket.m in Sources */,
-				224200AB1A97ACBC00D0E56A /* NESManagedRegistrationSheet.m in Sources */,
-				22E199EF18B5698B001B60C0 /* NESProxyWindowController.m in Sources */,
-				22488D9E18AD8E13003F5B68 /* NESGeneralViewController.m in Sources */,
-				229803B8187F345C00B704DD /* main.m in Sources */,
-				224D8708195B2D1800C0B6D8 /* Log.m in Sources */,
-				22DA065A1A8532D700F85E56 /* SocketIO.m in Sources */,
+				2AA65C8D2BCE6E0B000A35CB /* NESProxyWindowController.m in Sources */,
+				2AA65CE52BCE7033000A35CB /* NESUser.m in Sources */,
+				2AA65CC12BCE6EF5000A35CB /* NESEmptyView.m in Sources */,
+				2AA65CA52BCE6E82000A35CB /* NESConnectionManager.m in Sources */,
+				2AA65CA02BCE6E81000A35CB /* NESConnection.m in Sources */,
+				2AA65C8A2BCE6E0B000A35CB /* NESSelectIdentityDelegate.m in Sources */,
+				2AA65CBD2BCE6EF5000A35CB /* NESManagedRegistrationSheet.m in Sources */,
+				2AA65CC52BCE6EF5000A35CB /* FilterBarView.m in Sources */,
+				2AA65C8E2BCE6E0B000A35CB /* NESGeneralViewController.m in Sources */,
+				2AA65CC02BCE6EF5000A35CB /* NESPopoverTextFieldCell.m in Sources */,
+				2AA65CA42BCE6E81000A35CB /* NESConnectionProcess.m in Sources */,
+				2AA65C9F2BCE6E81000A35CB /* NESAppConfig.m in Sources */,
+				2AA65CC32BCE6EF5000A35CB /* NESConfirmationSheet.m in Sources */,
+				2AA65CD62BCE6F60000A35CB /* SocketIOJSONSerialization.m in Sources */,
+				2AA65CD82BCE6F60000A35CB /* SocketIOPacket.m in Sources */,
+				2AA65C872BCE6E0B000A35CB /* NESLocalForwardWindowController.m in Sources */,
+				2AA65CBF2BCE6EF5000A35CB /* NESPopoverTextFieldButton.m in Sources */,
+				2AA65CD92BCE6F60000A35CB /* SocketIOTransportXHR.m in Sources */,
+				2AA65C8B2BCE6E0B000A35CB /* NESRemoteForwardWindowController.m in Sources */,
+				2AA65CA22BCE6E81000A35CB /* NESManagedConnection.m in Sources */,
+				2AA65CA12BCE6E81000A35CB /* NESGetScriptOutput.m in Sources */,
+				2AA65CF12BCE71ED000A35CB /* NESAppDelegate.m in Sources */,
+				2AA65C882BCE6E0B000A35CB /* NESConnectionWindowController.m in Sources */,
+				2AA65C892BCE6E0B000A35CB /* NESSelectHostnameScriptDelegate.m in Sources */,
+				2AA65CC42BCE6EF5000A35CB /* NESMenuIconController.m in Sources */,
+				2AA65CD52BCE6F60000A35CB /* SocketIOTransportWebsocket.m in Sources */,
+				2AA65CDC2BCE6FC1000A35CB /* Log.m in Sources */,
+				2AA65C8F2BCE6E0B000A35CB /* NESConnectionCellView.m in Sources */,
+				2AA65CC22BCE6EF5000A35CB /* NESConfirmationDialogWindowController.m in Sources */,
 				229803C5187F345C00B704DD /* Secure_Pipes.xcdatamodeld in Sources */,
-				2234C98A189480BF000DEB44 /* NESPopoverTextFieldButton.m in Sources */,
-				2234C989189480BF000DEB44 /* NESPopoverTextField.m in Sources */,
-				22CE2F6B1A155ACA003A19CB /* NESSelectHostnameScriptDelegate.m in Sources */,
-				22F8E2FC1A8BA0EB00FB45AB /* NESConnectionManager.m in Sources */,
-				22488D9B18AD8B11003F5B68 /* NESAppConfig.m in Sources */,
-				22DC63B31A16839E000064F3 /* NESGetScriptOutput.m in Sources */,
-				22ED982518A9349E005F9C1C /* NESMenuIconController.m in Sources */,
-				22DA065D1A8532D700F85E56 /* SocketIOTransportWebsocket.m in Sources */,
-				2284C66118B1C090005C34E1 /* NESRemoteForwardWindowController.m in Sources */,
-				22B4BB0518B3E25C0052B33E /* NESConnectionWindowController.m in Sources */,
-				229F49A01984464B003BC1D2 /* FilterBarView.m in Sources */,
-				229803BF187F345C00B704DD /* NESAppDelegate.m in Sources */,
-				2288F40518A027C600C0331C /* NESController.m in Sources */,
-				2234C98B189480BF000DEB44 /* NESPopoverTextFieldCell.m in Sources */,
-				22759899189DA9CA00E42ADD /* NESKeychain.m in Sources */,
-				229803E8187F3F2A00B704DD /* NESPrefsWindowController.m in Sources */,
-				22DBDA0C18EFBC8600A7013F /* NESConfirmationDialogWindowController.m in Sources */,
-				22F4F4A718F0530C004D21E4 /* NESSelectIdentityDelegate.m in Sources */,
+				2AA65CF32BCE720C000A35CB /* main.m in Sources */,
+				2AA65CC62BCE6EF5000A35CB /* NESPopoverTextField.m in Sources */,
+				2AA65C8C2BCE6E0B000A35CB /* NESManagedConnectionWindowController.m in Sources */,
+				2AA65CA32BCE6E81000A35CB /* NESKeychain.m in Sources */,
+				2AA65CC72BCE6EF5000A35CB /* NESAdminPasswordDialogWindowController.m in Sources */,
+				2AA65CD42BCE6F60000A35CB /* SocketIO.m in Sources */,
+				2AA65CF02BCE71ED000A35CB /* NESController.m in Sources */,
+				2AA65C902BCE6E0B000A35CB /* NESConnectionViewController.m in Sources */,
+				2AA65C862BCE6E0B000A35CB /* NESPrefsWindowController.m in Sources */,
+				2AA65CBE2BCE6EF5000A35CB /* NESPopoverButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
