@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #include <Security/Security.h>
 
-#define SERVICE_NAME(name,type) ((type!=0)?(char *)[[NSString stringWithFormat:@"net.edgeservices (%ld) - %@",(long)type,name] UTF8String]:(char *)[[NSString stringWithFormat:@"net.edgeservices (%@)",name] UTF8String])
+#define SERVICE_NAME(name,type) ((type!=0)?(char *)[[NSString stringWithFormat:@"sl-soft.de (%ld) - %@",(long)type,name] UTF8String]:(char *)[[NSString stringWithFormat:@"sl-soft.de (%@)",name] UTF8String])
 #define APP_NAME @"Secure Pipes"
 
 @interface NESKeychain : NSObject

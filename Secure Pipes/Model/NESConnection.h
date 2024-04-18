@@ -61,7 +61,7 @@ typedef NS_ENUM(NSInteger, NESConnectionStatus) {
 
 #define PREFS_DIR @"~/Library/Preferences"
 #define SUPPORT_DIR @"~/Library/Application Support/Secure Pipes"
-#define PREFS_FILE @"net.edgeservices.connections.plist"
+#define PREFS_FILE @"sl-soft.de.connections.plist"
 #define PREFS_FULL_PATH PREFS_DIR @"/" PREFS_FILE
 
 @interface NESConnection : NSObject {

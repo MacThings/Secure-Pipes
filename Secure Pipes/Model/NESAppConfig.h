@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NESConnection.h"
 
-#define CONFIG_FILE @"net.edgeservices.sp-config.plist"
+#define CONFIG_FILE @"sl-soft.de.sp-config.plist"
 #define CONFIG_FULL_PATH PREFS_DIR @"/" CONFIG_FILE
 
 @interface NESAppConfig : NSObject
