@@ -6,6 +6,22 @@
 	objectVersion = 60;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2AFD1D172D2E5EE1000354E3 /* Publish */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2AFD1D182D2E5EE1000354E3 /* Build configuration list for PBXAggregateTarget "Publish" */;
+			buildPhases = (
+				2AFD1D1B2D2E5EEE000354E3 /* Publish */,
+			);
+			dependencies = (
+			);
+			name = Publish;
+			packageProductDependencies = (
+			);
+			productName = Publish;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2206D45D18A8260E00FB3E65 /* getopt.tcl in Resources */ = {isa = PBXBuildFile; fileRef = 22E8C2E418A67E7000506AB8 /* getopt.tcl */; };
 		224200A71A93D5FF00D0E56A /* home-sharing_helper.exp in Resources */ = {isa = PBXBuildFile; fileRef = 224200A21A93D49300D0E56A /* home-sharing_helper.exp */; };
@@ -494,7 +510,7 @@
 				229803A5187F345C00B704DD /* Frameworks */,
 				229803A6187F345C00B704DD /* Resources */,
 				227E54941AA2785800DF77AC /* CopyFiles */,
-				2A2D124A2BCB13130042DEEA /* Prepare Publishing */,
+				2A2D124A2BCB13130042DEEA /* Prepare Build */,
 			);
 			buildRules = (
 			);
@@ -519,6 +535,11 @@
 				CLASSPREFIX = NES;
 				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = "Sascha Lamprecht";
+				TargetAttributes = {
+					2AFD1D172D2E5EE1000354E3 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
 			};
 			buildConfigurationList = 229803A3187F345B00B704DD /* Build configuration list for PBXProject "Secure Pipes" */;
 			compatibilityVersion = "Xcode 15.0";
@@ -544,6 +565,7 @@
 			projectRoot = "";
 			targets = (
 				229803A7187F345C00B704DD /* Secure Pipes */,
+				2AFD1D172D2E5EE1000354E3 /* Publish */,
 			);
 		};
 /* End PBXProject section */
@@ -612,7 +634,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A2D124A2BCB13130042DEEA /* Prepare Publishing */ = {
+		2A2D124A2BCB13130042DEEA /* Prepare Build */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -621,14 +643,32 @@
 			);
 			inputPaths = (
 			);
-			name = "Prepare Publishing";
+			name = "Prepare Build";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\nSSHTUNNEL_USER=$(id -un)\n\nif [ -d /Volumes/Homeshare/Xcode/Secure-Pipes/upload ]; then\n    cp /Users/$SSHTUNNEL_USER/Documents/Xcode/Secure-Pipes/Secure\\ Pipes/secure-pipes.html /Volumes/Homeshare/Xcode/Secure-Pipes/upload/\n    codesign --force --deep --sign - \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"\n    ditto -c -k --sequesterRsrc --keepParent \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/Secure-Pipes/upload/secure-pipes.zip\nfi\n\nif [ -d /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\" ]; then\n  rm -rf /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\nfi\n\ncp -a \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Users/$SSHTUNNEL_USER/Desktop/.\ncodesign --force --deep --sign - /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\nSSHTUNNEL_USER=$(id -un)\n\nif [ -d /Volumes/Homeshare/Xcode/Secure-Pipes/upload ]; then\n    cp /Users/$SSHTUNNEL_USER/Documents/Xcode/Secure-Pipes/Secure\\ Pipes/secure-pipes.html /Volumes/Homeshare/Xcode/Secure-Pipes/upload/\n    codesign --force --deep --sign \"Apple Development: s.lamprecht@sl-soft.de (85JZW6284R)\" \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"\n    ditto -c -k --sequesterRsrc --keepParent \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/Secure-Pipes/upload/secure-pipes.zip\nfi\n\nif [ -d /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\" ]; then\n  rm -rf /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\nfi\n\ncp -a \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Users/$SSHTUNNEL_USER/Desktop/.\ncodesign --force --deep --sign \"Apple Development: s.lamprecht@sl-soft.de (85JZW6284R)\" /Users/$SSHTUNNEL_USER/Desktop/\"${PRODUCT_NAME}.app\"\n";
+		};
+		2AFD1D1B2D2E5EEE000354E3 /* Publish */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Publish;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nbash /Volumes/Homeshare/Xcode/Secure-Pipes/push.command\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -931,12 +971,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Secure Pipes/Secure Pipes.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_HARDENED_RUNTIME = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -950,7 +990,7 @@
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "sl-soft.de.secure-pipes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -967,12 +1007,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Secure Pipes/Secure Pipes.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_HARDENED_RUNTIME = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -986,7 +1026,7 @@
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "sl-soft.de.secure-pipes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -994,6 +1034,24 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2AFD1D192D2E5EE1000354E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ATFWV7M4B;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AFD1D1A2D2E5EE1000354E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ATFWV7M4B;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1018,6 +1076,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2AFD1D182D2E5EE1000354E3 /* Build configuration list for PBXAggregateTarget "Publish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AFD1D192D2E5EE1000354E3 /* Debug */,
+				2AFD1D1A2D2E5EE1000354E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1026,7 +1093,7 @@
 			repositoryURL = "https://github.com/sparkle-project/Sparkle";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.0;
+				minimumVersion = 2.6.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

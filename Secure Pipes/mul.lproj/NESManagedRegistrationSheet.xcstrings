@@ -19,18 +19,6 @@
         }
       }
     },
-    "F0z-JX-Cv5.title" : {
-      "comment" : "Class = \"NSWindow\"; title = \"Window\"; ObjectID = \"F0z-JX-Cv5\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Window"
-          }
-        }
-      }
-    },
     "Gth-1A-y0i.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Cancel\"; ObjectID = \"Gth-1A-y0i\";",
       "extractionState" : "extracted_with_value",

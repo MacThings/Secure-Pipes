@@ -14,31 +14,31 @@
       }
     },
     "jx6-9h-MeG.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Copyright © 2014-2020 Timothy Stonis, All rights reserved. https://www.opoet.com  2024 Sascha Lamprecht https://www.sl-soft.de  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website.\"; ObjectID = \"jx6-9h-MeG\";",
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Copyright © 2014-2020 Timothy Stonis, All rights reserved. https://www.opoet.com  2025 Sascha Lamprecht https://www.sl-soft.de  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website.\"; ObjectID = \"jx6-9h-MeG\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Copyright © 2014-2020 Timothy Stonis, All rights reserved. https://www.opoet.com  2024 Sascha Lamprecht https://www.sl-soft.de  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Copyright © 2014-2020 Timothy Stonis, All rights reserved. https://www.opoet.com  2024 Sascha Lamprecht https://www.sl-soft.de  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website."
+            "value" : "Copyright © 2014-2020 Timothy Stonis, All rights reserved. https://www.opoet.com  2025 Sascha Lamprecht https://www.sl-soft.de  Secure Pipes is copyrighted software and comes without any warranty. In no event shall the author of this software be liable for any special, consequential, incidental or indirect damages whatsoever. By downloading and using this software you are bound by the terms of the end user license agreement and terms of service posted on the opoet website."
           }
         }
       }
     },
     "WS0-8u-keI.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Version 1.0.0\"; ObjectID = \"WS0-8u-keI\";",
+      "comment" : "Class = \"NSTextFieldCell\"; title = \"Version 1.0.1\"; ObjectID = \"WS0-8u-keI\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Version 1.0.0"
+            "value" : "Version 1.0.1"
           }
         }
       }

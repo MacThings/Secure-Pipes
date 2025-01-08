@@ -1,18 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "1yW-yS-R2Y.title" : {
-      "comment" : "Class = \"NSMenu\"; title = \"OtherViews\"; ObjectID = \"1yW-yS-R2Y\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "OtherViews"
-          }
-        }
-      }
-    },
     "3Si-ME-7uZ.title" : {
       "comment" : "Class = \"NSButtonCell\"; title = \"Managed\"; ObjectID = \"3Si-ME-7uZ\";",
       "extractionState" : "stale",
@@ -211,18 +199,6 @@
         }
       }
     },
-    "M5d-l9-3ty.title" : {
-      "comment" : "Class = \"NSMenu\"; title = \"OtherViews\"; ObjectID = \"M5d-l9-3ty\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "OtherViews"
-          }
-        }
-      }
-    },
     "RjK-fK-WOS.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Connection\"; ObjectID = \"RjK-fK-WOS\";",
       "extractionState" : "extracted_with_value",
@@ -297,18 +273,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "New Remote Forward..."
-          }
-        }
-      }
-    },
-    "wZJ-Bq-mE7.title" : {
-      "comment" : "Class = \"NSTextFieldCell\"; title = \"Text Cell\"; ObjectID = \"wZJ-Bq-mE7\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Text Cell"
           }
         }
       }

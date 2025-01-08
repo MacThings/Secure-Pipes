@@ -1,18 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "1.title" : {
-      "comment" : "Class = \"NSWindow\"; title = \"Window\"; ObjectID = \"1\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Window"
-          }
-        }
-      }
-    },
     "3dJ-h9-1yi.title" : {
       "comment" : "Class = \"NSTextFieldCell\"; title = \"Are you sure you want to delete the connection \\\"Local Connection\\\"? \"; ObjectID = \"3dJ-h9-1yi\";",
       "extractionState" : "extracted_with_value",

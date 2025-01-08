@@ -13,18 +13,18 @@
 
 static NESUser *_currentUser = nil;
 
-@implementation NESUser     
+@implementation NESUser
 
 /*
  
  current user
  
  */
-+ (id)currentUser
-{
-    if (!_currentUser) {
-        _currentUser = [[self alloc] initWithName: NSUserName()];
-    }
++ (instancetype)currentUser {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _currentUser = [[self alloc] initWithName:NSUserName()];
+    });
     return _currentUser;
 }
 
@@ -33,29 +33,43 @@ static NESUser *_currentUser = nil;
  init with user name
  
  */
-- (id)initWithName:(NSString *)name
-{
-    if ([super init]) {
-        CBIdentityAuthority *authority = [CBIdentityAuthority
-                                          defaultIdentityAuthority];    // default is local and network
-        _user =[CBIdentity identityWithName:name authority:authority]; //searches for full and logon names
+- (instancetype)initWithName:(NSString *)name {
+    if (self = [super init]) {
+        // Avoid synchronous, heavy operations in `dispatch_once`
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0), ^{
+            CBIdentityAuthority *authority = [self defaultAuthority];
+            self->_user = [CBIdentity identityWithName:name authority:authority];
+            if (!self->_user) {
+                NSLog(@"Failed to initialize CBIdentity with name: %@", name);
+                // Additional error handling or fallback logic can go here
             }
+        });
+    }
     return self;
 }
+
 /*
  
  user is member of admin group
  
  */
-- (BOOL)isMemberOfAdminGroup
-{
-    CBIdentityAuthority *authority =[CBIdentityAuthority
-                                     defaultIdentityAuthority]; // default is local and network
-    // admin is 80, user is 20.
-    // to see user group membership type 'id' at terminal
-    // for list of groups type 'more /etc/group'
-    return [_user isMemberOfGroup:[CBGroupIdentity
-                                   groupIdentityWithPosixGID:80 authority:authority]];
+- (BOOL)isMemberOfAdminGroup {
+    if (!_user) {
+        NSLog(@"User identity not initialized.");
+        return NO;
+    }
+    CBGroupIdentity *adminGroup = [CBGroupIdentity groupIdentityWithPosixGID:80 authority:[self defaultAuthority]];
+    return [_user isMemberOfGroup:adminGroup];
+}
+
+// Helper method to get the default authority
+- (CBIdentityAuthority *)defaultAuthority {
+    static CBIdentityAuthority *authority = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        authority = [CBIdentityAuthority defaultIdentityAuthority];
+    });
+    return authority;
 }
 
 @end
